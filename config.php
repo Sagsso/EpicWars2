@@ -19,6 +19,7 @@
 
     define('VENDORS','./views/_vendors/');
     define('STYLES','./views/_styles/');
+    // define('STYLES','./views/_styles/');
 
     require_once './loader.php';
 

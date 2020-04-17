@@ -18,7 +18,7 @@ class CharacterFactory implements ICharacterFactory{
     }
 
     public static function getRogue(string $name): \Rogue {
-        
+        return new Rogue($name);
     }
 
     public static function getWarrior(string $name): \Warrior {

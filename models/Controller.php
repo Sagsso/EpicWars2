@@ -17,7 +17,8 @@ abstract class Controller implements IController{
     
     function __construct() {
         $this->view = new View();
-        session_start();
+        session_start();    
+        // session_destroy();
     }
 
     abstract public function index(): void;
