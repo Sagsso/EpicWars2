@@ -19,7 +19,7 @@
 
     define('VENDORS','./views/_vendors/');
     define('STYLES','./views/_styles/');
-    // define('STYLES','./views/_styles/');
+    define('ASYNCHRONOUS','./views/_asynchronousUX/');
 
     require_once './loader.php';
 

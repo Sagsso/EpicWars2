@@ -4,13 +4,115 @@ body {
 }
 
 body {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
+  display: grid;
+  justify-items: center;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #f5f5f5;
+}
+
+.container4{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 85% 15%;
+  grid-template-areas:
+  "table"
+  "btn";
+  width: 100%;
+  height: 100%;
+}
+
+.container3{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 30%;
+  grid-template-areas:
+  "visual"
+  "btn";
+  width: 100%;
+  height: 100%;
+}
+
+.container2{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 56px auto;
+  grid-template-areas:
+  "header"
+  "content";
+  width: 100%;
+  height: 100%;
+}
+
+.visual{
+  background-image: url('../../assets/Fondo.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+.area-visual{
+  display: grid;
+  grid-area: visual;
+}
+
+.area-table{
+  grid-area: table;
+
+}
+
+.center-start{
+  align-items: start;
+  justify-items: center;
+}
+
+.end{
+  align-self: end;
+}
+
+.start{
+  align-self: start;
+}
+
+.area-btn{
+  display: grid;
+  grid-area: btn;
+}
+
+.area-header{
+  display: grid;
+  grid-area: header;
+}
+
+.area-content{
+  display: grid;
+  grid-area: content;
+}
+
+.signin-background{
+  background-color: #007bff;
+}
+
+.card{
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #e3e6f0;
+  border-radius: 0.35rem;
+  padding: 10px;
+}
+
+.big-btn{
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 15px;
+}
+
+.margin-all{
+  margin: 5px;
+}
+
+.bg-blue{
+  background-color:#007bff ;
 }
 
 .form-signin {
