@@ -26,7 +26,7 @@ class MySQLiMAdapter implements IDBAdapter {
         return $this->source->select('*', $table);
     }
     function getAllCharacters(){
-        return $this->source->select('*','user_personaje', "username = '".$_SESSION["username"]."'");
+        return $this->source->select('*','user_character', "username = '".$_SESSION["username"]."'");
     }
     function query($query){
         $consulta = mysqli_query($this->source->getLink(), $query);

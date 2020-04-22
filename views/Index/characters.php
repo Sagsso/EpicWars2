@@ -1,7 +1,6 @@
 <?php 
 require_once DATABASE."connection.php";
 print_r($conexion->getAllCharacters());
-echo "HOLAA" 
 ?>
 
 <div class="container4">
