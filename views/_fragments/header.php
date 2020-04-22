@@ -7,18 +7,18 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="asyncLink nav-link" href="<?php print(URL); ?>initial">Home
+          <a class="nav-link" href="<?php print(URL); ?>home">Home
             <span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="asyncLink nav-link" href="<?php print(URL); ?>characters">Characters</a>
+          <a class="nav-link" href="<?php print(URL); ?>characters">Characters</a>
         </li>
         <li class="nav-item">
-          <a class="asyncLink nav-link" href="<?php print(URL); ?>arena">Arena</a>
+          <a class="nav-link" href="<?php print(URL); ?>arena">Arena</a>
         </li>
         <li class="nav-item">
-          <a class="asyncLink nav-link" href="<?php print(URL); ?>history">History</a>
+          <a class="nav-link" href="<?php print(URL); ?>history">History</a>
         </li>
       </ul>
     </div>

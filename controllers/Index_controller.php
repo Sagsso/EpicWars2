@@ -24,7 +24,7 @@ class Index_controller extends Controller{
     }
 
     public function create(): void {
-        $this->view->render($this,"createCharacter","Creating...");
+        $this->view->render($this,"create","Creating...");
     }
 
     public function signup(): void {

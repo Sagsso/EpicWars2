@@ -1,16 +1,19 @@
-<div class="container4">
-    <div class="area-table container-fluid">
-        <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold">Arena</h6>
+<?php $this->loadFragment("head"); ?>
+<body>
+    <div class="container2">
+        <div class="area-header">
+            <?php $this->loadFragment("header"); ?>
         </div>
-        <div class="card-body">
-            <div>
-                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="dataTables_length" id="dataTable_length">
-                            </div>
-                        </div>
+        <div class="area-content">
+            <div class="container5">
+                <div class="selector area-selector">
+                    <h6 class="m-0 font-weight-bold card-header py-3">Seleccionar personaje</h6>
+                    <div class="dropdown card-body">
+                        <select name="class" id="" class="form-control">
+                            <option value="Mage">Mage</option>
+                            <option value="Rogue">Rogue</option>
+                            <option value="Warrior">Warrior</option>
+                        </select>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
@@ -54,4 +57,5 @@
             </div>
         </div>
     </div>
-</div>
+</body>
+</html>

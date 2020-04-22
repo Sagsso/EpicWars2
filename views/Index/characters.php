@@ -1,16 +1,16 @@
-<div class="container4">
-    <div class="area-table container-fluid">
-        <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold">Characters</h6>
+
+<?php $this->loadFragment("head"); ?>
+<body>
+
+    <div class="container2">
+        <div class="area-header">
+            <?php $this->loadFragment("header"); ?>
         </div>
-        <div class="card-body">
-            <div>
-                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="dataTables_length" id="dataTable_length">
-                            </div>
-                        </div>
+        <div class="area-content">
+            <div class="container4">
+                <div class="area-table container-fluid">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold">Characters</h6>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
@@ -45,11 +45,12 @@
                         </div>
                     </div>
                 </div>
+                <div class="area-btn center-start">
+                    <a href="<?php print(URL); ?>create" class="btn btn-primary js-scroll-trigger">Create a new character</a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="area-btn center-start">
-        <a href="<?php print(URL); ?>create" class="asyncLink btn btn-primary js-scroll-trigger">Create a new character</a>
-    </div>
+</body>
+</html>
 
-</div>
