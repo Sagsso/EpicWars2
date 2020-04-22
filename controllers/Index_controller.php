@@ -41,7 +41,6 @@ class Index_controller extends Controller{
     
     public function characters(): void {
         $this->view->characters = Characters_bl::getAll();
-
         $this->view->render($this,"characters","Characters");
     }
 
@@ -55,6 +54,7 @@ class Index_controller extends Controller{
             header('Location: '.URL);
             // echo $_SERVER["REQUEST_URI"];
         }*/
+        $this->view->rivals = Characters_bl::getRivals();
         $this->view->render($this,"arena","Arena");
     }
 

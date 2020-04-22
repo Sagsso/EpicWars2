@@ -1,6 +1,3 @@
-<?php
-require_once DATABASE . "loadArena.php";
-?>
 <div class="container4">
     <div class="area-table container-fluid">
         <div class="card-header py-3">
@@ -37,34 +34,18 @@ require_once DATABASE . "loadArena.php";
                                     </tr>
                                 </tfoot>
                                 <tbody>
-                                    <tr role="row" class="odd">
-                                        <td class="sorting_1">Garet</td>
-                                        <td>2</td>
-                                        <td>Warrior</td>
-                                        <td>SantGalvez</td>
-                                        <td><a href="#">Desafiar</a></td>
-                                    </tr>
-                                    <tr role="row" class="even">
-                                        <td class="sorting_1">Aurelion</td>
-                                        <td>1</td>
-                                        <td>Mage</td>
-                                        <td>ValVega</td>
-                                        <td><a href="#">Desafiar</a></td>
-                                    </tr>
-                                    <tr role="row" class="odd">
-                                        <td class="sorting_1">Ashe</td>
-                                        <td>3</td>
-                                        <td>Rogue</td>
-                                        <td>Elperro</td>
-                                        <td><a href="#">Desafiar</a></td>
-                                    </tr>
-                                    <tr role="row" class="even">
-                                        <td class="sorting_1">Ivern</td>
-                                        <td>4</td>
-                                        <td>Mage</td>
-                                        <td>MiOso</td>
-                                        <td><a href="#">Desafiar</a></td>
-                                    </tr>
+                                    <?php
+                                    foreach ($this->rivals as $rival) {
+                                        echo "<tr role='row' class='odd'>
+                                        <td class='sorting_1'>" . $rival['name'] . "</td>
+                                        <td>" . $rival['level'] . "</td>
+                                        <td>" . $rival['class'] . "</td>
+                                        <td>" . $rival['username'] . "</td>
+                                        <td><a href='#'>Desafiar</a></td>
+                                        </tr>
+                                        ";
+                                    } ?>
+
                                 </tbody>
                             </table>
                         </div>

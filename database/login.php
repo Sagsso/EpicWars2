@@ -9,7 +9,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     //Validar usuario y contraseña
     $query = "SELECT COUNT(*) as contar from user WHERE username = '$username' AND password = '$password'";
 
-    $result = $conexion->query($query);
+    $result = Connection::getInstance()->query($query);
     // print_r($result);
 
     if($result['contar'] > 0) {

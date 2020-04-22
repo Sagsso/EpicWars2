@@ -33,7 +33,6 @@
                                 <tbody>
                                     <?php 
                                     foreach ($this->characters as $character) {
-                                        // print_r($character["name"]);
                                         echo "<tr role='row' class='odd'>
                                         <td class='sorting_1'>".$character['name']."</td>
                                         <td>". $character['level']."</td>
