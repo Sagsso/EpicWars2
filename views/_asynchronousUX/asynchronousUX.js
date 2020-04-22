@@ -12,7 +12,11 @@ $(function(){
       method: 'GET',
     }).then((response) => {
         response.text().then((result) => {
-            $("#asyncLoadArea").html(result);
+            $(where).html(result);
+            $(".asyncLink").click(function(e){
+              e.preventDefault();
+              asyncLoadThis($(this).attr("href"),where);
+            });
         });
     });
   }

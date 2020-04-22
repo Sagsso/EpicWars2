@@ -64,6 +64,12 @@ body {
   justify-items: center;
 }
 
+.grid-center{
+  display: grid;
+  align-self: center;
+  justify-self: center;
+}
+
 .end{
   align-self: end;
 }

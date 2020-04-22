@@ -50,6 +50,7 @@
     </div>
     
     <div class="area-btn center-start">
-        <a href="#" class="asyncLink btn btn-primary js-scroll-trigger">Create a new character</a>
+        <a href="<?php print(URL); ?>create" class="asyncLink btn btn-primary js-scroll-trigger">Create a new character</a>
     </div>
+    
 </div>
