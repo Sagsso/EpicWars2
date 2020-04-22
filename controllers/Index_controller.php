@@ -55,6 +55,7 @@ class Index_controller extends Controller{
             // echo $_SERVER["REQUEST_URI"];
         }*/
         $this->view->rivals = Characters_bl::getRivals();
+        $this->view->characters = Characters_bl::getAll();
         $this->view->render($this,"arena","Arena");
     }
 

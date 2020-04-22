@@ -10,9 +10,11 @@
                     <h6 class="m-0 font-weight-bold card-header py-3">Seleccionar personaje</h6>
                     <div class="dropdown card-body">
                         <select name="class" id="" class="form-control">
-                            <option value="Mage">Mage</option>
-                            <option value="Rogue">Rogue</option>
-                            <option value="Warrior">Warrior</option>
+                            <?php
+                                    foreach ($this->characters as $character) {
+                                        echo " <option value='".$character['name']."'>". $character['name']. "</option>";
+                                    } ?>
+
                         </select>
                     </div>
                     <div class="row">

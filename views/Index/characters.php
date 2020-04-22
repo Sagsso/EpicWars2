@@ -25,7 +25,7 @@
 
                                 <tfoot>
                                     <tr>
-                                        <th rowspan="1" colspan="1">Name</th>
+                                        <th rowspan="1" colspan="1">Character</th>
                                         <th rowspan="1" colspan="1">Level</th>
                                         <th rowspan="1" colspan="1">Class</th>
                                     </tr>

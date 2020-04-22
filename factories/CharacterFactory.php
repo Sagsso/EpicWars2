@@ -21,8 +21,8 @@ class CharacterFactory implements ICharacterFactory{
         return new Rogue($name);
     }
 
-    public static function getWarrior(string $name): \Warrior {
-        
+    public static function getWarrior(string $name, string $house = null): \Warrior {
+        return new Warrior($name, $house);
     }
 
 }
