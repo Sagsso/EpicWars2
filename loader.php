@@ -16,6 +16,12 @@ spl_autoload_register(function($class){
         require_once MODELS.$class.".php";
         return 0;
     }
+
+    if (file_exists(BUSINESS . $class . ".php")) {
+        require_once BUSINESS . $class . ".php";
+        return 0;
+    }
+    require DATABASE . "connection.php";
     
 
 });

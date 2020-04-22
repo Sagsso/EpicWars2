@@ -2,9 +2,22 @@
 
 require_once 'MySQLiMAdapter.php';
 
-$host = 'localhost';
-$usuario = 'root';
-$clave = '';
-$bd = 'epicwars';
 
-$conexion = new MySQLiMAdapter($host,$usuario,$clave,$bd);
+
+class Connection {
+
+    private static $instance;
+
+    private function __construct() {
+
+    }
+    public static function getInstance()
+    {
+        if (!self::$instance instanceof self) {
+            self::$instance = new  MySQLiMAdapter('localhost', 'root', '', 'epicwars');
+        }
+
+        return self::$instance;
+    }
+    
+}

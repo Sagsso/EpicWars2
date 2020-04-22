@@ -11,6 +11,8 @@
  *
  * @author pabhoz
  */
+require_once BUSINESS."characters_bl.php";
+
 class Index_controller extends Controller{
     
     function __construct() {
@@ -38,6 +40,8 @@ class Index_controller extends Controller{
     }
     
     public function characters(): void {
+        $this->view->characters = Characters_bl::getAll();
+
         $this->view->render($this,"characters","Characters");
     }
 

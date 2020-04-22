@@ -14,6 +14,7 @@
     define('FACTORIES',__DIR__.'/factories/');
     define('MODELS',__DIR__.'/models/');
     define('DATABASE',__DIR__.'/database/');
+    define('BUSINESS',__DIR__.'/businessLogic/');
 
     define('CONTROLLERS',__DIR__.'/controllers/');
     define('VIEWS',__DIR__.'/views/');

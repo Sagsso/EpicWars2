@@ -1,8 +1,3 @@
-<?php 
-require_once DATABASE."connection.php";
-print_r($conexion->getAllCharacters());
-?>
-
 <div class="container4">
     <div class="area-table container-fluid">
         <div class="card-header py-3">
@@ -27,6 +22,7 @@ print_r($conexion->getAllCharacters());
                                         <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Class: activate to sort column ascending" style="width: 130px;">Class</th>
                                     </tr>
                                 </thead>
+
                                 <tfoot>
                                     <tr>
                                         <th rowspan="1" colspan="1">Name</th>
@@ -35,17 +31,16 @@ print_r($conexion->getAllCharacters());
                                     </tr>
                                 </tfoot>
                                 <tbody>
-                                    <tr role="row" class="odd">
-                                        <td class="sorting_1">Garet</td>
-                                        <td>2</td>
-                                        <td>Warrior</td>
-                                    </tr>
-                                    <tr role="row" class="even">
-                                        <td class="sorting_1">Aurelion</td>
-                                        <td>1</td>
+                                    <?php 
+                                    foreach ($this->characters as $character) {
+                                        // print_r($character["name"]);
+                                        echo "<tr role='row' class='odd'>
+                                        <td class='sorting_1'>".$character['name']."</td>
+                                        <td>". $character['level']."</td>
+                                        <td>".$character['class']."</td>
+                                        </tr>";
+                                    } ?>
 
-                                        <td>Mage </td>
-                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -57,5 +52,5 @@ print_r($conexion->getAllCharacters());
     <div class="area-btn center-start">
         <a href="<?php print(URL); ?>create" class="asyncLink btn btn-primary js-scroll-trigger">Create a new character</a>
     </div>
-    
+
 </div>
