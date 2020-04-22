@@ -1,6 +1,6 @@
 <?php $this->loadFragment("head"); ?>
 <?php
-require_once '/opt/lampp/htdocs/backendProjects/Parcial2/database/signup.php';
+require_once DATABASE.'signup.php';
 ?>
 
 <body class="signin-background">

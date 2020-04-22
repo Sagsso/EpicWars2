@@ -5,21 +5,14 @@
         <div class="area-header">
             <?php $this->loadFragment("header"); ?>
         </div>
-        <div id="asyncLoadArea" class="area-content">
+        <div class="area-content">
+            <div class="container3 visual">
+                <div class="area-btn center-start">
+                    <a href="<?php print(URL); ?>arena" class="big-btn btn btn-primary js-scroll-trigger">Let's play!</a>
+                </div>
+            </div>
         </div>
     </div>
-
-    <script type="text/javascript" src="<?php echo ASYNCHRONOUS; ?>asynchronousUX.js"></script>
-    <script type="text/javascript">
-    //Script para cargar la primera pagina
-    fetch('<?php print(URL); ?>initial', {
-        method: 'GET',
-    }).then((response) => {
-        response.text().then((info) => {
-            $("#asyncLoadArea").html(info);
-        });
-    });
-    </script>
 
 </body>
 </html>

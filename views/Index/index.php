@@ -1,5 +1,5 @@
 <?php $this->loadFragment("head"); ?>
-<?php require_once '/opt/lampp/htdocs/backendProjects/Parcial2/database/login.php';?>
+<?php require_once DATABASE.'login.php';?>
 <body class="signin-background">
   <div class="text-center card" style="width: 28%;">
       <form action="#" method="POST" class="form-signin">
