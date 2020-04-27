@@ -64,6 +64,13 @@ class Characters_bl
         } 
     }
 
+    public static function delete($id) {
+        $data = array("Characterid" => $id);
+        Connection::getInstance()->delete('User_has_Character', $data);
+        $data2 = array("id" => $id);
+        Connection::getInstance()->delete('`Character`', $data2);
+    }
+
     public static function create() {
         if (isset($_POST['name']) && isset($_POST['class'])) {
             $name = $_POST['name'];

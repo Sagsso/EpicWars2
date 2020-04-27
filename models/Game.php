@@ -11,6 +11,9 @@
  *
  * @author pabhoz
  */
+
+require_once BUSINESS.'characters_bl.php';
+
 class Game implements IGame{
 
     private $character1;
@@ -44,20 +47,23 @@ class Game implements IGame{
             // Acá se elimina de la base de datos
             echo $this->history->death($character1);
             //Se determina si el que inicio el desafio gano
-            $this->history->setResult($this->won($character1));
+            $this->history->setResult($this->won($character1->getId()));
+            Characters_bl::delete($character1);
             //Acá se sube de nivel el jugador que ganó
             $character2->resetStats();
             $character2->setLevel(($character2->getLevel())+1);
+            $_SESSION['id_character_selected'] = null;
         }else if($HP2 <= 0){
             // Acá se elimina de la base de datos
             echo $this->history->death($character2);
             //Se determina si el que inicio el desafio gano
             $this->history->setResult($this->won($character1));
+            Characters_bl::delete($character2->getId());
             // Acá se sube de nivel el jugador que ganó
             $character1->resetStats();
             $character1->setLevel(($character1->getLevel())+1);
+            $_SESSION['id_character_selected'] = null;
         }
-
     }
 
     function won(ICharacter $character): bool {
@@ -78,6 +84,14 @@ class Game implements IGame{
 
     function setCharacter2(ICharacter $character): void {
         $this->character2 = $character;
+    }
+
+    function getHistory() {
+        return $this->history;
+    }
+
+    function setHistory(IHistory $history): void {
+        $this->history = $history;
     }
 
 }

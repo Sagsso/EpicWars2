@@ -128,9 +128,9 @@ abstract class Character implements ICharacter{
         $this->hp = $hp;
     }
 
-    function getId($id): void
+    function getId(): int
     {
-        $this->id = $id;
+        return $this->id;
     }
 
     function setId($id): void

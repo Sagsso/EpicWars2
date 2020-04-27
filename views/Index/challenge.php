@@ -1,6 +1,7 @@
 <?php
     require_once MODELS."Game.php";
     require_once FACTORIES."CharacterFactory.php";
+    require_once BUSINESS."History_bl.php";
     $this->loadFragment("head"); 
 
     $character1 = CharacterFactory::getCharacter($_SESSION['id_character_selected']);
@@ -18,6 +19,7 @@
                 <h1 class="h3 my-3 text-center font-weight-normal">Challenge</h1>
                 <?php 
                 $game->fight();
+                //History_bl::create($game->getHistory());
                 ?>
                 <a href="<?php echo URL ?>arena" class="mt-3 text-start">Come back</a>
             </div>

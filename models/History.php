@@ -14,7 +14,6 @@
 class History implements IHistory{
 
     private $detail;
-    private $id;
     private $challengerId;
     private $challengedId;
     private $result;
