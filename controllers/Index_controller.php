@@ -48,12 +48,11 @@ class Index_controller extends Controller{
         $this->view->render($this,"history","History");
     }
 
+    public function challenge(): void {
+        $this->view->render($this,"challenge","Challenge");
+    }
+
     public function arena(): void{
-        /*
-        if(!isset($_SESSION['user'])) {            
-            header('Location: '.URL);
-            // echo $_SERVER["REQUEST_URI"];
-        }*/
         $this->view->rivals = Characters_bl::getRivals();
         $this->view->characters = Characters_bl::getAll();
         $this->view->render($this,"arena","Arena");

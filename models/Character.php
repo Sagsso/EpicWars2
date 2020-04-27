@@ -34,9 +34,9 @@ abstract class Character implements ICharacter{
     }
 
     
-    abstract public function attack(\ICharacter $target): void;
+    abstract public function attack(\ICharacter $target): array;
 
-    abstract public function getDamage(float $value, bool $isMagical): void;
+    abstract public function getDamage(float $value, bool $isMagical): array;
 
     abstract public function getStat(string $statName): float;
 
@@ -50,12 +50,17 @@ abstract class Character implements ICharacter{
     abstract public function setStat(string $statName, float $value): void;
 
     abstract public function setStats(array $stats): void;
+
+    abstract public function resetStats(): void;
     
     protected function isCritical(float $rate) :bool {
-        echo  $this->getName()."'s rate for a critical is ".($rate * 100)."% </br>";
         $roll = mt_rand(0,100);
-        echo  $this->getName()."'s roll is: $roll </br>";
         return ($roll <= $rate * 100) ? true: false;
+    }
+
+    protected function isMagical() :bool {
+        $roll = mt_rand(0,1);
+        return ($roll == 0) ? false: true;
     }
     
     function getName() {

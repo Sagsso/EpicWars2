@@ -1,3 +1,7 @@
+<?php
+require_once LOGIC."/logic.php";
+?>
+
 <?php $this->loadFragment("head"); ?>
 <body>
     <div class="container2">
@@ -5,11 +9,11 @@
             <?php $this->loadFragment("header"); ?>
         </div>
         <div class="area-content">
-            <div class="container5">
+            <form action="#" class="container5" method="POST">
                 <div class="selector area-selector">
                     <h6 class="m-0 font-weight-bold card-header py-3">Seleccionar personaje</h6>
                     <div class="dropdown card-body">
-                        <select name="class" id="" class="form-control">
+                        <select name="character" id="" class="form-control">
                             <?php
                                     foreach ($this->characters as $character) {
                                         echo " <option value='".$character['name']."'>". $character['name']. "</option>";
@@ -53,7 +57,7 @@
                                         <td>" . $rival['level'] . "</td>
                                         <td>" . $rival['class'] . "</td>
                                         <td>" . $rival['username'] . "</td>
-                                        <td><a href='#'>Desafiar</a></td>
+                                        <td><button href='#' type='submit'>Desafiar</button></td>
                                         </tr>
                                         ";
                                     }} ?>
@@ -63,7 +67,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </body>
