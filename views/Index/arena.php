@@ -27,6 +27,11 @@ if (isset($_POST['character_selected'])) {
                             </select>
                         </form>
                     </div>
+                </div>
+                <div class="area-table container-fluid">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold">Arena</h6>
+                    </div>
                     <div class="row">
                         <div class="col-sm-12">
                             <table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
@@ -50,6 +55,8 @@ if (isset($_POST['character_selected'])) {
                                 </tfoot>
                                 <tbody>
                                     <?php
+                                    if (is_array($this->rivals) || is_object($this->rivals))
+                                    {
                                     foreach ($this->rivals as $rival) {
                                         echo "<tr role='row' class='odd'>
                                         <td class='sorting_1'>" . $rival['name'] . "</td>
@@ -59,7 +66,7 @@ if (isset($_POST['character_selected'])) {
                                         <td><a href='#'>Desafiar</a></td>
                                         </tr>
                                         ";
-                                    } ?>
+                                    }} ?>
 
                                 </tbody>
                             </table>
