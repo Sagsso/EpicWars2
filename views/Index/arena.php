@@ -19,7 +19,6 @@ $this->loadFragment("head");
             <div class="selector area-selector">
                 <h6 class="m-0 font-weight-bold card-header py-3">Seleccionar personaje</h6>
                 <div class="dropdown card-body">
-                    <?php echo $_SESSION['id_character_selected']; ?>
                     <form action="" method="POST">
                         <select value="<?php echo $_SESSION['id_character_selected'] ?>" onchange="this.form.submit()" name="character_selected" id="" class="form-control">
                             <?php

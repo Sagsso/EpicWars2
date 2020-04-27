@@ -27,7 +27,7 @@ class CharacterFactory implements ICharacterFactory{
 
     public static function getCharacter(int $id): \ICharacter {
         $className = "create".ucfirst(Characters_bl::getClass($id));
-        $character = CharacterFactory::{$className}(Characters_bl::getCharacter($id));
+        $character = CharacterFactory::{$className}(Characters_bl::getCharacterName($id));
         $character->setLevel(Characters_bl::getLevel($id));
         return $character;
     }
