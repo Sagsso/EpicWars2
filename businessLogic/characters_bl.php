@@ -77,6 +77,11 @@ class Characters_bl
         Connection::getInstance()->delete('`Character`', $data2);
     }
 
+    public static function update($character) {
+        $data = array("level" => $character->getLevel());
+        Connection::getInstance()->update(`Character`, $data, 'id = '.$character->getId());
+    }
+
     public static function create() {
         if (isset($_POST['name']) && isset($_POST['class'])) {
             $name = $_POST['name'];

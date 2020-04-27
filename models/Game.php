@@ -25,7 +25,6 @@ class Game implements IGame{
         $this->character2 = $character2;
         $this->history = new History();
         $this->history->setChallengerId($_SESSION['user_id']);
-        // $this->history->setChallengedId($_SESSION['id_rival_selected']);
         $this->history->setDuelo($this->character1->getName()." vs ".$this->character2->getName());
     }
     
@@ -51,12 +50,11 @@ class Game implements IGame{
             echo $this->history->death($character1);
             //Se determina si el que inicio el desafio gano
             $this->history->setResult($this->won($character1->getId()));
-            Characters_bl::delete($character1);
+            Characters_bl::delete($character1->getId());
             //Acá se sube de nivel el jugador que ganó
             $character2->resetStats();
             $character2->setLevel(($character2->getLevel())+1);
-            echo $this->history->getDuelo();
-            echo "Result: ".$this->history->getResult();
+            //Character_bl::update($character2);
             $_SESSION['id_character_selected'] = null;
         }else if($HP2 <= 0){
             // Acá se elimina de la base de datos
@@ -67,8 +65,7 @@ class Game implements IGame{
             // Acá se sube de nivel el jugador que ganó
             $character1->resetStats();
             $character1->setLevel(($character1->getLevel())+1);
-            echo $this->history->getDuelo();
-            echo "Result: " . $this->history->getResult();
+            //Character_bl::update($character1);
             $_SESSION['id_character_selected'] = null;
         }
     }

@@ -140,8 +140,8 @@ class MySQLiManager{
 		$valores = substr($valores,0,strlen($valores)-1);
 		$stmt = "UPDATE $table SET $valores WHERE $where";
 
-		$result = $this->link->query($stmt) or die($this->link->error.__LINE__);
-		if($result->num_rows > 0) {
+		$result = $this->link->query($stmt) or die($this->link->error._LINE_);
+		if(!$result) {
 			$response = false;
 		}
 		else {

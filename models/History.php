@@ -15,7 +15,6 @@ class History implements IHistory{
 
     private $detail;
     private $challengerId;
-    private $challengedId;
     private $duelo;
     private $result;
     
@@ -58,13 +57,7 @@ class History implements IHistory{
     function setChallengerId(string $id): void {
         $this->challengerId = $id;
     }
-    function getChallengedId() {
-        return intval($this->challengedId);
-    }
 
-    function setChallengedId(string $id): void {
-        $this->challengedId = $id;
-    }
     function getDuelo() {
         return $this->duelo;
     }
