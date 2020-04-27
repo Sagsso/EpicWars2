@@ -13,6 +13,7 @@
  */
 require_once BUSINESS."characters_bl.php";
 require_once BUSINESS."users_bl.php";
+require_once BUSINESS."history_bl.php";
 
 class Index_controller extends Controller{
     
@@ -47,7 +48,17 @@ class Index_controller extends Controller{
     }
 
     public function history(): void {
+        $this->view->history = History_bl::show();
         $this->view->render($this,"history","History");
+    }
+
+    public function challenge(): void {
+        $this->view->history = [];
+        $this->view->render($this,"challenge","Challenge");
+    }
+
+    public function challengeH(): void {
+        $this->view->render($this,"challengeH","Challenge");
     }
 
     public function arena(): void{

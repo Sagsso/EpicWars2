@@ -5,10 +5,24 @@ require_once DATABASE."connection.php";
 class Characters_bl
 {
 
+    public static function getClass($id) {
+        $result1 = Connection::getInstance()->select('characterClassId', '`Character`', "id = ".$id);
+        $idClass = $result1[0]['characterClassId'];
+        $result = Connection::getInstance()->select('name', '`CharacterClass`', "id =".$idClass);
+        return $result[0]["name"];
+    }
+
+    public static function getIdCharacter($name)
+    {
+        $result = Connection::getInstance()->select('id', '`Character`', "name = '" . $name."'");
+        return $result[0]["id"];
+    }
+
     public static function getLevel($id) {
         $result = Connection::getInstance()->select('level', '`Character`', "id = ".$id); 
         return $result[0]["level"];
     }
+    
     public static function getCharacterName($id) {
         if($id != null) {
             $result = Connection::getInstance()->select('name', '`Character`', "id = ".$id); 
@@ -45,7 +59,7 @@ class Characters_bl
             $level = self::getLevel($idCharacter);
             // echo $_SESSION['id_character_selected']." - ".$level;
             $limitLevel = $level + 2;
-            $queryRivals = "SELECT `User`.id, `User`.username, `Character`.name, `Character`.level, `CharacterClass`.`name` as class 
+            $queryRivals = "SELECT `Character`.id as idCharacter,`User`.id, `User`.username, `Character`.name, `Character`.level, `CharacterClass`.`name` as class 
             FROM `User_has_Character` 
             INNER JOIN `Character` ON `User_has_Character`.Characterid = `Character`.id 
             INNER JOIN `User` ON `User_has_Character`.`Userid` = `User`.id 
@@ -56,6 +70,18 @@ class Characters_bl
         } 
     }
 
+    public static function delete($id) {
+        $data = array("Characterid" => $id);
+        Connection::getInstance()->delete('User_has_Character', $data);
+        $data2 = array("id" => $id);
+        Connection::getInstance()->delete('`Character`', $data2);
+    }
+
+    public static function update($character) {
+        $data = array("level" => $character->getLevel());
+        Connection::getInstance()->update(`Character`, $data, 'id = '.$character->getId());
+    }
+
     public static function create() {
         if (isset($_POST['name']) && isset($_POST['class'])) {
             $name = $_POST['name'];
@@ -64,27 +90,24 @@ class Characters_bl
 
             switch ($class) {
                 case 'Mage':
-                    $newCharacter = CharacterFactory::getMage($name);
+                    $newCharacter = CharacterFactory::createMage($name);
                     Connection::getInstance()->insert('`Character`', ["name" => $name, "level" => $newCharacter->getLevel(), "characterClassId" => 1]);
-                    $totalId = Connection::getInstance()->query("SELECT COUNT(*) AS total FROM `Character`")[0]["total"];
-                    Connection::getInstance()->insert('`User_has_Character`', ["Userid" => $_SESSION['user_id'], "Characterid" => $totalId]);
                     break;
                 case 'Rogue':
-                    $newCharacter = CharacterFactory::getRogue($name);
+                    $newCharacter = CharacterFactory::createRogue($name);
                     Connection::getInstance()->insert('`Character`', ["name" => $name, "level" => $newCharacter->getLevel(), "characterClassId" => 2]);
-                    $totalId = Connection::getInstance()->query("SELECT COUNT(*) AS total FROM `Character`")[0]["total"];
-                    Connection::getInstance()->insert('`User_has_Character`', ["Userid" => $_SESSION['user_id'], "Characterid" => $totalId]);
                     break;
                 case 'Warrior':
-                    $newCharacter = CharacterFactory::getWarrior($name);
+                    $newCharacter = CharacterFactory::createWarrior($name);
                     Connection::getInstance()->insert('`Character`', ["name" => $name, "level" => $newCharacter->getLevel(), "characterClassId" => 3]);
-                    $totalId = Connection::getInstance()->query("SELECT COUNT(*) AS total FROM `Character`")[0]["total"];
-                    Connection::getInstance()->insert('`User_has_Character`', ["Userid" => $_SESSION['user_id'], "Characterid" => $totalId]);
                     break;
                 default:
                     # code...
                     break;
             }
+
+            $newId = self::getIdCharacter($name);
+            Connection::getInstance()->insert('`User_has_Character`', ["Userid" => $_SESSION['user_id'], "Characterid" => $newId]);
 
             header('Location: ' . URL . "characters");
         }

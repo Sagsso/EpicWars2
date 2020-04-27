@@ -15,6 +15,7 @@
     define('MODELS',__DIR__.'/models/');
     define('DATABASE',__DIR__.'/database/');
     define('BUSINESS',__DIR__.'/businessLogic/');
+    define('LOGIC',__DIR__.'/');
 
     define('CONTROLLERS',__DIR__.'/controllers/');
     define('VIEWS',__DIR__.'/views/');

@@ -12,25 +12,24 @@
  * @author pabhoz
  */
 class Mage extends Character {
-
-    private $house;
      
-    function __construct($name, $house) {
+    function __construct($name) {
         parent::__construct($name, 1, 4, 10, 6, 5, 2, 80);
-        $this->house = $house;
     }
     
-    public function attack(\ICharacter $target): void {
-        $damage = (!$this->isCritical( (0.5 * $this->getIntl()) / 100)) ? 1.2 * $this->getIntl() : (1.2 * $this->getIntl()) * 2 ;
-        $housePrint = (is_null($this->getHouse())) ? '' : " of ".$this->getHouse();
-        echo $this->getName().$housePrint." burns ".$target->getName()." for ".$damage." hp! </br>";
-        $target->getDamage($damage, true);
+    public function attack(\ICharacter $target): array {
+        $isCritical = $this->isCritical( (0.5 * $this->getIntl()) / 100);
+        $damage = (!$isCritical) ? 1.2 * $this->getIntl() : (1.2 * $this->getIntl()) * 2 ;
+        $result = $target->getDamage($damage, true);
+        $dates = array('critical' => $isCritical, 'damage' => $damage, 'magical' => $result['magical'], 'takenDamage' => $result['takenDamage']);
+        return $dates;
     }
 
-    public function getDamage(float $value, bool $isMagical): void {
+    public function getDamage(float $value, bool $isMagical): array {
         $takenDamage = ($isMagical) ? $value - (0.8 * $this->getMDef()): $value - $this->getFDef();
         $this->setHp($this->getHp() - $takenDamage);
-        echo $this->getName()." now has ".$this->getHp()." hp </br>";
+        $result = array('magical' => $isMagical, 'takenDamage' => $takenDamage);
+        return $result;
     }
 
     public function getStat(string $statName): float {
@@ -46,26 +45,36 @@ class Mage extends Character {
     }
 
     public function setStats(array $stats): void {
-        
-    }
-    
-    function getHouse() {
-        return $this->house;
-    }
-
-    function setHouse($house): void {
-        $this->house = $house;
+        // Hay que hacer la validación de que el arreglo traiga todos los datos necesarios
+        $this->setStr($stats['str']);
+        $this->setIntl($stats['intl']);
+        $this->setAgi($stats['agi']);
+        $this->setMDef($stats['mdef']);
+        $this->setFDef($stats['fdef']);
+        $this->setHp($stats['hp']);
     }
 
+    public function resetStats(): void {
+        $this->setStr(4);
+        $this->setIntl(10);
+        $this->setAgi(6);
+        $this->setMDef(5);
+        $this->setFDef(2);
+        $this->setHp(80);
+    }
         
     function setLevel($level): void {
         $this->level = $level;
-        $this->setStr($this->getStr() * (1.5 * ($this->getLevel() - 1)));
-        $this->setIntl($this->getIntl() * (2.3 * ($this->getLevel() - 1)));
-        $this->setAgi($this->getAgi() * (1.6 * ($this->getLevel() - 1)));
-        $this->setMDef($this->getMDef() * (1.5 * ($this->getLevel() - 1)));
-        $this->setFDef($this->getFDef() * (1.1 * ($this->getLevel() - 1)));
-        $this->setHp($this->getHp() * (1.4 * ($this->getLevel() - 1)));
+        if ($this->level > 1) {
+            $newStats = array ('str' => $this->getStr() * (1.5 * ($this->getLevel() - 1)),
+            'intl' => $this->getIntl() * (2.3 * ($this->getLevel() - 1)),
+            'agi' => $this->getAgi() * (1.6 * ($this->getLevel() - 1)),
+            'mdef' => $this->getMDef() * (1.5 * ($this->getLevel() - 1)),
+            'fdef' => $this->getFDef() * (1.1 * ($this->getLevel() - 1)),
+            'hp' => $this->getHp() * (1.4 * ($this->getLevel() - 1))
+            );
+            $this->setStats($newStats);
+        }
     }
 
 }
