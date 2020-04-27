@@ -91,4 +91,11 @@ class Characters_bl
 
     }
 
+    public static function delete($id) {
+        $data = array("Characterid" => $id);
+        Connection::getInstance()->delete('User_has_Character', $data);
+        $data2 = array("id" => $id);
+        Connection::getInstance()->delete('`Character`', $data2);
+    }
+
 }
