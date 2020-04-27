@@ -32,13 +32,15 @@
                                 </tfoot>
                                 <tbody>
                                     <?php 
+                                    // print_r($this->characters);
                                     foreach ($this->characters as $character) {
                                         echo "<tr role='row' class='odd'>
                                         <td class='sorting_1'>".$character['name']."</td>
                                         <td>". $character['level']."</td>
                                         <td>".$character['class']."</td>
                                         </tr>";
-                                    } ?>
+                                    } 
+                                    ?>
 
                                 </tbody>
                             </table>
