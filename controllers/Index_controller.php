@@ -53,7 +53,7 @@ class Index_controller extends Controller{
     }
 
     public function arena(): void{
-        $this->view->rivals = Characters_bl::getRivals();
+        $this->view->rivals = Characters_bl::getRivals($_SESSION['id_character_selected']);
         $this->view->characters = Characters_bl::getAll();
         $this->view->render($this,"arena","Arena");
     }
