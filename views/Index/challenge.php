@@ -1,8 +1,12 @@
 <?php
-    require_once LOGIC."/logic.php";
-?>
+    require_once MODELS."Game.php";
+    require_once FACTORIES."CharacterFactory.php";
+    $this->loadFragment("head"); 
 
-<?php $this->loadFragment("head"); ?>
+    $character1 = CharacterFactory::getCharacter($_SESSION['id_character_selected']);
+    $character2 = CharacterFactory::getCharacter($_SESSION['id_rival_selected']);
+    $game = new Game($character1,$character2);
+?>
 <body>
 
     <div class="container2 my-5">
@@ -12,7 +16,9 @@
         <div class="area-content">
             <div class="py-3 px-5 grid-center card">
                 <h1 class="h3 my-3 text-center font-weight-normal">Challenge</h1>
-                <?php fight($one, $two);?>
+                <?php 
+                $game->fight();
+                ?>
                 <a href="<?php echo URL ?>arena" class="mt-3 text-start">Come back</a>
             </div>
         </div>

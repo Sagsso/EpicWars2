@@ -5,10 +5,18 @@ require_once DATABASE."connection.php";
 class Characters_bl
 {
 
+    public static function getClass($id) {
+        $result1 = Connection::getInstance()->select('characterClassId', '`Character`', "id = ".$id);
+        $idClass = $result1[0]['characterClassId'];
+        $result = Connection::getInstance()->select('name', '`Characterclass`', "id =".$idClass);
+        return $result[0]["name"];
+    }
+
     public static function getLevel($id) {
         $result = Connection::getInstance()->select('level', '`Character`', "id = ".$id); 
         return $result[0]["level"];
     }
+    
     public static function getCharacter($id) {
         $result = Connection::getInstance()->select('name', '`Character`', "id = ".$id); 
         return $result[0]["name"];
@@ -38,7 +46,7 @@ class Characters_bl
         $level = self::getLevel($idCharacter);
         // echo $_SESSION['id_character_selected']." - ".$level;
         $limitLevel = $level + 2;
-        $queryRivals = "SELECT `User`.id, `User`.username, `Character`.name, `Character`.level, `CharacterClass`.`name` as class 
+        $queryRivals = "SELECT `Character`.id as idCharacter, `User`.id, `User`.username, `Character`.name, `Character`.level, `CharacterClass`.`name` as class 
         FROM `User_has_Character` 
         INNER JOIN `Character` ON `User_has_Character`.Characterid = `Character`.id 
         INNER JOIN `User` ON `User_has_Character`.`Userid` = `User`.id 

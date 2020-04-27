@@ -13,7 +13,7 @@
  */
 class Mage extends Character {
      
-    function __construct($name, $house) {
+    function __construct($name) {
         parent::__construct($name, 1, 4, 10, 6, 5, 2, 80);
     }
     
@@ -65,14 +65,16 @@ class Mage extends Character {
         
     function setLevel($level): void {
         $this->level = $level;
-        $newStats = array ('str' => $this->getStr() * (1.5 * ($this->getLevel() - 1)),
-        'intl' => $this->getIntl() * (2.3 * ($this->getLevel() - 1)),
-        'agi' => $this->getAgi() * (1.6 * ($this->getLevel() - 1)),
-        'mdef' => $this->getMDef() * (1.5 * ($this->getLevel() - 1)),
-        'fdef' => $this->getFDef() * (1.1 * ($this->getLevel() - 1)),
-        'hp' => $this->getHp() * (1.4 * ($this->getLevel() - 1))
-        );
-        $this->setStats($newStats);
+        if ($this->level > 1) {
+            $newStats = array ('str' => $this->getStr() * (1.5 * ($this->getLevel() - 1)),
+            'intl' => $this->getIntl() * (2.3 * ($this->getLevel() - 1)),
+            'agi' => $this->getAgi() * (1.6 * ($this->getLevel() - 1)),
+            'mdef' => $this->getMDef() * (1.5 * ($this->getLevel() - 1)),
+            'fdef' => $this->getFDef() * (1.1 * ($this->getLevel() - 1)),
+            'hp' => $this->getHp() * (1.4 * ($this->getLevel() - 1))
+            );
+            $this->setStats($newStats);
+        }
     }
 
 }

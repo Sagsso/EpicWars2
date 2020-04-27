@@ -49,6 +49,7 @@ class Index_controller extends Controller{
     }
 
     public function challenge(): void {
+        $this->view->history = [];
         $this->view->render($this,"challenge","Challenge");
     }
 

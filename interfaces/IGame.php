@@ -10,8 +10,8 @@
  *
  * @author pabhoz
  */
-interface ICharacterFactory {
-    static function createMage(string $name): Mage;
-    static function createRogue(string $name): Rogue;
-    static function createWarrior(string $name): Warrior;
+interface IGame {
+    
+    function fight(ICharacter $character1, ICharacter $character2) :void;
+
 }
