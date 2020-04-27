@@ -14,7 +14,7 @@ class History_bl{
     }
 
     public static function create($history) {
-        Connection::getInstance()->insert('`History`', ["challengerId" =>$history->getChallengerId(), "challengedId" => $history->getChallengedId(), "result" => $history->getResult(), "detail" => $history->getDetail()]);
+        Connection::getInstance()->insert('`History`', ["userid" =>$history->getChallengerId(), "duelo" => $history->getDuelo(), "result" => $history->getResult(), "detail" => $history->getDetail()]);
     }
 }
 ?>

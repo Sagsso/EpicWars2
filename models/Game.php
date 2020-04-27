@@ -24,8 +24,9 @@ class Game implements IGame{
         $this->character1 = $character1;
         $this->character2 = $character2;
         $this->history = new History();
-        $this->history->setChallengerId($_SESSION['id_character_selected']);
-        $this->history->setChallengedId($_SESSION['id_rival_selected']);
+        $this->history->setChallengerId($_SESSION['user_id']);
+        // $this->history->setChallengedId($_SESSION['id_rival_selected']);
+        $this->history->setDuelo($this->character1->getName()." vs ".$this->character2->getName());
     }
     
     public function fight(ICharacter $character1 = null, ICharacter $character2 = null) :void{
@@ -54,7 +55,8 @@ class Game implements IGame{
             //Acá se sube de nivel el jugador que ganó
             $character2->resetStats();
             $character2->setLevel(($character2->getLevel())+1);
-
+            echo $this->history->getDuelo();
+            echo "Result: ".$this->history->getResult();
             $_SESSION['id_character_selected'] = null;
         }else if($HP2 <= 0){
             // Acá se elimina de la base de datos
@@ -65,12 +67,13 @@ class Game implements IGame{
             // Acá se sube de nivel el jugador que ganó
             $character1->resetStats();
             $character1->setLevel(($character1->getLevel())+1);
-
+            echo $this->history->getDuelo();
+            echo "Result: " . $this->history->getResult();
             $_SESSION['id_character_selected'] = null;
         }
     }
 
-    function won(ICharacter $character): bool {
+    function won(ICharacter $character) {
         return ($character == $this->getCharacter1()) ? 1 : 0;
     }
 
