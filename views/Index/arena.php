@@ -23,7 +23,7 @@ $this->loadFragment("head");
                     <form action="" method="POST">
                         <select value="<?php echo $_SESSION['id_character_selected'] ?>" onchange="this.form.submit()" name="character_selected" id="" class="form-control">
                             <?php
-                            echo " <option value='" . $_SESSION['id_character_selected'] . "'>" . Characters_bl::getCharacter($_SESSION['id_character_selected']) . "</option>";
+                            echo " <option value='" . $_SESSION['id_character_selected'] . "'>" . Characters_bl::getCharacterName($_SESSION['id_character_selected']) . "</option>";
                             foreach ($this->characters as $character) {
                                 if ($character['idCharacter'] != $_SESSION['id_character_selected']) {
                                     echo " <option value='" . $character['idCharacter'] . "'>" . $character['name'] . "</option>";
@@ -60,16 +60,18 @@ $this->loadFragment("head");
                             </tfoot>
                             <tbody>
                                 <?php
-                                if (is_array($this->rivals) || is_object($this->rivals)) {
-                                    foreach ($this->rivals as $rival) {
-                                        echo "<tr role='row' class='odd'>
-                                        <td class='sorting_1'>" . $rival['name'] . "</td>
-                                        <td>" . $rival['level'] . "</td>
-                                        <td>" . $rival['class'] . "</td>
-                                        <td>" . $rival['username'] . "</td>
-                                        <td><button value='" . $rival['idCharacter'] . "' name='rival_selected' type='submit'>Desafiar</button></td>
-                                        </tr>
-                                        ";
+                                if ($this->rivals) {
+                                    if (is_array($this->rivals) || is_object($this->rivals)) {
+                                        foreach ($this->rivals as $rival) {
+                                            echo "<tr role='row' class='odd'>
+                                            <td class='sorting_1'>" . $rival['name'] . "</td>
+                                            <td>" . $rival['level'] . "</td>
+                                            <td>" . $rival['class'] . "</td>
+                                            <td>" . $rival['username'] . "</td>
+                                            <td><button value='" . $rival['idCharacter'] . "' name='rival_selected' type='submit'>Desafiar</button></td>
+                                            </tr>
+                                            ";
+                                        }
                                     }
                                 } ?>
 

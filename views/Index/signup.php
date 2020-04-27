@@ -1,11 +1,9 @@
 <?php $this->loadFragment("head"); ?>
-<?php
-require_once DATABASE.'signup.php';
-?>
+
 
 <body class="signin-background">
   <div class="text-center card" style="width: 25%;">
-    <form action="#" class="form-signin" method="POST">
+    <form action="<?php Users_bl::create() ?>" class="form-signin" method="POST">
       <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
       <label for="inputEmail" class="sr-only">Email address</label>
       <input id="name" type="email" id="inputEmail" class="form-control" placeholder="Email address" name="username" required autofocus>

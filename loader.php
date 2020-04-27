@@ -17,10 +17,11 @@ spl_autoload_register(function($class){
         return 0;
     }
 
-    if (file_exists(BUSINESS . $class . ".php")) {
-        require_once BUSINESS . $class . ".php";
+    if (file_exists(BUSINESS.$class.".php")) {
+        require_once BUSINESS.$class.".php";
         return 0;
     }
+    
     require DATABASE . "connection.php";
     
 
