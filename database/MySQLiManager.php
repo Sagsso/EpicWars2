@@ -92,7 +92,7 @@ class MySQLiManager{
                 $valores = null;
             
 		foreach ($values as $key => $value) {
-			$columnas.=$key.',';
+			$columnas.= "`".$key. '`,';
 			if( $sanear == true){
 				$valores.='"'.ucwords(strtolower($value)).'",';
 			}else{
@@ -103,7 +103,6 @@ class MySQLiManager{
 		$valores = substr($valores, 0, -1);
 
 		$stmt = "INSERT INTO ".$table." (".$columnas.") VALUES(".$valores.") ".$where.";";
-		
                 //$result = $this->link->query($stmt) or die($this->link->error.__LINE__);
                 $result = $this->link->query($stmt) or die($this->link->error);
 		

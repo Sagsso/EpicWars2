@@ -1,8 +1,12 @@
-<?php
+<?php 
 require_once LOGIC."/logic.php";
+$this->loadFragment("head");
+if (isset($_POST['character_selected'])) {
+    // $_SESSION["character_selected"] = $_POST['character_selected'];
+    $_SESSION["id_character_selected"] = $_POST['character_selected'];
+}
 ?>
 
-<?php $this->loadFragment("head"); ?>
 <body>
     <div class="container2">
         <div class="area-header">
@@ -13,13 +17,17 @@ require_once LOGIC."/logic.php";
                 <div class="selector area-selector">
                     <h6 class="m-0 font-weight-bold card-header py-3">Seleccionar personaje</h6>
                     <div class="dropdown card-body">
-                        <select name="character" id="" class="form-control">
-                            <?php
-                                    foreach ($this->characters as $character) {
-                                        echo " <option value='".$character['name']."'>". $character['name']. "</option>";
-                                    } ?>
-
-                        </select>
+                        <form action="<?php echo URL."arena"?>" method="POST" >
+                            <select value="<?php echo $_SESSION['id_character_selected'] ?>" onclick="this.form.submit()" name="character_selected" id="" class="form-control">
+                                <?php
+                                        echo " <option value='" . $_SESSION['id_character_selected'] . "'>" . Characters_bl::getCharacter($_SESSION['id_character_selected']) . "</option>";
+                                foreach ($this->characters as $character) {
+                                    if ($character['idCharacter'] != $_SESSION['id_character_selected']) {                                       
+                                        echo " <option value='" . $character['idCharacter'] . "'>" . $character['name'] . "</option>";
+                                    }
+                                } ?>
+                            </select>
+                        </form>
                     </div>
                 </div>
                 <div class="area-table container-fluid">
@@ -71,4 +79,11 @@ require_once LOGIC."/logic.php";
         </div>
     </div>
 </body>
+<script>
+    function send(e) {
+        e.preventDefault();
+        console.log('Hola');
+    }
+</script>
+
 </html>

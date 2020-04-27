@@ -26,7 +26,14 @@ class MySQLiMAdapter implements IDBAdapter {
         return $this->source->select('*', $table);
     }
     function query($query){
-        $consulta = mysqli_query($this->source->getLink(), $query);
-        return mysqli_fetch_array($consulta);
+        // $consulta = mysqli_query($this->source->getLink(), $query);
+        $result = $this->source->getLink()->query($query);
+        $response = [];
+        while ($row = $result->fetch_assoc()) {
+            $response[] = $row;
+        }
+        // echo "Hay respuesta ".$response;
+        return $response;
+        // return mysqli_fetch_array($consulta);
     }
 }

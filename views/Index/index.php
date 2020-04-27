@@ -1,5 +1,20 @@
-<?php $this->loadFragment("head"); ?>
-<?php require_once DATABASE.'login.php';?>
+<?php $this->loadFragment("head");
+if (ini_get("session.use_cookies")) {
+  $params = session_get_cookie_params();
+  setcookie(
+    session_name(),
+    '',
+    time() - 42000,
+    $params["path"],
+    $params["domain"],
+    $params["secure"],
+    $params["httponly"]
+  );
+}
+session_destroy() ?>
+<?php require_once DATABASE.'login.php';
+
+?>
 <body class="signin-background">
   <div class="text-center card" style="width: 28%;">
       <form action="#" method="POST" class="form-signin">

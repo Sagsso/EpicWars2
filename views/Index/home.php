@@ -1,4 +1,5 @@
-<?php $this->loadFragment("head"); ?>
+<?php $this->loadFragment("head");
+?>
 <body>
 
     <div class="container2">

@@ -21,6 +21,7 @@ abstract class Character implements ICharacter{
     protected $mDef;
     protected $fDef;
     protected $hp;
+    protected $id;
 
     function __construct($name, $level, $str, $intl, $agi, $mDef, $fDef, $hp) {
         $this->name = $name;
@@ -126,5 +127,16 @@ abstract class Character implements ICharacter{
     function setHp($hp): void {
         $this->hp = $hp;
     }
+
+    function getId($id): void
+    {
+        $this->id = $id;
+    }
+
+    function setId($id): void
+    {
+        $this->id = $id;
+    }
+
 
 }
