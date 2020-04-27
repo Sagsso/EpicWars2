@@ -12,6 +12,7 @@
  * @author pabhoz
  */
 require_once BUSINESS."characters_bl.php";
+require_once BUSINESS."users_bl.php";
 
 class Index_controller extends Controller{
     

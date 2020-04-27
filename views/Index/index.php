@@ -13,12 +13,13 @@
 // }
 session_destroy() 
 ?>
-<?php require_once DATABASE.'login.php';
+<?php
+//  require_once BUSINESS.'users_bl.php';
 
 ?>
 <body class="signin-background">
   <div class="text-center card" style="width: 28%;">
-      <form action="#" method="POST" class="form-signin">
+      <form action="<?php Users_bl::login()?>" method="POST" class="form-signin">
         <span class="mb-3 h3">The best <br> ROL GAME</span>
         <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
         <label for="inputEmail" class="sr-only">Email address</label>
