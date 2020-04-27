@@ -50,6 +50,21 @@ class History implements IHistory{
         return $msn1;
     }
 
+    function getChallengerId() {
+        return $this->challengerId;
+    }
+
+    function setChallengerId(string $id): void {
+        $this->challengerId = $id;
+    }
+    function getChallengedId() {
+        return $this->challengedId;
+    }
+
+    function setChallengedId(string $id): void {
+        $this->challengedId = $id;
+    }
+
     function getDetail() {
         return $this->detail;
     }

@@ -13,8 +13,8 @@ class History_bl{
         return $result;
     }
 
-    public static function create(IHistory $history) {
-        Connection::getInstance()->insert('`History`', ["challengerId" => $_SESSION['id_character_selected'], "challengedId" => $_SESSION['id_rival_selected'], "result" => $history->getResult(), "detail" => $history->getDetail()]);
+    public static function create($history) {
+        Connection::getInstance()->insert('`History`', ["challengerId" =>$history->getChallengerId(), "challengedId" => $history->getChallengedId(), "result" => $history->getResult(), "detail" => $history->getDetail()]);
     }
 }
 ?>

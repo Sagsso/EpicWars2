@@ -8,8 +8,14 @@ class Characters_bl
     public static function getClass($id) {
         $result1 = Connection::getInstance()->select('characterClassId', '`Character`', "id = ".$id);
         $idClass = $result1[0]['characterClassId'];
-        $result = Connection::getInstance()->select('name', '`Characterclass`', "id =".$idClass);
+        $result = Connection::getInstance()->select('name', '`CharacterClass`', "id =".$idClass);
         return $result[0]["name"];
+    }
+
+    public static function getIdCharacter($name)
+    {
+        $result = Connection::getInstance()->select('id', '`Character`', "name = '" . $name."'");
+        return $result[0]["id"];
     }
 
     public static function getLevel($id) {
@@ -81,25 +87,22 @@ class Characters_bl
                 case 'Mage':
                     $newCharacter = CharacterFactory::createMage($name);
                     Connection::getInstance()->insert('`Character`', ["name" => $name, "level" => $newCharacter->getLevel(), "characterClassId" => 1]);
-                    $totalId = Connection::getInstance()->query("SELECT COUNT(*) AS total FROM `Character`")[0]["total"];
-                    Connection::getInstance()->insert('`User_has_Character`', ["Userid" => $_SESSION['user_id'], "Characterid" => $totalId]);
                     break;
                 case 'Rogue':
                     $newCharacter = CharacterFactory::createRogue($name);
                     Connection::getInstance()->insert('`Character`', ["name" => $name, "level" => $newCharacter->getLevel(), "characterClassId" => 2]);
-                    $totalId = Connection::getInstance()->query("SELECT COUNT(*) AS total FROM `Character`")[0]["total"];
-                    Connection::getInstance()->insert('`User_has_Character`', ["Userid" => $_SESSION['user_id'], "Characterid" => $totalId]);
                     break;
                 case 'Warrior':
                     $newCharacter = CharacterFactory::createWarrior($name);
                     Connection::getInstance()->insert('`Character`', ["name" => $name, "level" => $newCharacter->getLevel(), "characterClassId" => 3]);
-                    $totalId = Connection::getInstance()->query("SELECT COUNT(*) AS total FROM `Character`")[0]["total"];
-                    Connection::getInstance()->insert('`User_has_Character`', ["Userid" => $_SESSION['user_id'], "Characterid" => $totalId]);
                     break;
                 default:
                     # code...
                     break;
             }
+
+            $newId = self::getIdCharacter($name);
+            Connection::getInstance()->insert('`User_has_Character`', ["Userid" => $_SESSION['user_id'], "Characterid" => $newId]);
 
             header('Location: ' . URL . "characters");
         }
