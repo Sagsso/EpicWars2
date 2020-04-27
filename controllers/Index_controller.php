@@ -32,6 +32,7 @@ class Index_controller extends Controller{
     }
 
     public function home(): void {
+        $this->view->characters = Characters_bl::getAll();
         $this->view->render($this,"home","Epic Wars");
     }
 
@@ -49,7 +50,11 @@ class Index_controller extends Controller{
     }
 
     public function arena(): void{
-        $this->view->rivals = Characters_bl::getRivals($_SESSION['id_character_selected']);
+        if(isset($_SESSION['id_character_selected'])){
+            $this->view->rivals = Characters_bl::getRivals($_SESSION['id_character_selected']);
+        } else {
+            $this->view->rivals = [];
+        }
         $this->view->characters = Characters_bl::getAll();
         $this->view->render($this,"arena","Arena");
     }
