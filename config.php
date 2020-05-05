@@ -1,4 +1,10 @@
 <?php
+/**
+ * Description of config file
+ *
+ * Where all the important project constants are defined, 
+ * to be used in routes and imports within the project.
+ */
 
     $https = filter_input(INPUT_SERVER, 'HTTPS');
     $http_host = filter_input(INPUT_SERVER, 'HTTP_HOST');
@@ -25,4 +31,4 @@
 
     require_once './loader.php';
 
-
+?>

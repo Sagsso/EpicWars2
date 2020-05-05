@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * Lazy loader.
+ *
+ * It manages the loading of all project paths and performs all 
+ * important file imports so that the program can function and 
+ * communicate.
+ */
 spl_autoload_register(function($class){
     
     if(file_exists(INTERFACES.$class.".php")){

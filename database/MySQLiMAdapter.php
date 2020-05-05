@@ -1,5 +1,14 @@
 <?php
 require_once 'MySQLiManager.php';
+
+/**
+ * Description of MySQLiMAdapter
+ *
+ * The MySQLiMAdapter class is based on the design pattern 
+ * called adapter. Which consists in generating an intermediary 
+ * that facilitates the processes with the current application 
+ * with respect to another imported file.
+ */
 class MySQLiMAdapter implements IDBAdapter {
 
     private $source;
@@ -26,14 +35,11 @@ class MySQLiMAdapter implements IDBAdapter {
         return $this->source->select('*', $table);
     }
     function query($query){
-        // $consulta = mysqli_query($this->source->getLink(), $query);
         $result = $this->source->getLink()->query($query);
         $response = [];
         while ($row = $result->fetch_assoc()) {
             $response[] = $row;
         }
-        // echo "Hay respuesta ".$response;
         return $response;
-        // return mysqli_fetch_array($consulta);
     }
 }

@@ -1,20 +1,28 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * Description of View
  *
- * @author pabhoz
+ * The view class is in charge of defining the minimum methods 
+ * that every view must have in order to be shown properly in 
+ * the interface.
  */
 class View implements IView{
     
+    /**
+     * @var string $title View's title.
+     */
     private $title;
 
+    /**
+     * It is in charge of rendering the view, which allows it to 
+     * be displayed in the interface each time it is called.
+     * 
+     * @param string $controller The controller's name.
+     * @param string $view The view's name.
+     * @param string $title The page title.
+     * @return void
+     */
     public function render($controller,$view,$title = ''): void{
         
         $controllerWithTail = get_class($controller);
@@ -34,6 +42,12 @@ class View implements IView{
         }
     }
     
+    /**
+     * He's the one who loads a piece of information into a view.
+     * 
+     * @param string $fragmentName The fragment's name.
+     * @return void
+     */
     public function loadFragment($fragmentName) : void{
         $path = './views/_fragments/'.$fragmentName;
         if(file_exists($path.".php")) {

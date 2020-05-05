@@ -1,5 +1,12 @@
- <?php
- 
+<?php
+/**
+ * Description of mvcBootstrap
+ *
+ * It is in charge of filtering the url addresses, 
+ * and partitions them into according to the relevant information, 
+ * which is divided into controllers and views to be displayed.
+ */
+
 $url = ( isset($_GET["url"]) ) ? $_GET["url"] : "Index/index";
 $url = explode("/", $url);
 
@@ -25,3 +32,5 @@ if (file_exists($path)) {
     }
     
 }
+
+?>
