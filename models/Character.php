@@ -43,7 +43,7 @@ abstract class Character implements ICharacter{
 
     public function getStats(): array {
         return ["level" => $this->getLevel(),"str" => $this->getStr(),"intl" => $this->getIntl(),"agi" => $this->getAgi()
-                ,"mDef" => $this->getMDef(),"fDef" => $this->getFDef(),"hp" => $this->getHp()];
+                ,"mdef" => $this->getMDef(),"fdef" => $this->getFDef(),"hp" => $this->getHp()];
     }
 
     abstract public function iDie(): void;

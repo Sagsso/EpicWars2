@@ -22,7 +22,7 @@ spl_autoload_register(function($class){
         return 0;
     }
     
-    require DATABASE . "connection.php";
+    // require DATABASE . "connection.php";
     
 
 });

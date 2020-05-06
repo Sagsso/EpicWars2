@@ -1,7 +1,7 @@
 <?php
 
-require_once DATABASE."connection.php";
-
+// require_once DATABASE."connection.php";
+ 
 class Characters_bl
 {
 
@@ -31,6 +31,8 @@ class Characters_bl
             return '';
         }
     }
+
+
     
     public static function getAll() {
         $query = "SELECT `Character`.id as idCharacter,`Character`.name, `Character`.level, `CharacterClass`.`name`as class FROM `User_has_Character` 
@@ -114,11 +116,5 @@ class Characters_bl
 
     }
 
-    public static function delete($id) {
-        $data = array("Characterid" => $id);
-        Connection::getInstance()->delete('User_has_Character', $data);
-        $data2 = array("id" => $id);
-        Connection::getInstance()->delete('`Character`', $data2);
-    }
 
 }

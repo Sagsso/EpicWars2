@@ -1,6 +1,7 @@
 <?php
+// define('DATABASE', __DIR__ . '/database/');
 
-require_once DATABASE . "connection.php";
+require_once "./database/connection.php";
 
 
 class Users_bl{
@@ -20,8 +21,10 @@ class Users_bl{
                 $_SESSION['username'] = $username;
                 $_SESSION['user_id'] = $id;
                 header('Location: ' . URL . 'home');
+                return true;
             } else {
                 header('Location: ' . URL);
+                return false;
             }
         }
     }
@@ -36,7 +39,9 @@ class Users_bl{
             echo "usuario registrado";
 
             header('Location: ' . URL);
+            return true;
         }
+        return false;
     }
 }
 ?>
