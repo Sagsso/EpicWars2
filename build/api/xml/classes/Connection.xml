@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Connection" namespace="" name="Connection" abstract="false" final="false" start="10" end="38">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/database" file="connection.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/database/connection.php" size="775" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="a6d595426e2496e76e0f5cbdbbd376ac4247f835" relative="database/connection.php"/>
+  <docblock>
+    <description compact="Description of Connection.">This is the class that manages the connection to the database.</description>
+  </docblock>
+  <member name="instance" visibility="private" static="true" line="15">
+    <docblock>
+      <description/>
+      <var description="$instance An instance of self." type="object">
+        <type full="Connection" namespace="" name="Connection"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="17" end="19" abstract="false" final="false" static="false" visibility="private"/>
+  <method name="getInstance" start="29" end="36" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="getInstance method.">This function is based on the Singleton design pattern,
+which controls the handling of instances in 1.</description>
+      <return description="An instance." resolution="self" type="object">
+        <type full="Connection" namespace="" name="Connection"/>
+      </return>
+    </docblock>
+  </method>
+</class>

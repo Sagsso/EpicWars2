@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/views/_fragments" file="imports.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/views/_fragments/imports.php" size="720" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="99c24c8db7670f6a3cd6846c8e4fa655e19c5d91" relative="views/_fragments/imports.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;link rel="stylesheet" href="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">VENDORS</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">bootstrap-4.4.1-dist/css/bootstrap.min.css" &gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">&lt;script src="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">VENDORS</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">bootstrap-4.4.1-dist/js/bootstrap.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">&lt;link rel="stylesheet" href="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">STYLES</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">main.css" &gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">&lt;link href="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">VENDORS</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">fontawesome/all.min.css" rel="stylesheet" type="text/css"&gt;</token>
+  </line>
+</source>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="ICharacterFactory" namespace="" name="ICharacterFactory" abstract="false" final="false" start="13" end="17">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces" file="ICharacterFactory.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces/ICharacterFactory.php" size="418" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="ed73ac5f09fa0e9a580bffef2c8ea6009fe41afa" relative="interfaces/ICharacterFactory.php"/>
+  <docblock>
+    <description/>
+    <author value="pabhoz"/>
+  </docblock>
+  <method name="createMage" start="14" end="14" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="false">
+      <type full="Mage" namespace="" name="Mage"/>
+    </return>
+    <parameter name="name" byreference="false" type="string"/>
+  </method>
+  <method name="createRogue" start="15" end="15" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="false">
+      <type full="Rogue" namespace="" name="Rogue"/>
+    </return>
+    <parameter name="name" byreference="false" type="string"/>
+  </method>
+  <method name="createWarrior" start="16" end="16" abstract="false" final="false" static="true" visibility="public">
+    <return type="object" nullable="false">
+      <type full="Warrior" namespace="" name="Warrior"/>
+    </return>
+    <parameter name="name" byreference="false" type="string"/>
+  </method>
+  <implementors>
+    <class full="CharacterFactory" namespace="" name="CharacterFactory"/>
+  </implementors>
+</interface>

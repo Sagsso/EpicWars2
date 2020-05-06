@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Warrior</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">Warrior</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/models/Warrior.php.xhtml#line11">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>Warrior</h1>
+        <h4>Description of Warrior</h4>
+        <p>The warrior class is in charge of creating an object with all<br/>the information referring to the warrior entity as well as<br/>defining attributes, calculations, and statistics specific<br/>to the class.</p>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Warrior
+                extends <a title="Character" href="../classes/Character.xhtml">Character</a>
+            {<br/><ul class="none"><li>// Inherited members from <span title="Character">Character</span></li><li>protected  <a href="#members">$name</a>;
+                        </li><li>protected  <a href="#members">$level</a>;
+                        </li><li>protected  <a href="#members">$str</a>;
+                        </li><li>protected  <a href="#members">$intl</a>;
+                        </li><li>protected  <a href="#members">$agi</a>;
+                        </li><li>protected  <a href="#members">$mDef</a>;
+                        </li><li>protected  <a href="#members">$fDef</a>;
+                        </li><li>protected  <a href="#members">$hp</a>;
+                        </li><li>protected  <a href="#members">$id</a>;
+                        </li></ul><ul class="none"><li>// methods</li><li>public void <a title="Warrior" href="../classes/Warrior/__construct.xhtml">__construct</a>()
+                    </li><li>public array <a title="Warrior" href="../classes/Warrior/attack.xhtml">attack</a>()
+                    </li><li>public array <a title="Warrior" href="../classes/Warrior/getDamage.xhtml">getDamage</a>()
+                    </li><li>public float <a title="Warrior" href="../classes/Warrior/getStat.xhtml">getStat</a>()
+                    </li><li>public void <a title="Warrior" href="../classes/Warrior/iDie.xhtml">iDie</a>()
+                    </li><li>public void <a title="Warrior" href="../classes/Warrior/setStat.xhtml">setStat</a>()
+                    </li><li>public void <a title="Warrior" href="../classes/Warrior/setStats.xhtml">setStats</a>()
+                    </li><li>public void <a title="Warrior" href="../classes/Warrior/resetStats.xhtml">resetStats</a>()
+                    </li><li>public void <a title="Warrior" href="../classes/Warrior/setLevel.xhtml">setLevel</a>()
+                    </li></ul><ul class="none"><li>// Inherited methods from <span title="Character">Character</span></li><li>public void <a title="Character" href="../classes/Character/__construct.xhtml">__construct</a>()
+                        </li><li>public abstract void <a title="Character" href="../classes/Character/attack.xhtml">attack</a>()
+                        </li><li>public abstract void <a title="Character" href="../classes/Character/getDamage.xhtml">getDamage</a>()
+                        </li><li>public abstract void <a title="Character" href="../classes/Character/getStat.xhtml">getStat</a>()
+                        </li><li>public array <a title="Character" href="../classes/Character/getStats.xhtml">getStats</a>()
+                        </li><li>public abstract void <a title="Character" href="../classes/Character/iDie.xhtml">iDie</a>()
+                        </li><li>public abstract void <a title="Character" href="../classes/Character/setStat.xhtml">setStat</a>()
+                        </li><li>public abstract void <a title="Character" href="../classes/Character/setStats.xhtml">setStats</a>()
+                        </li><li>public abstract void <a title="Character" href="../classes/Character/resetStats.xhtml">resetStats</a>()
+                        </li><li>protected bool <a title="Character" href="../classes/Character/isCritical.xhtml">isCritical</a>()
+                        </li><li>protected bool <a title="Character" href="../classes/Character/isMagical.xhtml">isMagical</a>()
+                        </li><li>public string <a title="Character" href="../classes/Character/getName.xhtml">getName</a>()
+                        </li><li>public int <a title="Character" href="../classes/Character/getLevel.xhtml">getLevel</a>()
+                        </li><li>public int <a title="Character" href="../classes/Character/getStr.xhtml">getStr</a>()
+                        </li><li>public int <a title="Character" href="../classes/Character/getIntl.xhtml">getIntl</a>()
+                        </li><li>public int <a title="Character" href="../classes/Character/getAgi.xhtml">getAgi</a>()
+                        </li><li>public int <a title="Character" href="../classes/Character/getMDef.xhtml">getMDef</a>()
+                        </li><li>public int <a title="Character" href="../classes/Character/getFDef.xhtml">getFDef</a>()
+                        </li><li>public int <a title="Character" href="../classes/Character/getHp.xhtml">getHp</a>()
+                        </li><li>public void <a title="Character" href="../classes/Character/setName.xhtml">setName</a>()
+                        </li><li>public void <a title="Character" href="../classes/Character/setLevel.xhtml">setLevel</a>()
+                        </li><li>public void <a title="Character" href="../classes/Character/setStr.xhtml">setStr</a>()
+                        </li><li>public void <a title="Character" href="../classes/Character/setIntl.xhtml">setIntl</a>()
+                        </li><li>public void <a title="Character" href="../classes/Character/setAgi.xhtml">setAgi</a>()
+                        </li><li>public void <a title="Character" href="../classes/Character/setMDef.xhtml">setMDef</a>()
+                        </li><li>public void <a title="Character" href="../classes/Character/setFDef.xhtml">setFDef</a>()
+                        </li><li>public void <a title="Character" href="../classes/Character/setHp.xhtml">setHp</a>()
+                        </li><li>public int <a title="Character" href="../classes/Character/getId.xhtml">getId</a>()
+                        </li><li>public void <a title="Character" href="../classes/Character/setId.xhtml">setId</a>()
+                        </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>
+              <a title="Character" href="../classes/Character.xhtml">Character</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="agi">
+              <strong>$agi</strong>
+            </li>
+            <li id="fDef">
+              <strong>$fDef</strong>
+            </li>
+            <li id="hp">
+              <strong>$hp</strong>
+            </li>
+            <li id="id">
+              <strong>$id</strong>
+            </li>
+            <li id="intl">
+              <strong>$intl</strong>
+            </li>
+            <li id="level">
+              <strong>$level</strong>
+            </li>
+            <li id="mDef">
+              <strong>$mDef</strong>
+            </li>
+            <li id="name"><strong>$name</strong>
+                —
+                string</li>
+            <li id="str">
+              <strong>$str</strong>
+            </li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="__construct">
+              <a title="Warrior" href="../classes/Warrior/__construct.xhtml">__construct()</a>
+            </li>
+            <li id="attack"><a title="Warrior" href="../classes/Warrior/attack.xhtml">attack()</a>
+                — Make an attack on another character.</li>
+            <li id="getDamage"><a title="Warrior" href="../classes/Warrior/getDamage.xhtml">getDamage()</a>
+                — It makes a defense with respect to an attack received.</li>
+            <li id="getStat">
+              <a title="Warrior" href="../classes/Warrior/getStat.xhtml">getStat()</a>
+            </li>
+            <li id="iDie">
+              <a title="Warrior" href="../classes/Warrior/iDie.xhtml">iDie()</a>
+            </li>
+            <li id="resetStats"><a title="Warrior" href="../classes/Warrior/resetStats.xhtml">resetStats()</a>
+                — Defines the warrior's stats in its initial state (Level 1).</li>
+            <li id="setLevel"><a title="Warrior" href="../classes/Warrior/setLevel.xhtml">setLevel()</a>
+                — Set the level, and perform the necessary calculations to update the stats depending on the new level.</li>
+            <li id="setStat">
+              <a title="Warrior" href="../classes/Warrior/setStat.xhtml">setStat()</a>
+            </li>
+            <li id="setStats"><a title="Warrior" href="../classes/Warrior/setStats.xhtml">setStats()</a>
+                — Sets the warrior's stats.</li>
+          </ul>
+          <h3>Inherited from <a title="Character" href="../classes/Character.xhtml">Character</a></h3>
+          <h4>protected</h4>
+          <ul>
+            <li id="isCritical"><a title="Character" href="../classes/Character/isCritical.xhtml">isCritical()</a>
+                — Determines a critical hit</li>
+            <li id="isMagical"><a title="Character" href="../classes/Character/isMagical.xhtml">isMagical()</a>
+                — Determines a magical hit</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="attack">
+              <a title="Character" href="../classes/Character/attack.xhtml">attack()</a>
+            </li>
+            <li id="getAgi"><a title="Character" href="../classes/Character/getAgi.xhtml">getAgi()</a>
+                — Gets the character's agi.</li>
+            <li id="getDamage">
+              <a title="Character" href="../classes/Character/getDamage.xhtml">getDamage()</a>
+            </li>
+            <li id="getFDef"><a title="Character" href="../classes/Character/getFDef.xhtml">getFDef()</a>
+                — Gets the character's fDef.</li>
+            <li id="getHp"><a title="Character" href="../classes/Character/getHp.xhtml">getHp()</a>
+                — Gets the character's hp.</li>
+            <li id="getId"><a title="Character" href="../classes/Character/getId.xhtml">getId()</a>
+                — Gets the character's id.</li>
+            <li id="getIntl"><a title="Character" href="../classes/Character/getIntl.xhtml">getIntl()</a>
+                — Gets the character's intl.</li>
+            <li id="getLevel"><a title="Character" href="../classes/Character/getLevel.xhtml">getLevel()</a>
+                — Gets the character's level.</li>
+            <li id="getMDef"><a title="Character" href="../classes/Character/getMDef.xhtml">getMDef()</a>
+                — Gets the character's mDef.</li>
+            <li id="getName"><a title="Character" href="../classes/Character/getName.xhtml">getName()</a>
+                — Gets the character's name.</li>
+            <li id="getStat">
+              <a title="Character" href="../classes/Character/getStat.xhtml">getStat()</a>
+            </li>
+            <li id="getStats"><a title="Character" href="../classes/Character/getStats.xhtml">getStats()</a>
+                — Manages the character's stats.</li>
+            <li id="getStr"><a title="Character" href="../classes/Character/getStr.xhtml">getStr()</a>
+                — Gets the character's str.</li>
+            <li id="iDie">
+              <a title="Character" href="../classes/Character/iDie.xhtml">iDie()</a>
+            </li>
+            <li id="resetStats">
+              <a title="Character" href="../classes/Character/resetStats.xhtml">resetStats()</a>
+            </li>
+            <li id="setAgi"><a title="Character" href="../classes/Character/setAgi.xhtml">setAgi()</a>
+                — Sets the character's agi.</li>
+            <li id="setFDef"><a title="Character" href="../classes/Character/setFDef.xhtml">setFDef()</a>
+                — Sets the character's fDef.</li>
+            <li id="setHp"><a title="Character" href="../classes/Character/setHp.xhtml">setHp()</a>
+                — Sets the character's hp.</li>
+            <li id="setId"><a title="Character" href="../classes/Character/setId.xhtml">setId()</a>
+                — Sets the character's id.</li>
+            <li id="setIntl"><a title="Character" href="../classes/Character/setIntl.xhtml">setIntl()</a>
+                — Sets the character's intl.</li>
+            <li id="setLevel"><a title="Character" href="../classes/Character/setLevel.xhtml">setLevel()</a>
+                — Sets the character's level.</li>
+            <li id="setMDef"><a title="Character" href="../classes/Character/setMDef.xhtml">setMDef()</a>
+                — Sets the character's mDef.</li>
+            <li id="setName"><a title="Character" href="../classes/Character/setName.xhtml">setName()</a>
+                — Sets the character's name.</li>
+            <li id="setStat">
+              <a title="Character" href="../classes/Character/setStat.xhtml">setStat()</a>
+            </li>
+            <li id="setStats">
+              <a title="Character" href="../classes/Character/setStats.xhtml">setStats()</a>
+            </li>
+            <li id="setStr"><a title="Character" href="../classes/Character/setStr.xhtml">setStr()</a>
+                — Sets the character's str.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2020 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

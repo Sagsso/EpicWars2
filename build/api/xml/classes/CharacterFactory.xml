@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="CharacterFactory" namespace="" name="CharacterFactory" abstract="false" final="false" start="8" end="63">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/factories" file="CharacterFactory.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/factories/CharacterFactory.php" size="1851" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="a4ba10718835f74ef88b14ff627f7c5e53698f99" relative="factories/CharacterFactory.php"/>
+  <docblock>
+    <description compact="Description of CharacterFactory">This factory is in charge of managing the instance of the characters.</description>
+  </docblock>
+  <implements full="ICharacterFactory" namespace="" name="ICharacterFactory"/>
+  <method name="createMage" start="18" end="20" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Create a mage type character.">Creates the instance of a new mage, with a predefined level of 1.</description>
+      <param description="Name of the character." type="string" variable="$name"/>
+      <return description="An instance." type="object">
+        <type full="Mage" namespace="" name="Mage"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Mage" namespace="" name="Mage"/>
+    </return>
+    <parameter name="name" byreference="false" type="string"/>
+  </method>
+  <method name="createRogue" start="30" end="32" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Create a rogue type character.">Creates the instance of a new rogue, with a predefined level of 1.</description>
+      <param description="Name of the character." type="string" variable="$name"/>
+      <return description="An instance." type="object">
+        <type full="Rogue" namespace="" name="Rogue"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Rogue" namespace="" name="Rogue"/>
+    </return>
+    <parameter name="name" byreference="false" type="string"/>
+  </method>
+  <method name="createWarrior" start="42" end="44" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Create a warrior type character.">Creates the instance of a new warrior, with a predefined level of 1.</description>
+      <param description="Name of the character." type="string" variable="$name"/>
+      <return description="An instance." type="object">
+        <type full="Warrior" namespace="" name="Warrior"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="Warrior" namespace="" name="Warrior"/>
+    </return>
+    <parameter name="name" byreference="false" type="string"/>
+  </method>
+  <method name="getCharacter" start="55" end="61" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Create an existing character.">Creates an instance for a character that is brought from the database.</description>
+      <param description="It receives a number that represents a specific character" type="int" variable="$id">on the character table.</param>
+      <return description="An instance of character-type." type="object">
+        <type full="ICharacter" namespace="" name="ICharacter"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="ICharacter" namespace="" name="ICharacter"/>
+    </return>
+    <parameter name="id" byreference="false" type="int"/>
+  </method>
+  <interface full="ICharacterFactory" namespace="" name="ICharacterFactory">
+    <method name="createMage" start="14" end="14" abstract="false" final="false" static="true" visibility="public">
+      <return type="object" nullable="false">
+        <type full="Mage" namespace="" name="Mage"/>
+      </return>
+      <parameter name="name" byreference="false" type="string"/>
+    </method>
+    <method name="createRogue" start="15" end="15" abstract="false" final="false" static="true" visibility="public">
+      <return type="object" nullable="false">
+        <type full="Rogue" namespace="" name="Rogue"/>
+      </return>
+      <parameter name="name" byreference="false" type="string"/>
+    </method>
+    <method name="createWarrior" start="16" end="16" abstract="false" final="false" static="true" visibility="public">
+      <return type="object" nullable="false">
+        <type full="Warrior" namespace="" name="Warrior"/>
+      </return>
+      <parameter name="name" byreference="false" type="string"/>
+    </method>
+  </interface>
+</class>

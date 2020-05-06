@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Users_bl" namespace="" name="Users_bl" abstract="false" final="false" start="12" end="62">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/businessLogic" file="users_bl.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/businessLogic/users_bl.php" size="1924" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="f6a8a4962df78afcfba0fa130ff7623637afe14a" relative="businessLogic/users_bl.php"/>
+  <docblock>
+    <description compact="Description of Users_bl.">It is in charge of creating, bringing, updating, or deleting
+specific data, according to the function,
+from the table user in the database.</description>
+  </docblock>
+  <method name="login" start="23" end="42" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="login method.">This function is responsible for verifying the sign in
+data obtained by the POST method, comparing it with the data
+obtained from the user database.</description>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="create" start="52" end="61" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="create method.">This function is responsible for creating a new user in the
+database with the registration data obtained by POST method.</description>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+  </method>
+</class>

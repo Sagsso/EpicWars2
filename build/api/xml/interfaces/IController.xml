@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="IController" namespace="" name="IController" abstract="false" final="false" start="13" end="15">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces" file="IController.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces/IController.php" size="276" time="2020-04-17T07:23:19+02:00" unixtime="1587100999" sha1="660c45bc19896a2a93e238a6a3ed2fdd6be03ca1" relative="interfaces/IController.php"/>
+  <docblock>
+    <description/>
+    <author value="pabhoz"/>
+  </docblock>
+  <method name="index" start="14" end="14" abstract="false" final="false" static="false" visibility="public">
+    <return type="void" nullable="false"/>
+  </method>
+  <implementors>
+    <class full="Controller" namespace="" name="Controller"/>
+    <class full="Index_controller" namespace="" name="Index_controller"/>
+  </implementors>
+</interface>

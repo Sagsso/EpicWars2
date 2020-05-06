@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/views/Index" file="signup.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/views/Index/signup.php" size="859" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="76b4b83534f624a86acaea23102820783efb5955" relative="views/Index/signup.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">loadFragment</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"head"</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="2"/>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_INLINE_HTML">&lt;body class="signin-background"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">  &lt;div class="text-center card" style="width: 25%;"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">    &lt;form action="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">Users_bl</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">create</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">" class="form-signin" method="POST"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">      &lt;h1 class="h3 mb-3 font-weight-normal"&gt;Please sign up&lt;/h1&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">      &lt;label for="inputEmail" class="sr-only"&gt;Email address&lt;/label&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">      &lt;input id="name" type="email" id="inputEmail" class="form-control" placeholder="Email address" name="username" required autofocus&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">      &lt;label for="inputPassword" class="sr-only"&gt;Password&lt;/label&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">      &lt;input id="password" type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">      &lt;button class="btn btn-lg btn-primary btn-block mt-3" type="submit"&gt;Sign up&lt;/button&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">      &lt;p class="mt-5 mb-3 text-muted"&gt;&amp;copy; 2020&lt;/p&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">    &lt;/form&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">  &lt;/div&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="17"/>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+</source>
