@@ -43,5 +43,11 @@ class Users_bl{
         }
         return false;
     }
+
+    public static function getIdUser($username)
+    {
+        $result = Connection::getInstance()->select('id', '`User`', "username = '" . $username . "'");
+        return $result[0]["id"];
+    }
 }
 ?>
