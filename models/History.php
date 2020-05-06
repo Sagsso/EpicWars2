@@ -33,7 +33,7 @@ class History implements IHistory{
         if ($details['magical']) {
             $msn3 = $character1->getName().' has a magical defense of '.$character1->getMDef().' and gets a total damage of '.$details['takenDamage'].'</br>';
         }else{
-            $msn3 = $character1->getName().' has a physical defense of '.$character1->getMDef().' and gets a total damage of '.$details['takenDamage'].'</br>';
+            $msn3 = $character1->getName().' has a physical defense of '.$character1->getFDef().' and gets a total damage of '.$details['takenDamage'].'</br>';
         }
         $msn4 = $character1->getName().' now has '.$character1->getHp().' hp. </br>';
 
