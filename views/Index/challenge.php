@@ -1,7 +1,7 @@
 <?php
     require_once MODELS."Game.php";
     require_once FACTORIES."CharacterFactory.php";
-    require_once BUSINESS."history_bl.php";
+    require_once BUSINESS."History_bl.php";
     $this->loadFragment("head"); 
 
     $character1 = CharacterFactory::getCharacter($_SESSION['id_character_selected']);

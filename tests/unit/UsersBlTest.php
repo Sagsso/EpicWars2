@@ -3,7 +3,7 @@ require_once './loader.php';
 require_once './config.php';
 require_once './interfaces/IDBAdapter.php';
 require_once './database/connection.php';
-require_once './businessLogic/users_bl.php';
+require_once './businessLogic/Users_bl.php';
 
 class UsersBlTest extends \Codeception\Test\Unit
 {

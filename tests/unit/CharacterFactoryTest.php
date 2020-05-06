@@ -7,7 +7,7 @@ require_once './interfaces/ICharacter.php';
 // require_once './interfaces/ICharacterBl.php';
 
 require_once './factories/CharacterFactory.php';
-require_once './businessLogic/characters_bl.php';
+require_once './businessLogic/Characters_bl.php';
 require_once './models/Character.php';
 require_once './models/Mage.php';
 require_once './models/Warrior.php';
@@ -45,21 +45,12 @@ class CharacterFactoryTest extends \Codeception\Test\Unit
         $this->tester->assertTrue($warrior instanceof Warrior);
     }
 
-    public function testGetCharacter() {
-        // \Codeception\Stub::make('Characters_bl', ['getClass' => function () {return 'Mage';}], $this);
-        $cb = Codeception\Stub::make('Characters_bl', ['getCharacterName' => function () {return 'Lucius Malfoy';}]);
-        $variable = $cb->getCharacterName(1);
-        // // $character = CharacterFactory::getCharacter(7);
-        // echo $variable;
-        // $this->tester->assertEquals('Lucius Malfoy', $character->getName());
-        // $this->tester->assertEquals('Lucius Malfoy', $variable);
-        // $user = Stub::make('Characters_bl', ['getName' => 'john']);
-        // // $name = $user->getName(); // 'john'
-        // echo var_dump($user);
-        // $this->tester->assertEquals('john', $user->getName());
+    // public function testGetCharacter() {
 
-        // $user = \Codeception\Stub::make('User', ['getName' => 'john']);
-        // $name = $user->getName(); // 'john'
-    }
+    //     $cb = \Codeception\Stub::make('Characters_bl', 
+    //         ['getCharacterName' => function ($id) {return 'Lucius Malfoy';}]);
+    //     $name = $cb->getCharacterName(1);
+    
+    // }
 
 }
