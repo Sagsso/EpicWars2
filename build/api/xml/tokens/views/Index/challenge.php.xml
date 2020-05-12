@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/views/Index" file="challenge.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/views/Index/challenge.php" size="982" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="79299099adfe5f326fde598ec0bde08131f0ced5" relative="views/Index/challenge.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_REQUIRE_ONCE">require_once</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">MODELS</token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"Game.php"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_REQUIRE_ONCE">require_once</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">FACTORIES</token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"CharacterFactory.php"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_REQUIRE_ONCE">require_once</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">BUSINESS</token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"history_bl.php"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="5">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">loadFragment</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"head"</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+  </line>
+  <line no="6"/>
+  <line no="7">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$character1</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">CharacterFactory</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">getCharacter</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$_SESSION</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'id_character_selected'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="8">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$character2</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">CharacterFactory</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">getCharacter</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$_SESSION</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'id_rival_selected'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="9">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$game</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Game</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$character1</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_VARIABLE">$character2</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="10">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">&lt;body&gt;</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">    &lt;div class="container2 my-5"&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">        &lt;div class="area-header"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">            </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">loadFragment</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"header"</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">        &lt;div class="area-content"&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">            &lt;div class="py-3 px-5 grid-center card"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                &lt;h1 class="h3 my-3 text-center font-weight-normal"&gt;Challenge&lt;/h1&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+  </line>
+  <line no="21">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_VARIABLE">$game</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">fight</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="22">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_STRING">History_bl</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">create</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$game</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">getHistory</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="23">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                &lt;a href="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">URL</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">arena" class="mt-3 text-start"&gt;Come back&lt;/a&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="28"/>
+  <line no="29">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+</source>

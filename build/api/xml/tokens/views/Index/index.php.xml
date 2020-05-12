@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/views/Index" file="index.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/views/Index/index.php" size="1400" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="65ed9509f502b26afc555d93206c4c3518e06cef" relative="views/Index/index.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">loadFragment</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"head"</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="2">
+    <token name="T_COMMENT">// if (ini_get("session.use_cookies")) {</token>
+  </line>
+  <line no="3">
+    <token name="T_COMMENT">//   $params = session_get_cookie_params();</token>
+  </line>
+  <line no="4">
+    <token name="T_COMMENT">//   setcookie(</token>
+  </line>
+  <line no="5">
+    <token name="T_COMMENT">//     session_name(),</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT">//     '',</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT">//     time() - 42000,</token>
+  </line>
+  <line no="8">
+    <token name="T_COMMENT">//     $params["path"],</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT">//     $params["domain"],</token>
+  </line>
+  <line no="10">
+    <token name="T_COMMENT">//     $params["secure"],</token>
+  </line>
+  <line no="11">
+    <token name="T_COMMENT">//     $params["httponly"]</token>
+  </line>
+  <line no="12">
+    <token name="T_COMMENT">//   );</token>
+  </line>
+  <line no="13">
+    <token name="T_COMMENT">// }</token>
+  </line>
+  <line no="14">
+    <token name="T_STRING">session_destroy</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+  </line>
+  <line no="15">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="17">
+    <token name="T_COMMENT">//  require_once BUSINESS.'users_bl.php';</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">&lt;body class="signin-background"&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">  &lt;div class="text-center card" style="width: 28%;"&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">      &lt;form action="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">Users_bl</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">login</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">" method="POST" class="form-signin"&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">        &lt;span class="mb-3 h3"&gt;The best &lt;br&gt; ROL GAME&lt;/span&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">        &lt;h1 class="h3 mb-3 font-weight-normal"&gt;Please sign in&lt;/h1&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">        &lt;label for="inputEmail" class="sr-only"&gt;Email address&lt;/label&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">        &lt;input type="email" id="inputEmail" class="form-control" name="username" placeholder="Email address" required autofocus&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">        &lt;label for="inputPassword" class="sr-only"&gt;Password&lt;/label&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">        &lt;input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">        &lt;span class="mt-5 mb-5 text-muted"&gt;If you don't have an account.</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">        &lt;a href="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">URL</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">signup"&gt;Create it here&lt;/a&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">        &lt;/span&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">        &lt;button class="btn btn-lg btn-primary btn-block mt-3" type="submit"&gt;Sign in&lt;/button&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">        &lt;p class="mt-5 mb-3 text-muted"&gt;&amp;copy; 2020&lt;/p&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">    &lt;/form&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">  &lt;/div&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+</source>

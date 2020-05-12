@@ -3,9 +3,24 @@
 
 require_once "./database/connection.php";
 
-
+/**
+ * Description of Users_bl.
+ * 
+ * It is in charge of creating, bringing, updating, or deleting 
+ * specific data, according to the function, 
+ * from the table user in the database. 
+ */
 class Users_bl{
 
+    /**
+     * login method.
+     * 
+     * This function is responsible for verifying the sign in 
+     * data obtained by the POST method, comparing it with the data 
+     * obtained from the user database.
+     * 
+     * @return void
+     */
     public static function login() {
         if (isset($_POST['username']) && isset($_POST['password'])) {
             $username = $_POST['username'];
@@ -29,14 +44,20 @@ class Users_bl{
         }
     }
 
+    /**
+     * create method.
+     * 
+     * This function is responsible for creating a new user in the 
+     * database with the registration data obtained by POST method.
+     * 
+     * @return void
+     */
     public static function create() {
         if (isset($_POST['username']) && isset($_POST['password'])) {
             $username = $_POST['username'];
             $password = $_POST['password'];
 
             Connection::getInstance()->insert('User', ["username" =>  $username, "password" => $password]);
-
-            echo "usuario registrado";
 
             header('Location: ' . URL);
             return true;

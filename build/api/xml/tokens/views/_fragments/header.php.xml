@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/views/_fragments" file="header.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/views/_fragments/header.php" size="1374" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="9c33c03a7c9b935b03ee0a2bb01353e7d13467ed" relative="views/_fragments/header.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;nav class="navbar navbar-expand-lg navbar-dark bg-blue fixed-top"&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">  &lt;div class="container"&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;a class="navbar-brand" href="#"&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_VARIABLE">$_SESSION</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'username'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">" | "</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4">
+    <token name="T_WHITESPACE">     </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_ISSET">isset</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$_SESSION</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'id_character_selected'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_QUESTION_MARK">?</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">" "</token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_STRING">Characters_bl</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">getCharacterName</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$_SESSION</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'id_character_selected'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">" "</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/a&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">      &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;/button&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">    &lt;div class="collapse navbar-collapse" id="navbarResponsive"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">      &lt;ul class="navbar-nav ml-auto"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">        &lt;li class="nav-item active"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">          &lt;a class="nav-link" href="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_PRINT">print</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">URL</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">home"&gt;Home</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">            &lt;span class="sr-only"&gt;(current)&lt;/span&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">          &lt;/a&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">        &lt;/li&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">        &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">          &lt;a class="nav-link" href="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_PRINT">print</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">URL</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">characters"&gt;Characters&lt;/a&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">        &lt;/li&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">        &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">          &lt;a class="nav-link" href="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_PRINT">print</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">URL</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">arena"&gt;Arena&lt;/a&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">        &lt;/li&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">        &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">          &lt;a class="nav-link" href="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_PRINT">print</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">URL</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">history"&gt;History&lt;/a&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">        &lt;/li&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">        &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">          &lt;a class="nav-link" href="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_PRINT">print</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">URL</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">"&gt;Log out&lt;/a&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">        &lt;/li&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">      &lt;/ul&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">  &lt;/div&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">&lt;/nav&gt;</token>
+  </line>
+</source>

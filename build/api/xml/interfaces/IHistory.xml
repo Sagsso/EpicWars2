@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="IHistory" namespace="" name="IHistory" abstract="false" final="false" start="13" end="18">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces" file="IHistory.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces/IHistory.php" size="395" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="04b4075ccf1efbb398b539d3bd6740b639a4d106" relative="interfaces/IHistory.php"/>
+  <docblock>
+    <description/>
+    <author value="pabhoz"/>
+  </docblock>
+  <method name="locutor" start="15" end="15" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="character1" byreference="false" type="object">
+      <type full="ICharacter" namespace="" name="ICharacter"/>
+    </parameter>
+    <parameter name="character2" byreference="false" type="object">
+      <type full="ICharacter" namespace="" name="ICharacter"/>
+    </parameter>
+    <parameter name="details" byreference="false" type="array"/>
+  </method>
+  <method name="death" start="17" end="17" abstract="false" final="false" static="false" visibility="public">
+    <return type="string" nullable="false"/>
+    <parameter name="stats" byreference="false" type="object">
+      <type full="ICharacter" namespace="" name="ICharacter"/>
+    </parameter>
+  </method>
+  <implementors>
+    <class full="History" namespace="" name="History"/>
+  </implementors>
+</interface>

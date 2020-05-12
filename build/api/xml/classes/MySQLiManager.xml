@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="MySQLiManager" namespace="" name="MySQLiManager" abstract="false" final="false" start="3" end="227">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/database" file="MySQLiManager.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/database/MySQLiManager.php" size="5359" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="ad21c41ef497a47e356648147c42ebd35d918b06" relative="database/MySQLiManager.php"/>
+  <member name="link" visibility="private" static="false" line="5"/>
+  <constructor name="__construct" start="7" end="21" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="DB_HOST" byreference="false" type="{unknown}"/>
+    <parameter name="DB_USER" byreference="false" type="{unknown}"/>
+    <parameter name="DB_PASS" byreference="false" type="{unknown}"/>
+    <parameter name="DB_NAME" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="getLink" start="24" end="26" abstract="false" final="false" static="false" visibility="public"/>
+  <destructor name="__destruct" start="35" end="41" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="__destruct"/>
+      <author value="Pabhoz Destruye el hilo y cierra la conexión."/>
+    </docblock>
+    <inline>
+      <comment value="echo &quot;id: &quot;.$thread_id.&quot;&lt;br&gt;&quot;;" line="38"/>
+    </inline>
+  </destructor>
+  <method name="select" start="57" end="71" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="select"/>
+      <author value="Pabhoz retorna el resultado de una query de tipo SELECT a una base de datos MySQL."/>
+      <param description="Atributo a seleccionar de la tabla" type="object" variable="$attr">
+        <type full="String" namespace="" name="String"/>
+      </param>
+      <param description="Tabla de la que se selecciona" type="object" variable="$table">
+        <type full="String" namespace="" name="String"/>
+      </param>
+      <param description="condicional (opcional) de la selección" type="object" variable="$where">
+        <type full="String" namespace="" name="String"/>
+      </param>
+      <return description="$response / Error" type="object">
+        <type full="Array&lt;String&gt;" namespace="" name="Array&lt;String&gt;"/>
+      </return>
+    </docblock>
+    <parameter name="attr" byreference="false" type="{unknown}"/>
+    <parameter name="table" byreference="false" type="{unknown}"/>
+    <parameter name="where" byreference="false" type="string" default="''"/>
+  </method>
+  <method name="insert" start="89" end="118" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="insert"/>
+      <author value="Pabhoz inserta registros enviados en formato INSERT a una base de datos MySQL"/>
+      <param description="Tabla en la que se insertarán los datos" type="object" variable="$table">
+        <type full="String" namespace="" name="String"/>
+      </param>
+      <param description="Arreglo de datos a insertar cuyo indice corresponde" type="object" variable="$values">al atributo en la base de datos.<type full="Array" namespace="" name="Array"/></param>
+      <param description="condicional (opcional) de la selección" type="object" variable="$where">
+        <type full="String" namespace="" name="String"/>
+      </param>
+      <param description="Condicional que determina si debe ser saneada la cadena" type="object" variable="$sanear">
+        <type full="Boolean" namespace="" name="Boolean"/>
+      </param>
+      <return description="$response true/false" type="object">
+        <type full="Boolean" namespace="" name="Boolean"/>
+      </return>
+    </docblock>
+    <parameter name="table" byreference="false" type="{unknown}"/>
+    <parameter name="values" byreference="false" type="{unknown}"/>
+    <parameter name="where" byreference="false" type="string" default="''"/>
+    <parameter name="sanear" byreference="false" type="boolean" default="false"/>
+    <inline>
+      <comment value="$result = $this-&gt;link-&gt;query($stmt) or die($this-&gt;link-&gt;error.__LINE__);" line="106"/>
+    </inline>
+  </method>
+  <method name="update" start="134" end="152" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="update"/>
+      <author value="Pabhoz Actualiza registros en la tabla deseada mediante una String en formato Update Query de MySQL"/>
+      <param description="Tabla de la base de datos" type="object" variable="$table">
+        <type full="String" namespace="" name="String"/>
+      </param>
+      <param description="Valores ordenados en formato [attr] = value" type="object" variable="$values">
+        <type full="Array&lt;String&gt;" namespace="" name="Array&lt;String&gt;"/>
+      </param>
+      <param description="Sentencia where" type="object" variable="$where">
+        <type full="String" namespace="" name="String"/>
+      </param>
+      <return description="$response" type="object">
+        <type full="Boolean" namespace="" name="Boolean"/>
+      </return>
+    </docblock>
+    <parameter name="table" byreference="false" type="{unknown}"/>
+    <parameter name="values" byreference="false" type="{unknown}"/>
+    <parameter name="where" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="delete" start="169" end="189" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="update"/>
+      <author value="Pabhoz Eliminar registros en la tabla deseada mediante una String en formato Update Query de MySQL"/>
+      <param description="Tabla de la base de datos" type="object" variable="$table">
+        <type full="String" namespace="" name="String"/>
+      </param>
+      <param description="Valores ordenados en formato [attr] = value" type="object" variable="$values">o en otro caso sentencia<type full="Array&lt;String&gt;/String" namespace="" name="Array&lt;String&gt;/String"/></param>
+      <param description="Indica si se usará $values como string o como arreglo" type="object" variable="$complex">
+        <type full="Boolean" namespace="" name="Boolean"/>
+      </param>
+      <return description="$response" type="object">
+        <type full="Boolean" namespace="" name="Boolean"/>
+      </return>
+    </docblock>
+    <parameter name="table" byreference="false" type="{unknown}"/>
+    <parameter name="values" byreference="false" type="{unknown}"/>
+    <parameter name="complex" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="check" start="206" end="225" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="update"/>
+      <author value="Pabhoz Checar la existencia de un registro en la base de datos"/>
+      <param description="Atributo a checkear" type="object" variable="$what">
+        <type full="String" namespace="" name="String"/>
+      </param>
+      <param description="Tabla de la base de datos" type="object" variable="$table">
+        <type full="String" namespace="" name="String"/>
+      </param>
+      <param description="Valores ordenados en formato [attr] = value" type="object" variable="$values">o en otro caso sentencia<type full="Array&lt;String&gt;/String" namespace="" name="Array&lt;String&gt;/String"/></param>
+      <param description="Indica si se usará $values como string o como arreglo" type="object" variable="$complex">
+        <type full="Boolean" namespace="" name="Boolean"/>
+      </param>
+      <return description="$response" type="object">
+        <type full="Boolean" namespace="" name="Boolean"/>
+      </return>
+    </docblock>
+    <parameter name="what" byreference="false" type="{unknown}"/>
+    <parameter name="table" byreference="false" type="{unknown}"/>
+    <parameter name="values" byreference="false" type="{unknown}"/>
+    <parameter name="complex" byreference="false" type="boolean" default="false"/>
+  </method>
+</class>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Mage" namespace="" name="Mage" abstract="false" final="false" start="11" end="116">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/models" file="Mage.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/models/Mage.php" size="3922" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="240ecf025b02e80f39f08c6edb9d190a75e9d1e0" relative="models/Mage.php"/>
+  <docblock>
+    <description compact="Description of Mage">The mage class is in charge of creating an object with all
+the information referring to the mage entity as well as
+defining attributes, calculations, and statistics specific
+to the class.</description>
+  </docblock>
+  <extends full="Character" namespace="" name="Character"/>
+  <constructor name="__construct" start="13" end="15" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="attack" start="27" end="33" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Make an attack on another character.">It generates all the necessary calculations to determine the damage
+that will be done to the other character with values of the mage's
+skills.</description>
+      <param description="The character who will be attacked." type="object" variable="$target">
+        <type full="ICharacter" namespace="" name="ICharacter"/>
+      </param>
+      <return description="Array with the properties of the attack carried out." type="array"/>
+    </docblock>
+    <return type="array" nullable="false"/>
+    <parameter name="target" byreference="false" type="object">
+      <type full="ICharacter" namespace="" name="ICharacter"/>
+    </parameter>
+  </method>
+  <method name="getDamage" start="47" end="52" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="It makes a defense with respect to an attack received.">It generates all the necessary calculations to determine the defense
+that will be done depending the values of the mage's
+skills. The defense depends on the value of the damage and the type of
+blow. In addition, the character's stats are updated with the final damage.</description>
+      <param description="Damage received." type="float" variable="$value"/>
+      <param description="Damage type." type="object" variable="$isMagical">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+      <return description="Array with the properties of the defense." type="array"/>
+    </docblock>
+    <return type="array" nullable="false"/>
+    <parameter name="value" byreference="false" type="float"/>
+    <parameter name="isMagical" byreference="false" type="bool"/>
+  </method>
+  <method name="getStat" start="54" end="56" abstract="false" final="false" static="false" visibility="public">
+    <return type="float" nullable="false"/>
+    <parameter name="statName" byreference="false" type="string"/>
+  </method>
+  <method name="iDie" start="58" end="60" abstract="false" final="false" static="false" visibility="public">
+    <return type="void" nullable="false"/>
+  </method>
+  <method name="setStat" start="62" end="64" abstract="false" final="false" static="false" visibility="public">
+    <return type="void" nullable="false"/>
+    <parameter name="statName" byreference="false" type="string"/>
+    <parameter name="value" byreference="false" type="float"/>
+  </method>
+  <method name="setStats" start="71" end="79" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Sets the mage's stats."/>
+      <param type="array" variable="$stats"/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+    <return type="void" nullable="false"/>
+    <parameter name="stats" byreference="false" type="array"/>
+    <inline>
+      <comment value="Hay que hacer la validación de que el arreglo traiga todos los datos necesarios" line="72"/>
+    </inline>
+  </method>
+  <method name="resetStats" start="86" end="93" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Defines the mage's stats in its initial state (Level 1)."/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+    <return type="void" nullable="false"/>
+  </method>
+  <method name="setLevel" start="102" end="114" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the level, and perform the necessary calculations to update the stats depending on the new level."/>
+      <param type="array" variable="$stats"/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+    <return type="void" nullable="false"/>
+    <parameter name="level" byreference="false" type="{unknown}"/>
+  </method>
+  <parent full="Character" namespace="" name="Character">
+    <implements full="ICharacter" namespace="" name="ICharacter"/>
+    <member name="name" visibility="protected" static="false" line="21">
+      <docblock>
+        <description/>
+        <var description="$name Character's name." type="string"/>
+        <var description="$level Character's level." type="int"/>
+        <var description="$str Character's strenght." type="int"/>
+        <var description="$intl Character's intellect." type="int"/>
+        <var description="$agi Character's agility." type="int"/>
+        <var description="$mDef Character's magic defense." type="int"/>
+        <var description="$fDef Character's physical defense." type="int"/>
+        <var description="$id Character's ID." type="int"/>
+      </docblock>
+    </member>
+    <member name="level" visibility="protected" static="false" line="22"/>
+    <member name="str" visibility="protected" static="false" line="23"/>
+    <member name="intl" visibility="protected" static="false" line="24"/>
+    <member name="agi" visibility="protected" static="false" line="25"/>
+    <member name="mDef" visibility="protected" static="false" line="26"/>
+    <member name="fDef" visibility="protected" static="false" line="27"/>
+    <member name="hp" visibility="protected" static="false" line="28"/>
+    <member name="id" visibility="protected" static="false" line="29"/>
+    <constructor name="__construct" start="31" end="40" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="name" byreference="false" type="{unknown}"/>
+      <parameter name="level" byreference="false" type="{unknown}"/>
+      <parameter name="str" byreference="false" type="{unknown}"/>
+      <parameter name="intl" byreference="false" type="{unknown}"/>
+      <parameter name="agi" byreference="false" type="{unknown}"/>
+      <parameter name="mDef" byreference="false" type="{unknown}"/>
+      <parameter name="fDef" byreference="false" type="{unknown}"/>
+      <parameter name="hp" byreference="false" type="{unknown}"/>
+    </constructor>
+    <method name="attack" start="43" end="43" abstract="true" final="false" static="false" visibility="public">
+      <return type="array" nullable="false"/>
+      <parameter name="target" byreference="false" type="object">
+        <type full="ICharacter" namespace="" name="ICharacter"/>
+      </parameter>
+    </method>
+    <method name="getDamage" start="45" end="45" abstract="true" final="false" static="false" visibility="public">
+      <return type="array" nullable="false"/>
+      <parameter name="value" byreference="false" type="float"/>
+      <parameter name="isMagical" byreference="false" type="bool"/>
+    </method>
+    <method name="getStat" start="47" end="47" abstract="true" final="false" static="false" visibility="public">
+      <return type="float" nullable="false"/>
+      <parameter name="statName" byreference="false" type="string"/>
+    </method>
+    <method name="getStats" start="56" end="59" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Manages the character's stats.">Returns all stats of the character's instance.</description>
+        <return type="array"/>
+      </docblock>
+      <return type="array" nullable="false"/>
+    </method>
+    <method name="iDie" start="61" end="61" abstract="true" final="false" static="false" visibility="public">
+      <return type="void" nullable="false"/>
+    </method>
+    <method name="setStat" start="63" end="63" abstract="true" final="false" static="false" visibility="public">
+      <return type="void" nullable="false"/>
+      <parameter name="statName" byreference="false" type="string"/>
+      <parameter name="value" byreference="false" type="float"/>
+    </method>
+    <method name="setStats" start="65" end="65" abstract="true" final="false" static="false" visibility="public">
+      <return type="void" nullable="false"/>
+      <parameter name="stats" byreference="false" type="array"/>
+    </method>
+    <method name="resetStats" start="67" end="67" abstract="true" final="false" static="false" visibility="public">
+      <return type="void" nullable="false"/>
+    </method>
+    <method name="isCritical" start="79" end="82" abstract="false" final="false" static="false" visibility="protected">
+      <docblock>
+        <description compact="Determines a critical hit">It generates a logic, where a random number is obtained
+to determine the probability of taking a critical hit
+within the given range.</description>
+        <param type="float" variable="$rate"/>
+        <return type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
+      <return type="bool" nullable="false"/>
+      <parameter name="rate" byreference="false" type="float"/>
+    </method>
+    <method name="isMagical" start="92" end="95" abstract="false" final="false" static="false" visibility="protected">
+      <docblock>
+        <description compact="Determines a magical hit">It generates a logic, where a random number is obtained
+to determine the probability of taking a magical hit.</description>
+        <return type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
+      <return type="bool" nullable="false"/>
+    </method>
+    <method name="getName" start="101" end="103" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Gets the character's name."/>
+        <return type="string"/>
+      </docblock>
+    </method>
+    <method name="getLevel" start="109" end="111" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Gets the character's level."/>
+        <return type="int"/>
+      </docblock>
+    </method>
+    <method name="getStr" start="117" end="119" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Gets the character's str."/>
+        <return type="int"/>
+      </docblock>
+    </method>
+    <method name="getIntl" start="125" end="127" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Gets the character's intl."/>
+        <return type="int"/>
+      </docblock>
+    </method>
+    <method name="getAgi" start="133" end="135" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Gets the character's agi."/>
+        <return type="int"/>
+      </docblock>
+    </method>
+    <method name="getMDef" start="141" end="143" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Gets the character's mDef."/>
+        <return type="int"/>
+      </docblock>
+    </method>
+    <method name="getFDef" start="149" end="151" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Gets the character's fDef."/>
+        <return type="int"/>
+      </docblock>
+    </method>
+    <method name="getHp" start="157" end="159" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Gets the character's hp."/>
+        <return type="int"/>
+      </docblock>
+    </method>
+    <method name="setName" start="166" end="168" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Sets the character's name."/>
+        <param type="string" variable="$name"/>
+        <return type="object">
+          <type full="void" namespace="" name="void"/>
+        </return>
+      </docblock>
+      <return type="void" nullable="false"/>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="setLevel" start="175" end="177" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Sets the character's level."/>
+        <param type="int" variable="$level"/>
+        <return type="object">
+          <type full="void" namespace="" name="void"/>
+        </return>
+      </docblock>
+      <return type="void" nullable="false"/>
+      <parameter name="level" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="setStr" start="184" end="186" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Sets the character's str."/>
+        <param type="int" variable="$str"/>
+        <return type="object">
+          <type full="void" namespace="" name="void"/>
+        </return>
+      </docblock>
+      <return type="void" nullable="false"/>
+      <parameter name="str" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="setIntl" start="193" end="195" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Sets the character's intl."/>
+        <param type="int" variable="$intl"/>
+        <return type="object">
+          <type full="void" namespace="" name="void"/>
+        </return>
+      </docblock>
+      <return type="void" nullable="false"/>
+      <parameter name="intl" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="setAgi" start="202" end="204" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Sets the character's agi."/>
+        <param type="int" variable="$agi"/>
+        <return type="object">
+          <type full="void" namespace="" name="void"/>
+        </return>
+      </docblock>
+      <return type="void" nullable="false"/>
+      <parameter name="agi" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="setMDef" start="211" end="213" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Sets the character's mDef."/>
+        <param type="int" variable="$mDef"/>
+        <return type="object">
+          <type full="void" namespace="" name="void"/>
+        </return>
+      </docblock>
+      <return type="void" nullable="false"/>
+      <parameter name="mDef" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="setFDef" start="220" end="222" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Sets the character's fDef."/>
+        <param type="int" variable="$fDef"/>
+        <return type="object">
+          <type full="void" namespace="" name="void"/>
+        </return>
+      </docblock>
+      <return type="void" nullable="false"/>
+      <parameter name="fDef" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="setHp" start="229" end="231" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Sets the character's hp."/>
+        <param type="int" variable="$hp"/>
+        <return type="object">
+          <type full="void" namespace="" name="void"/>
+        </return>
+      </docblock>
+      <return type="void" nullable="false"/>
+      <parameter name="hp" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="getId" start="237" end="240" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Gets the character's id."/>
+        <return type="int"/>
+      </docblock>
+      <return type="int" nullable="false"/>
+    </method>
+    <method name="setId" start="247" end="250" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Sets the character's id."/>
+        <param type="int" variable="$id"/>
+        <return type="object">
+          <type full="void" namespace="" name="void"/>
+        </return>
+      </docblock>
+      <return type="void" nullable="false"/>
+      <parameter name="id" byreference="false" type="{unknown}"/>
+    </method>
+  </parent>
+  <interface full="ICharacter" namespace="" name="ICharacter">
+    <method name="getStats" start="15" end="15" abstract="false" final="false" static="false" visibility="public">
+      <return type="array" nullable="false"/>
+    </method>
+    <method name="setStats" start="17" end="17" abstract="false" final="false" static="false" visibility="public">
+      <return type="void" nullable="false"/>
+      <parameter name="stats" byreference="false" type="array"/>
+    </method>
+    <method name="getStat" start="19" end="19" abstract="false" final="false" static="false" visibility="public">
+      <return type="float" nullable="false"/>
+      <parameter name="statName" byreference="false" type="string"/>
+    </method>
+    <method name="setStat" start="21" end="21" abstract="false" final="false" static="false" visibility="public">
+      <return type="void" nullable="false"/>
+      <parameter name="statName" byreference="false" type="string"/>
+      <parameter name="value" byreference="false" type="float"/>
+    </method>
+    <method name="attack" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+      <return type="array" nullable="false"/>
+      <parameter name="target" byreference="false" type="object">
+        <type full="ICharacter" namespace="" name="ICharacter"/>
+      </parameter>
+    </method>
+    <method name="getDamage" start="25" end="25" abstract="false" final="false" static="false" visibility="public">
+      <return type="array" nullable="false"/>
+      <parameter name="value" byreference="false" type="float"/>
+      <parameter name="isMagical" byreference="false" type="bool"/>
+    </method>
+    <method name="resetStats" start="27" end="27" abstract="false" final="false" static="false" visibility="public">
+      <return type="void" nullable="false"/>
+    </method>
+    <method name="iDie" start="29" end="29" abstract="false" final="false" static="false" visibility="public">
+      <return type="void" nullable="false"/>
+    </method>
+  </interface>
+</class>

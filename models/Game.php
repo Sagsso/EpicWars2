@@ -1,23 +1,27 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Description of Character
- *
- * @author pabhoz
- */
-
 require_once BUSINESS.'characters_bl.php';
 
+/**
+ * Description of Game.
+ * 
+ * It's the class in charge of managing the logic of the game.
+ */
 class Game implements IGame{
 
+    /**
+     * @var ICharacter $character1 The first character, who challenges.
+     */
     private $character1;
+
+    /**
+     * @var ICharacter $character2 The second character, who is challenged.
+     */
     private $character2;
+
+    /**
+     * @var IHistory $history The history of the challenge.
+     */
     private $history;
 
     function __construct(ICharacter $character1, ICharacter $character2) {
@@ -28,6 +32,18 @@ class Game implements IGame{
         $this->history->setDuelo($this->character1->getName()." vs ".$this->character2->getName());
     }
     
+    /**
+     * Manages the fights between characters.
+     * 
+     * Artificial intelligence that manages the turns of the characters as well 
+     * as the attacks and defenses. It uses character specific functions for damage 
+     * and life calculation, updating each character's stats in every iteration. 
+     * It is a recursive function.
+     * 
+     * @param ICharacter $character1 (optional) The character he's going to attack.
+     * @param ICharacter $character2 (optional) The character who gets attacked.
+     * @return void
+     */
     public function fight(ICharacter $character1 = null, ICharacter $character2 = null) :void{
 
         if ($character1 == null || $character2 == null) {
@@ -70,30 +86,67 @@ class Game implements IGame{
         }
     }
 
+    /**
+     * Determines the character that won.
+     * 
+     * This function determines if the player who challenges is 
+     * the one who wins the fight. From there you can determine 
+     * the status (Victory or Defeat).
+     * 
+     * @param ICharacter $character The character to be compared.
+     * @return int Returns 0 if the challenging player is the one who enters as $character.
+     */
     function won(ICharacter $character) {
         return ($character == $this->getCharacter1()) ? 1 : 0;
     }
 
+    /**
+     * Gets the character1.
+     * @return ICharacter
+     */
     function getCharacter1() {
         return $this->character1;
     }
 
+    /**
+     * Sets the character1.
+     * @param ICharacter $character
+     * @return void
+     */
     function setCharacter1(ICharacter $character): void {
         $this->character1 = $character;
     }
 
+    /**
+     * Gets the character2.
+     * @return ICharacter
+     */
     function getCharacter2() {
         return $this->character2;
     }
 
+    /**
+     * Sets the character2.
+     * @param ICharacter $character
+     * @return void
+     */
     function setCharacter2(ICharacter $character): void {
         $this->character2 = $character;
     }
 
+    /**
+     * Gets the history.
+     * @return IHistory
+     */
     function getHistory() {
         return $this->history;
     }
 
+    /**
+     * Sets the history.
+     * @param IHistory $history
+     * @return void
+     */
     function setHistory(IHistory $history): void {
         $this->history = $history;
     }

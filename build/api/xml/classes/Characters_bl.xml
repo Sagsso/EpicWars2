@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Characters_bl" namespace="" name="Characters_bl" abstract="false" final="false" start="12" end="209">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/businessLogic" file="characters_bl.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/businessLogic/characters_bl.php" size="8193" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="1f4c0fff8fab8c594a8c1e24dd6816ced144f6a2" relative="businessLogic/characters_bl.php"/>
+  <docblock>
+    <description compact="Description of Characters_bl.">It is in charge of creating, bringing, updating, or deleting
+specific data, according to the function,
+from the table character in the database.</description>
+  </docblock>
+  <method name="getClass" start="24" end="29" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Get the class of a character.">Its function is to search the database for the class that corresponds
+to the character with a specific ID.</description>
+      <param description="It receives a number that represents a specific character" type="int" variable="$id">on the character table.</param>
+      <return description="The character's class." type="string"/>
+    </docblock>
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getIdCharacter" start="40" end="44" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Get the ID of a character.">Its function is to search the database for the ID number that corresponds
+to the name of the character.</description>
+      <param description="It receives the character's name." type="string" variable="$name"/>
+      <return description="The character's ID." type="int"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getLevel" start="56" end="59" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Get the level of a character.">Its function is to search the database for the level that corresponds
+to the character with a specific ID.</description>
+      <param description="It receives a number that represents a specific character" type="int" variable="$id">on the character table.</param>
+      <return description="The character's level." type="int"/>
+    </docblock>
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getCharacterName" start="71" end="78" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Get the name of a character.">Its function is to search the database for the name that corresponds
+to the character with a specific ID.</description>
+      <param description="It receives a number that represents a specific character" type="int" variable="$id">on the character table.</param>
+      <return description="The character name." type="string"/>
+    </docblock>
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getAll" start="90" end="106" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Get all the characters of a user.">Its function is to search for all the information corresponding to the
+current user's characters. It also determines the *character_selected
+and *id_character_selected* depending on the first character the current
+user has registered in the character table.</description>
+      <return description="Of characters." type="array"/>
+    </docblock>
+  </method>
+  <method name="getRivals" start="119" end="134" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Get the rivals depending the character selected.">Depending on the *id_character_selected* in the current user session, the
+function will be searched for the characters of other players with the same
+level or within a range of 2 levels higher and lower.</description>
+      <param description="It receives a number that represents a specific" type="int" variable="$idCharacter">character on the character table.</param>
+      <return description="Of characters." type="array"/>
+    </docblock>
+    <parameter name="idCharacter" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="delete" start="146" end="151" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Delete a character.">This function takes care of removing a row from the character table,
+depending on the specific character ID delivered.</description>
+      <param description="It receives a number that represents a specific" type="int" variable="$id">character on the character table.</param>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="update" start="162" end="165" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Update the level of a character.">This function updates the level in the database depending on the
+specific character ID.</description>
+      <param description="Receives a character-type object." type="object" variable="$character">
+        <type full="ICharacter" namespace="" name="ICharacter"/>
+      </param>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="character" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="create" start="177" end="207" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Create a character.">This function is in charge of creating the character depending on
+the data obtained by POST method. It calls the character factory to
+create an instance of the new character as well as create a new
+character in the database.</description>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+  </method>
+</class>

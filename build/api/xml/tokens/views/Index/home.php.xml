@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/views/Index" file="home.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/views/Index/home.php" size="515" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="655881be0f6828b3ae3114fcf72414b7bc51639d" relative="views/Index/home.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">loadFragment</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"head"</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="2">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;body&gt;</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;div class="container2"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">        &lt;div class="area-header"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">            </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">loadFragment</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"header"</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">        &lt;div class="area-content"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">            &lt;div class="container3 visual"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">                &lt;div class="area-btn center-start"&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">                    &lt;a href="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_PRINT">print</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">URL</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">arena" class="big-btn btn btn-primary js-scroll-trigger"&gt;Let's play!&lt;/a&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="17"/>
+  <line no="18">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+  <line no="20"/>
+  <line no="21"/>
+</source>

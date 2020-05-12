@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/opt/lampp/htdocs/backendProjects/Parcial2">
+  <namespace name="">
+    <interface name="ICharacter" src="interfaces/ICharacter.php" xml="interfaces/ICharacter.xml"/>
+    <interface name="IView" src="interfaces/IView.php" xml="interfaces/IView.xml"/>
+    <interface name="IController" src="interfaces/IController.php" xml="interfaces/IController.xml"/>
+    <interface name="IHistory" src="interfaces/IHistory.php" xml="interfaces/IHistory.xml"/>
+    <interface name="IDBAdapter" src="interfaces/IDBAdapter.php" xml="interfaces/IDBAdapter.xml"/>
+    <interface name="IGame" src="interfaces/IGame.php" xml="interfaces/IGame.xml"/>
+    <interface name="ICharacterFactory" src="interfaces/ICharacterFactory.php" xml="interfaces/ICharacterFactory.xml"/>
+    <class name="Connection" src="database/connection.php" description="Description of Connection." xml="classes/Connection.xml"/>
+    <class name="MySQLiMAdapter" src="database/MySQLiMAdapter.php" description="Description of MySQLiMAdapter" xml="classes/MySQLiMAdapter.xml"/>
+    <class name="MySQLiManager" src="database/MySQLiManager.php" xml="classes/MySQLiManager.xml"/>
+    <class name="CharacterFactory" src="factories/CharacterFactory.php" description="Description of CharacterFactory" xml="classes/CharacterFactory.xml"/>
+    <class name="Rogue" src="models/Rogue.php" description="Description of Rogue" xml="classes/Rogue.xml"/>
+    <class name="Character" src="models/Character.php" description="Description of Character" xml="classes/Character.xml"/>
+    <class name="View" src="models/View.php" description="Description of View" xml="classes/View.xml"/>
+    <class name="History" src="models/History.php" description="Description of History" xml="classes/History.xml"/>
+    <class name="Mage" src="models/Mage.php" description="Description of Mage" xml="classes/Mage.xml"/>
+    <class name="Game" src="models/Game.php" description="Description of Game." xml="classes/Game.xml"/>
+    <class name="Controller" src="models/Controller.php" description="Description of Controller" xml="classes/Controller.xml"/>
+    <class name="Warrior" src="models/Warrior.php" description="Description of Warrior" xml="classes/Warrior.xml"/>
+    <class name="Index_controller" src="controllers/Index_controller.php" description="Description of Index_controller." xml="classes/Index_controller.xml"/>
+    <class name="Characters_bl" src="businessLogic/characters_bl.php" description="Description of Characters_bl." xml="classes/Characters_bl.xml"/>
+    <class name="History_bl" src="businessLogic/history_bl.php" description="Description of History_bl." xml="classes/History_bl.xml"/>
+    <class name="Users_bl" src="businessLogic/users_bl.php" description="Description of Users_bl." xml="classes/Users_bl.xml"/>
+  </namespace>
+</index>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - History</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">History</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/models/History.php.xhtml#line10">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>History</h1>
+        <h4>Description of History</h4>
+        <p>The history class is in charge of creating an object of the history<br/>entity with all its respective attributes, and its main objective<br/>is to keep the history of the fights between characters.</p>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class History
+                implements
+                <a title="IHistory" href="../interfaces/IHistory.xhtml">IHistory</a>
+            {<br/><ul class="none"><li>// members</li><li>private  <a href="#members">$detail</a>;
+                    </li><li>private  <a href="#members">$challengerId</a>;
+                    </li><li>private  <a href="#members">$duelo</a>;
+                    </li><li>private  <a href="#members">$result</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="History" href="../classes/History/__construct.xhtml">__construct</a>()
+                    </li><li>public string <a title="History" href="../classes/History/locutor.xhtml">locutor</a>()
+                    </li><li>public string <a title="History" href="../classes/History/death.xhtml">death</a>()
+                    </li><li>public int <a title="History" href="../classes/History/getChallengerId.xhtml">getChallengerId</a>()
+                    </li><li>public void <a title="History" href="../classes/History/setChallengerId.xhtml">setChallengerId</a>()
+                    </li><li>public string <a title="History" href="../classes/History/getDuelo.xhtml">getDuelo</a>()
+                    </li><li>public void <a title="History" href="../classes/History/setDuelo.xhtml">setDuelo</a>()
+                    </li><li>public string <a title="History" href="../classes/History/getDetail.xhtml">getDetail</a>()
+                    </li><li>public void <a title="History" href="../classes/History/setDetail.xhtml">setDetail</a>()
+                    </li><li>public int <a title="History" href="../classes/History/getResult.xhtml">getResult</a>()
+                    </li><li>public void <a title="History" href="../classes/History/setResult.xhtml">setResult</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Implements</h4>
+          <ul>
+            <li>
+              <a title="IHistory" href="../interfaces/IHistory.xhtml">IHistory</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="challengerId">
+              <strong>$challengerId</strong>
+            </li>
+            <li id="detail"><strong>$detail</strong>
+                —
+                string</li>
+            <li id="duelo">
+              <strong>$duelo</strong>
+            </li>
+            <li id="result">
+              <strong>$result</strong>
+            </li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="__construct">
+              <a title="History" href="../classes/History/__construct.xhtml">__construct()</a>
+            </li>
+            <li id="death"><a title="History" href="../classes/History/death.xhtml">death()</a>
+                — The function that announces the death of a player.</li>
+            <li id="getChallengerId"><a title="History" href="../classes/History/getChallengerId.xhtml">getChallengerId()</a>
+                — Gets the challenger's ID.</li>
+            <li id="getDetail"><a title="History" href="../classes/History/getDetail.xhtml">getDetail()</a>
+                — Gets the details (final message).</li>
+            <li id="getDuelo"><a title="History" href="../classes/History/getDuelo.xhtml">getDuelo()</a>
+                — Gets the Duelo.</li>
+            <li id="getResult"><a title="History" href="../classes/History/getResult.xhtml">getResult()</a>
+                — Gets the result.</li>
+            <li id="locutor"><a title="History" href="../classes/History/locutor.xhtml">locutor()</a>
+                — He's in charge of reporting all the events that happen in the fight.</li>
+            <li id="setChallengerId"><a title="History" href="../classes/History/setChallengerId.xhtml">setChallengerId()</a>
+                — Sets the challenger's ID.</li>
+            <li id="setDetail"><a title="History" href="../classes/History/setDetail.xhtml">setDetail()</a>
+                — Concatenate a new message to the final history details.</li>
+            <li id="setDuelo"><a title="History" href="../classes/History/setDuelo.xhtml">setDuelo()</a>
+                — Sets the Duelo.</li>
+            <li id="setResult"><a title="History" href="../classes/History/setResult.xhtml">setResult()</a>
+                — Sets the result.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2020 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>
