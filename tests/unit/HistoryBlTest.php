@@ -14,11 +14,15 @@ class HistoryBlTest extends \Codeception\Test\Unit
      */
     protected $tester;
     private $userId;
+    private $users_bl;
+    private $history_bl;
     
     protected function _before()
     {
         $_POST['username'] = 'JonAlexander@gmail.com';
         $_POST['password'] = 'snow';
+        $this->users_bl = new Users_bl();
+        $this->history_bl = new History_bl();
 
     }
 
@@ -30,9 +34,8 @@ class HistoryBlTest extends \Codeception\Test\Unit
     public function testCreateHistoryInDB()
     {
 
-
-        Users_bl::create();
-        $this->userId = Users_bl::getIdUser($_POST['username']);
+        $this->users_bl->create();
+        $this->userId = $this->users_bl->getIdUser($_POST['username']);
 
         //Stub for History class
         $history = \Codeception\Stub::make('History', 
@@ -42,17 +45,17 @@ class HistoryBlTest extends \Codeception\Test\Unit
          'getDetail' => 'Here is a super string with the battle.']);
 
         //MySQLiManager returns false if insert query is OK.
-        $this->tester->assertFalse(History_bl::create($history));
+        $this->tester->assertFalse($this->history_bl->create($history));
 
 
     }
 
     public function testShow()
     {
-        $this->userId = Users_bl::getIdUser($_POST['username']);
+        $this->userId = $this->users_bl->getIdUser($_POST['username']);
         $_SESSION["user_id"] = $this->userId;
-        //History_bl::show() retorna arreglo si el usuario tiene historiales de combate.
-        $this->tester->assertIsArray(History_bl::show());
+        //$this->history_bl->show() retorna arreglo si el usuario tiene historiales de combate.
+        $this->tester->assertIsArray($this->history_bl->show());
         Connection::getInstance()->delete('`History`', array("userid" =>  $this->userId));
         Connection::getInstance()->delete('`User`', array("id" =>  $this->userId));
 

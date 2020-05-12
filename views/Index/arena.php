@@ -22,7 +22,8 @@ $this->loadFragment("head");
                     <form action="" method="POST">
                         <select value="<?php echo $_SESSION['id_character_selected'] ?>" onchange="this.form.submit()" name="character_selected" id="" class="form-control">
                             <?php
-                            echo " <option value='" . $_SESSION['id_character_selected'] . "'>" . Characters_bl::getCharacterName($_SESSION['id_character_selected']) . "</option>";
+                            $charactersbl = new Characters_bl();
+                            echo " <option value='" . $_SESSION['id_character_selected'] . "'>" .$charactersbl->getCharacterName($_SESSION['id_character_selected']) . "</option>";
                             foreach ($this->characters as $character) {
                                 if ($character['idCharacter'] != $_SESSION['id_character_selected']) {
                                     echo " <option value='" . $character['idCharacter'] . "'>" . $character['name'] . "</option>";

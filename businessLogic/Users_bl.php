@@ -12,6 +12,11 @@ require_once "./database/connection.php";
  */
 class Users_bl{
 
+    function __construct()
+    {
+        
+    }
+
     /**
      * login method.
      * 
@@ -21,7 +26,7 @@ class Users_bl{
      * 
      * @return void
      */
-    public static function login() {
+    public function login() {
         if (isset($_POST['username']) && isset($_POST['password'])) {
             $username = $_POST['username'];
             $password = $_POST['password'];
@@ -52,7 +57,7 @@ class Users_bl{
      * 
      * @return void
      */
-    public static function create() {
+    public function create() {
         if (isset($_POST['username']) && isset($_POST['password'])) {
             $username = $_POST['username'];
             $password = $_POST['password'];
@@ -65,7 +70,7 @@ class Users_bl{
         return false;
     }
 
-    public static function getIdUser($username)
+    public function getIdUser($username)
     {
         $result = Connection::getInstance()->select('id', '`User`', "username = '" . $username . "'");
         return $result[0]["id"];

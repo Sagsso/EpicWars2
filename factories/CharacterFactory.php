@@ -7,6 +7,12 @@
  */
 class CharacterFactory implements ICharacterFactory{
     
+
+    function __construct()
+    {
+        
+    }
+
     /**
      * Create a mage type character.
      * 
@@ -15,7 +21,7 @@ class CharacterFactory implements ICharacterFactory{
      * @param string $name Name of the character.
      * @return Mage An instance.
      */
-    public static function createMage(string $name): \Mage {
+    public function createMage(string $name): \Mage {
         return new Mage($name);
     }
 
@@ -27,7 +33,7 @@ class CharacterFactory implements ICharacterFactory{
      * @param string $name Name of the character.
      * @return Rogue An instance.
      */
-    public static function createRogue(string $name): \Rogue {
+    public function createRogue(string $name): \Rogue {
         return new Rogue($name);
     }
 
@@ -39,7 +45,7 @@ class CharacterFactory implements ICharacterFactory{
      * @param string $name Name of the character.
      * @return Warrior An instance.
      */
-    public static function createWarrior(string $name): \Warrior {
+    public function createWarrior(string $name): \Warrior {
         return new Warrior($name);
     }
 
@@ -52,11 +58,12 @@ class CharacterFactory implements ICharacterFactory{
      * on the character table.
      * @return ICharacter An instance of character-type.
      */
-    public static function getCharacter(int $id): \ICharacter {
-        $className = "create".ucfirst(Characters_bl::getClass($id));
-        $character = CharacterFactory::{$className}(Characters_bl::getCharacterName($id));
+    public function getCharacter(int $id): \ICharacter {
+        $chbl = new Characters_bl();
+        $className = "create".ucfirst($chbl->getClass($id));
+        $character = self::{$className}($chbl->getCharacterName($id));
         $character->setId($id);
-        $character->setLevel(Characters_bl::getLevel($id));
+        $character->setLevel($chbl->getLevel($id));
         return $character;
     }
 

@@ -11,6 +11,10 @@ require_once DATABASE."connection.php";
  */
 class Characters_bl
 {
+
+    function __construct() {
+        $this->characterFactory = new CharacterFactory();
+    }
     /**
      * Get the class of a character.
      * 
@@ -21,7 +25,7 @@ class Characters_bl
      * on the character table.
      * @return string The character's class.
      */
-    public static function getClass($id) {
+    public function getClass($id) {
         $result1 = Connection::getInstance()->select('characterClassId', '`Character`', "id = ".$id);
         $idClass = $result1[0]['characterClassId'];
         $result = Connection::getInstance()->select('name', '`CharacterClass`', "id =".$idClass);
@@ -37,7 +41,7 @@ class Characters_bl
      * @param string $name It receives the character's name.
      * @return int The character's ID.
      */
-    public static function getIdCharacter($name)
+    public function getIdCharacter($name)
     {
         $result = Connection::getInstance()->select('id', '`Character`', "name = '" . $name."'");
         return $result[0]["id"];
@@ -53,7 +57,7 @@ class Characters_bl
      * on the character table.
      * @return int The character's level.
      */
-    public static function getLevel($id) {
+    public function getLevel($id) {
         $result = Connection::getInstance()->select('level', '`Character`', "id = ".$id); 
         return $result[0]["level"];
     }
@@ -68,7 +72,7 @@ class Characters_bl
      * on the character table.
      * @return string The character name.
      */
-    public static function getCharacterName($id) {
+    public function getCharacterName($id) {
         if($id != null) {
             $result = Connection::getInstance()->select('name', '`Character`', "id = ".$id); 
             return $result[0]["name"];
@@ -89,7 +93,7 @@ class Characters_bl
      * 
      * @return array Of characters.
      */
-    public static function getAll() {
+    public function getAll() {
         $query = "SELECT `Character`.id as idCharacter,`Character`.name, `Character`.level, `CharacterClass`.`name`as class FROM `User_has_Character` 
         INNER JOIN `Character` ON `User_has_Character`.Characterid = `Character`.id 
         INNER JOIN `CharacterClass` ON `Character`.`characterClassId` = `CharacterClass`.id
@@ -118,7 +122,7 @@ class Characters_bl
      * character on the character table.
      * @return array Of characters.
      */
-    public static function getRivals($idCharacter) {
+    public function getRivals($idCharacter) {
         if(isset($_SESSION['id_character_selected'])){
             $username = $_SESSION['username'];
             $id = $_SESSION['user_id'];
@@ -145,7 +149,7 @@ class Characters_bl
      * character on the character table.
      * @return void
      */
-    public static function delete($id) {
+    public function delete($id) {
         $data = array("Characterid" => $id);
         Connection::getInstance()->delete('User_has_Character', $data);
         $data2 = array("id" => $id);
@@ -161,7 +165,7 @@ class Characters_bl
      * @param ICharacter $character Receives a character-type object.
      * @return void
      */
-    public static function update($character) {
+    public function update($character) {
         $data = array("level" => $character->getLevel());
         Connection::getInstance()->update(`Character`, $data, 'id = '.$character->getId());
     }
@@ -176,7 +180,7 @@ class Characters_bl
      * 
      * @return void
      */
-    public static function create() {
+    public function create() {
         if (isset($_POST['name']) && isset($_POST['class'])) {
             $name = $_POST['name'];
             $class = $_POST['class'];
@@ -184,15 +188,15 @@ class Characters_bl
 
             switch ($class) {
                 case 'Mage':
-                    $newCharacter = CharacterFactory::createMage($name);
+                    $newCharacter = $this->characterFactory->createMage($name);
                     Connection::getInstance()->insert('`Character`', ["name" => $name, "level" => $newCharacter->getLevel(), "characterClassId" => 1]);
                     break;
                 case 'Rogue':
-                    $newCharacter = CharacterFactory::createRogue($name);
+                    $newCharacter = $this->characterFactory->createRogue($name);
                     Connection::getInstance()->insert('`Character`', ["name" => $name, "level" => $newCharacter->getLevel(), "characterClassId" => 2]);
                     break;
                 case 'Warrior':
-                    $newCharacter = CharacterFactory::createWarrior($name);
+                    $newCharacter = $this->characterFactory->createWarrior($name);
                     Connection::getInstance()->insert('`Character`', ["name" => $name, "level" => $newCharacter->getLevel(), "characterClassId" => 3]);
                     break;
                 default:

@@ -19,9 +19,11 @@ class CharacterFactoryTest extends \Codeception\Test\Unit
      * @var \UnitTester
      */
     protected $tester;
+    protected $characterFactory;
     
     protected function _before()
     {
+        $this->characterFactory = new CharacterFactory();
     }
 
     protected function _after()
@@ -31,17 +33,17 @@ class CharacterFactoryTest extends \Codeception\Test\Unit
     // tests
     public function testCreateMage()
     {
-        $mage = CharacterFactory::createMage('Voldi');
+        $mage = $this->characterFactory->createMage('Voldi');
         $this->tester->assertTrue($mage instanceof Mage);
     }
     public function testCreateRogue()
     {
-        $rogue = CharacterFactory::createRogue('Ayoze');
+        $rogue = $this->characterFactory->createRogue('Ayoze');
         $this->tester->assertTrue($rogue instanceof Rogue);
     }
     public function testCreateWarrior()
     {
-        $warrior = CharacterFactory::createWarrior('Spartacus');
+        $warrior = $this->characterFactory->createWarrior('Spartacus');
         $this->tester->assertTrue($warrior instanceof Warrior);
     }
 

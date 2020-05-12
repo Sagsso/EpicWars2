@@ -11,6 +11,11 @@ require_once DATABASE . "connection.php";
  */
 class History_bl{
 
+
+    function __construct()
+    {
+        
+    }
     /**
      * show method.
      * 
@@ -19,7 +24,7 @@ class History_bl{
      * 
      * @return array Of histories.
      */
-    public static function show() {
+    public function show() {
         $result = Connection::getInstance()->select('*', '`History`', "`History`.`userid` = '" . $_SESSION["user_id"] . "'");
         return $result;
     }
@@ -33,7 +38,7 @@ class History_bl{
      * @param IHistory $history Receives a history-type object.
      * @return void
      */
-    public static function create($history) {
+    public function create($history) {
         return Connection::getInstance()->insert('`History`', ["userid" =>$history->getChallengerId(), "duelo" => $history->getDuelo(), "result" => $history->getResult(), "detail" => $history->getDetail()]);
     }
 }

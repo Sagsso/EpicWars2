@@ -51,7 +51,7 @@ class Mage extends Character {
         return $result;
     }
 
-    public function getStat(string $statName): float {
+    public function getStat(string $statName) {
         
     }
 

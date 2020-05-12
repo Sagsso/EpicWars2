@@ -11,7 +11,8 @@
         </div>
         <div class="area-content">
             <div class="text-center grid-center card" style="width: 28%;">
-                <form action="<?php Characters_bl::create()?>" class="form-signin" method="POST">
+                <form action="<?php $charactersbl = new Characters_bl();
+                                $charactersbl->create()?>" class="form-signin" method="POST">
                     <h1 class="h3 mb-3 font-weight-normal">Creating a new character</h1>
                     <label class="sr-only">Name</label>
                     <input class="form-control" placeholder="Character's name" name="name" required autofocus>

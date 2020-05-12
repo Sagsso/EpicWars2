@@ -1,6 +1,6 @@
 <?php
 
-require_once BUSINESS.'characters_bl.php';
+require_once BUSINESS.'Characters_bl.php';
 
 /**
  * Description of Game.
@@ -30,6 +30,7 @@ class Game implements IGame{
         $this->history = new History();
         $this->history->setChallengerId($_SESSION['user_id']);
         $this->history->setDuelo($this->character1->getName()." vs ".$this->character2->getName());
+        $this->charactersbl = new Characters_bl();
     }
     
     /**
@@ -66,7 +67,7 @@ class Game implements IGame{
             echo $this->history->death($character1);
             //Se determina si el que inicio el desafio gano
             $this->history->setResult($this->won($character1->getId()));
-            Characters_bl::delete($character1->getId());
+            $this->charactersbl->delete($character1->getId());
             //Acá se sube de nivel el jugador que ganó
             $character2->resetStats();
             $character2->setLevel(($character2->getLevel())+1);
@@ -77,7 +78,7 @@ class Game implements IGame{
             echo $this->history->death($character2);
             //Se determina si el que inicio el desafio gano
             $this->history->setResult($this->won($character1));
-            Characters_bl::delete($character2->getId());
+            $this->charactersbl->delete($character2->getId());
             // Acá se sube de nivel el jugador que ganó
             $character1->resetStats();
             $character1->setLevel(($character1->getLevel())+1);

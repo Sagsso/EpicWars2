@@ -27,6 +27,8 @@ class Index_controller extends Controller{
     
     function __construct() {
         parent::__construct();
+        $this->characters_bl = new Characters_bl();
+        $this->history_bl = new History_bl();
     }
 
     /**
@@ -79,7 +81,7 @@ class Index_controller extends Controller{
      * @return void
      */
     public function characters(): void {
-        $this->view->characters = Characters_bl::getAll();
+        $this->view->characters = $this->characters_bl->getAll();
         $this->view->render($this,"characters","Characters");
     }
 
@@ -92,7 +94,7 @@ class Index_controller extends Controller{
      * @return void
      */
     public function history(): void {
-        $this->view->history = History_bl::show();
+        $this->view->history = $this->history_bl->show();
         $this->view->render($this,"history","History");
     }
 
@@ -133,11 +135,11 @@ class Index_controller extends Controller{
      */
     public function arena(): void{
         if(isset($_SESSION['id_character_selected'])){
-            $this->view->rivals = Characters_bl::getRivals($_SESSION['id_character_selected']);
+            $this->view->rivals = $this->characters_bl->getRivals($_SESSION['id_character_selected']);
         } else {
             $this->view->rivals = [];
         }
-        $this->view->characters = Characters_bl::getAll();
+        $this->view->characters = $this->characters_bl->getAll();
         $this->view->render($this,"arena","Arena");
     }
 

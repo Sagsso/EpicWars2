@@ -12,11 +12,13 @@ class UsersBlTest extends \Codeception\Test\Unit
      */
     protected $tester;
     private $username;
-    
+    private $users_bl;
+
     protected function _before()
     {
         $_POST['username'] = 'JonAlexander@gmail.com';
         $_POST['password'] = 'snow';
+        $this->users_bl = new Users_bl();
 
         $this->username =  $_POST['username'];
     }
@@ -29,14 +31,14 @@ class UsersBlTest extends \Codeception\Test\Unit
     // tests
     public function testUserCreation()
     {
-        $isCreated = Users_bl::create();
+        $isCreated = $this->users_bl->create();
         $this->tester->assertTrue($isCreated);
     }
     public function testUserAuthentication()
     {
         $_POST['username'] = 'juan@gmail.com';
         $_POST['password'] = 'juan';
-        $isLogged = Users_bl::login();
+        $isLogged = $this->users_bl->login();
         $this->tester->assertTrue($isLogged);
     }
 }
