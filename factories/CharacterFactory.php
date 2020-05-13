@@ -10,7 +10,6 @@ class CharacterFactory implements ICharacterFactory{
 
     function __construct()
     {
-        
     }
 
     /**
@@ -58,12 +57,11 @@ class CharacterFactory implements ICharacterFactory{
      * on the character table.
      * @return ICharacter An instance of character-type.
      */
-    public function getCharacter(int $id): \ICharacter {
-        $chbl = new Characters_bl();
-        $className = "create".ucfirst($chbl->getClass($id));
-        $character = self::{$className}($chbl->getCharacterName($id));
+    public function getCharacter(int $id, Characters_bl $charactersbl): \ICharacter {
+        $className = "create".ucfirst($charactersbl->getClass($id));
+        $character = self::{$className}($charactersbl->getCharacterName($id));
         $character->setId($id);
-        $character->setLevel($chbl->getLevel($id));
+        $character->setLevel($charactersbl->getLevel($id));
         return $character;
     }
 

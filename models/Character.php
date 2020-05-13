@@ -1,8 +1,6 @@
 <?php
 
 /**
- * Description of Character
- *
  * The character class is in charge of defining all 
  * the attributes that belong to all the characters in general.
  */
@@ -44,8 +42,6 @@ abstract class Character implements ICharacter{
 
     abstract public function getDamage(float $value, bool $isMagical): array;
 
-    abstract public function getStat(string $statName): float;
-
     /**
      * Manages the character's stats.
      * 
@@ -57,12 +53,6 @@ abstract class Character implements ICharacter{
         return ["level" => $this->getLevel(),"str" => $this->getStr(),"intl" => $this->getIntl(),"agi" => $this->getAgi()
                 ,"mdef" => $this->getMDef(),"fdef" => $this->getFDef(),"hp" => $this->getHp()];
     }
-
-    abstract public function iDie(): void;
-
-    abstract public function setStat(string $statName, float $value): void;
-
-    abstract public function setStats(array $stats): void;
 
     abstract public function resetStats(): void;
     

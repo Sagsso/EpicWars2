@@ -2,11 +2,12 @@
     require_once MODELS."Game.php";
     require_once FACTORIES."CharacterFactory.php";
     require_once BUSINESS."History_bl.php";
+    require_once BUSINESS."Characters_bl.php";
     $this->loadFragment("head");
     $characterFactory = new CharacterFactory();
-
-    $character1 = $characterFactory->getCharacter($_SESSION['id_character_selected']);
-    $character2 = $characterFactory->getCharacter($_SESSION['id_rival_selected']);
+    $charactersbl =  new Characters_bl();
+    $character1 = $characterFactory->getCharacter($_SESSION['id_character_selected'], $charactersbl);
+    $character2 = $characterFactory->getCharacter($_SESSION['id_rival_selected'], $charactersbl);
     $game = new Game($character1,$character2);
 ?>
 <body>

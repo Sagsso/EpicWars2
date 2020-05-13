@@ -1,8 +1,6 @@
 <?php
 
 /**
- * Description of Controller
- *
  * The controller class defines the constructor and the 
  * general minimum methods that every controller should have.
  */

@@ -1,8 +1,6 @@
 <?php
 
 /**
- * Description of History
- *
  * The history class is in charge of creating an object of the history 
  * entity with all its respective attributes, and its main objective 
  * is to keep the history of the fights between characters.
@@ -25,7 +23,7 @@ class History implements IHistory{
     }
 
     /**
-     * He's in charge of reporting all the events that happen in the fight.
+     * It's in charge of reporting all the events that happen in the fight.
      * 
      * It generates chains of strings with information about the fight and 
      * accumulates them in an array to generate a final message. It is also 

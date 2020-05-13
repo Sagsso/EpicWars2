@@ -1,8 +1,6 @@
 <?php
 
 /**
- * Description of Warrior
- *
  * The warrior class is in charge of creating an object with all 
  * the information referring to the warrior entity as well as 
  * defining attributes, calculations, and statistics specific 
@@ -49,18 +47,6 @@ class Warrior extends Character{
         $this->setHp($this->getHp() - $takenDamage);
         $result = array('magical' => $isMagical, 'takenDamage' => $takenDamage);
         return $result;
-    }
-
-    public function getStat(string $statName): float {
-        
-    }
-
-    public function iDie(): void {
-        
-    }
-
-    public function setStat(string $statName, float $value): void {
-        
     }
 
     /**

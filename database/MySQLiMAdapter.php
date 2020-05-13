@@ -2,8 +2,6 @@
 require_once 'MySQLiManager.php';
 
 /**
- * Description of MySQLiMAdapter
- *
  * The MySQLiMAdapter class is based on the design pattern 
  * called adapter. Which consists in generating an intermediary 
  * that facilitates the processes with the current application 

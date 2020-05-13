@@ -1,23 +1,9 @@
 <?php
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Description of Index_controller
- *
- * @author pabhoz
- */
 require_once BUSINESS."Characters_bl.php";
 require_once BUSINESS."Users_bl.php";
 require_once BUSINESS."History_bl.php";
 
 /**
- * Description of Index_controller.
- * 
  * The index_controller is in charge of handling views in the interface by using 
  * the rendering of the View class. It is also in charge of creating the 
  * variables to display the necessary information within the views, usually using 

@@ -1,17 +1,18 @@
 <?php
-// require_once './database/connection.php';
-// require_once './loader.php';
-// require_once './config.php';
-require_once './interfaces/ICharacterFactory.php';
-require_once './interfaces/ICharacter.php';
+require_once './loader.php';
+require_once './config.php';
+require_once './interfaces/IDBAdapter.php';
+require_once './database/connection.php';
+// require_once './interfaces/ICharacterFactory.php';
+// require_once './interfaces/ICharacter.php';
 // require_once './interfaces/ICharacterBl.php';
 
-require_once './factories/CharacterFactory.php';
-require_once './businessLogic/Characters_bl.php';
-require_once './models/Character.php';
-require_once './models/Mage.php';
-require_once './models/Warrior.php';
-require_once './models/Rogue.php';
+// require_once './factories/CharacterFactory.php';
+// require_once './businessLogic/Characters_bl.php';
+// require_once './models/Character.php';
+// require_once './models/Mage.php';
+// require_once './models/Warrior.php';
+// require_once './models/Rogue.php';
 
 class CharacterFactoryTest extends \Codeception\Test\Unit
 {
@@ -47,12 +48,16 @@ class CharacterFactoryTest extends \Codeception\Test\Unit
         $this->tester->assertTrue($warrior instanceof Warrior);
     }
 
-    // public function testGetCharacter() {
+    public function testGetCharacter() {
 
-    //     $cb = \Codeception\Stub::make('Characters_bl', 
-    //         ['getCharacterName' => function ($id) {return 'Lucius Malfoy';}]);
-    //     $name = $cb->getCharacterName(1);
-    
-    // }
+        $cb = \Codeception\Stub::make('Characters_bl', 
+            ['getCharacterName' => function ($id) {return 'Lucius Malfoy';}, 
+            'getClass' => function ($id) {return 'Mage';},
+            'getLevel' => function ($id) {return 3;}]);
+        $mage = $this->characterFactory->getCharacter(1, $cb);
+        $this->tester->assertTrue($mage instanceof Mage);
+        $this->tester->assertEquals($mage->getName(),'Lucius Malfoy');
+        $this->tester->assertEquals($mage->getLevel(),3);
+    }
 
 }

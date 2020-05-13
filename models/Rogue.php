@@ -1,8 +1,6 @@
 <?php
 
 /**
- * Description of Rogue
- *
  * The rogue class is in charge of creating an object with all 
  * the information referring to the rogue entity as well as 
  * defining attributes, calculations, and statistics specific 
@@ -53,19 +51,6 @@ class Rogue extends Character{
         $result = array('magical' => $isMagical, 'takenDamage' => $takenDamage);
         return $result;
     }
-
-    public function getStat(string $statName): float
-    {
-    }
-
-    public function iDie(): void
-    {
-    }
-
-    public function setStat(string $statName, float $value): void
-    {
-    }
-
 
     /**
      * Sets the rogue's stats.

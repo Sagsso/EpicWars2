@@ -1,8 +1,6 @@
 <?php
 
 /**
- * Description of View
- *
  * The view class is in charge of defining the minimum methods 
  * that every view must have in order to be shown properly in 
  * the interface.

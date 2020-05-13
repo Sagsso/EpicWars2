@@ -3,8 +3,6 @@
 require_once BUSINESS.'Characters_bl.php';
 
 /**
- * Description of Game.
- * 
  * It's the class in charge of managing the logic of the game.
  */
 class Game implements IGame{

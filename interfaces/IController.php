@@ -1,15 +1,17 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
- * @author pabhoz
+ * This interface is in charge of naming the 
+ * functions that are specific to the controllers.
  */
 interface IController {
+
+    /**
+     * Default function.
+     * 
+     * It is in charge of rendering the principal view.
+     * 
+     * @return void
+     */
     function index(): void;
 }

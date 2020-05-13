@@ -13,8 +13,8 @@ class Characters_bl
 {
 
     function __construct() {
-        $this->characterFactory = new CharacterFactory();
     }
+    
     /**
      * Get the class of a character.
      * 
@@ -188,16 +188,13 @@ class Characters_bl
 
             switch ($class) {
                 case 'Mage':
-                    $newCharacter = $this->characterFactory->createMage($name);
-                    Connection::getInstance()->insert('`Character`', ["name" => $name, "level" => $newCharacter->getLevel(), "characterClassId" => 1]);
+                    Connection::getInstance()->insert('`Character`', ["name" => $name, "level" => 1, "characterClassId" => 1]);
                     break;
                 case 'Rogue':
-                    $newCharacter = $this->characterFactory->createRogue($name);
-                    Connection::getInstance()->insert('`Character`', ["name" => $name, "level" => $newCharacter->getLevel(), "characterClassId" => 2]);
+                    Connection::getInstance()->insert('`Character`', ["name" => $name, "level" => 1, "characterClassId" => 2]);
                     break;
                 case 'Warrior':
-                    $newCharacter = $this->characterFactory->createWarrior($name);
-                    Connection::getInstance()->insert('`Character`', ["name" => $name, "level" => $newCharacter->getLevel(), "characterClassId" => 3]);
+                    Connection::getInstance()->insert('`Character`', ["name" => $name, "level" => 1, "characterClassId" => 3]);
                     break;
                 default:
                     # code...
