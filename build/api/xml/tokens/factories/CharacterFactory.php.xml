@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/factories" file="CharacterFactory.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/factories/CharacterFactory.php" size="1851" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="a4ba10718835f74ef88b14ff627f7c5e53698f99" relative="factories/CharacterFactory.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/factories" file="CharacterFactory.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/factories/CharacterFactory.php" size="1880" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="a5fd24dc5101b001345212c157d5f103f8101579" relative="factories/CharacterFactory.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -33,36 +33,52 @@
   <line no="9">
     <token name="T_WHITESPACE">    </token>
   </line>
-  <line no="10">
+  <line no="10"/>
+  <line no="11">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">__construct</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="12">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="13">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="11">
+  <line no="16">
     <token name="T_DOC_COMMENT">     * Create a mage type character.</token>
   </line>
-  <line no="12">
-    <token name="T_DOC_COMMENT">     * </token>
-  </line>
-  <line no="13">
-    <token name="T_DOC_COMMENT">     * Creates the instance of a new mage, with a predefined level of 1.</token>
-  </line>
-  <line no="14">
-    <token name="T_DOC_COMMENT">     * </token>
-  </line>
-  <line no="15">
-    <token name="T_DOC_COMMENT">     * @param string $name Name of the character.</token>
-  </line>
-  <line no="16">
-    <token name="T_DOC_COMMENT">     * @return Mage An instance.</token>
-  </line>
   <line no="17">
-    <token name="T_DOC_COMMENT">     */</token>
+    <token name="T_DOC_COMMENT">     * </token>
   </line>
   <line no="18">
+    <token name="T_DOC_COMMENT">     * Creates the instance of a new mage, with a predefined level of 1.</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT">     * @param string $name Name of the character.</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT">     * @return Mage An instance.</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="23">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_STATIC">static</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -79,7 +95,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="19">
+  <line no="24">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -91,41 +107,39 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="20">
+  <line no="25">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="21"/>
-  <line no="22">
+  <line no="26"/>
+  <line no="27">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="23">
+  <line no="28">
     <token name="T_DOC_COMMENT">     * Create a rogue type character.</token>
   </line>
-  <line no="24">
-    <token name="T_DOC_COMMENT">     * </token>
-  </line>
-  <line no="25">
-    <token name="T_DOC_COMMENT">     * Creates the instance of a new rogue, with a predefined level of 1.</token>
-  </line>
-  <line no="26">
-    <token name="T_DOC_COMMENT">     * </token>
-  </line>
-  <line no="27">
-    <token name="T_DOC_COMMENT">     * @param string $name Name of the character.</token>
-  </line>
-  <line no="28">
-    <token name="T_DOC_COMMENT">     * @return Rogue An instance.</token>
-  </line>
   <line no="29">
-    <token name="T_DOC_COMMENT">     */</token>
+    <token name="T_DOC_COMMENT">     * </token>
   </line>
   <line no="30">
+    <token name="T_DOC_COMMENT">     * Creates the instance of a new rogue, with a predefined level of 1.</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT">     * @param string $name Name of the character.</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT">     * @return Rogue An instance.</token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="35">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_STATIC">static</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -142,7 +156,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="31">
+  <line no="36">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -154,41 +168,39 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="32">
+  <line no="37">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="33"/>
-  <line no="34">
+  <line no="38"/>
+  <line no="39">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="35">
+  <line no="40">
     <token name="T_DOC_COMMENT">     * Create a warrior type character.</token>
   </line>
-  <line no="36">
-    <token name="T_DOC_COMMENT">     * </token>
-  </line>
-  <line no="37">
-    <token name="T_DOC_COMMENT">     * Creates the instance of a new warrior, with a predefined level of 1.</token>
-  </line>
-  <line no="38">
-    <token name="T_DOC_COMMENT">     * </token>
-  </line>
-  <line no="39">
-    <token name="T_DOC_COMMENT">     * @param string $name Name of the character.</token>
-  </line>
-  <line no="40">
-    <token name="T_DOC_COMMENT">     * @return Warrior An instance.</token>
-  </line>
   <line no="41">
-    <token name="T_DOC_COMMENT">     */</token>
+    <token name="T_DOC_COMMENT">     * </token>
   </line>
   <line no="42">
+    <token name="T_DOC_COMMENT">     * Creates the instance of a new warrior, with a predefined level of 1.</token>
+  </line>
+  <line no="43">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="44">
+    <token name="T_DOC_COMMENT">     * @param string $name Name of the character.</token>
+  </line>
+  <line no="45">
+    <token name="T_DOC_COMMENT">     * @return Warrior An instance.</token>
+  </line>
+  <line no="46">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="47">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_STATIC">static</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -205,7 +217,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="43">
+  <line no="48">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -217,44 +229,42 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="44">
+  <line no="49">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="45"/>
-  <line no="46">
+  <line no="50"/>
+  <line no="51">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="47">
+  <line no="52">
     <token name="T_DOC_COMMENT">     * Create an existing character.</token>
   </line>
-  <line no="48">
-    <token name="T_DOC_COMMENT">     * </token>
-  </line>
-  <line no="49">
-    <token name="T_DOC_COMMENT">     * Creates an instance for a character that is brought from the database.</token>
-  </line>
-  <line no="50">
-    <token name="T_DOC_COMMENT">     * </token>
-  </line>
-  <line no="51">
-    <token name="T_DOC_COMMENT">     * @param int $id It receives a number that represents a specific character </token>
-  </line>
-  <line no="52">
-    <token name="T_DOC_COMMENT">     * on the character table.</token>
-  </line>
   <line no="53">
-    <token name="T_DOC_COMMENT">     * @return ICharacter An instance of character-type.</token>
+    <token name="T_DOC_COMMENT">     * </token>
   </line>
   <line no="54">
-    <token name="T_DOC_COMMENT">     */</token>
+    <token name="T_DOC_COMMENT">     * Creates an instance for a character that is brought from the database.</token>
   </line>
   <line no="55">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="56">
+    <token name="T_DOC_COMMENT">     * @param int $id It receives a number that represents a specific character </token>
+  </line>
+  <line no="57">
+    <token name="T_DOC_COMMENT">     * on the character table.</token>
+  </line>
+  <line no="58">
+    <token name="T_DOC_COMMENT">     * @return ICharacter An instance of character-type.</token>
+  </line>
+  <line no="59">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="60">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_STATIC">static</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -263,6 +273,11 @@
     <token name="T_STRING">int</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$id</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Characters_bl</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$charactersbl</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_COLON">:</token>
     <token name="T_WHITESPACE"> </token>
@@ -271,7 +286,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="56">
+  <line no="61">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$className</token>
     <token name="T_WHITESPACE"> </token>
@@ -281,8 +296,8 @@
     <token name="T_PHPDOX_DOT">.</token>
     <token name="T_STRING">ucfirst</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_STRING">Characters_bl</token>
-    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_VARIABLE">$charactersbl</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">getClass</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$id</token>
@@ -290,20 +305,20 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="57">
+  <line no="62">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$character</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">CharacterFactory</token>
+    <token name="T_STRING">self</token>
     <token name="T_DOUBLE_COLON">::</token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
     <token name="T_VARIABLE">$className</token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_STRING">Characters_bl</token>
-    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_VARIABLE">$charactersbl</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">getCharacterName</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$id</token>
@@ -311,7 +326,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="58">
+  <line no="63">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$character</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -321,14 +336,14 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="59">
+  <line no="64">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$character</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">setLevel</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_STRING">Characters_bl</token>
-    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_VARIABLE">$charactersbl</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">getLevel</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$id</token>
@@ -336,20 +351,19 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="60">
+  <line no="65">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$character</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="61">
+  <line no="66">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="62"/>
-  <line no="63">
+  <line no="67"/>
+  <line no="68">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="64"/>
 </source>

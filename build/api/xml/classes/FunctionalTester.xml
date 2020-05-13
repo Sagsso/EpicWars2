@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="FunctionalTester" namespace="" name="FunctionalTester" abstract="false" final="false" start="19" end="26">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/tests/_support" file="FunctionalTester.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/tests/_support/FunctionalTester.php" size="561" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="82504ed90bc6f75377bcefa567e5d96c06280d19" relative="tests/_support/FunctionalTester.php"/>
+  <docblock>
+    <description compact="Inherited Methods"/>
+    <method value="void wantToTest($text)"/>
+    <method value="void wantTo($text)"/>
+    <method value="void execute($callable)"/>
+    <method value="void expectTo($prediction)"/>
+    <method value="void expect($prediction)"/>
+    <method value="void amGoingTo($argumentation)"/>
+    <method value="void am($role)"/>
+    <method value="void lookForwardTo($achieveValue)"/>
+    <method value="void comment($description)"/>
+    <method value="void pause()"/>
+    <suppresswarnings value="(PHPMD)"/>
+  </docblock>
+  <extends full="Codeception\Actor" namespace="Codeception" name="Actor" unresolved="true"/>
+  <uses full="_generated\FunctionalTesterActions" namespace="_generated" name="FunctionalTesterActions" start="21" end="21"/>
+  <trait full="_generated\FunctionalTesterActions" namespace="_generated" name="FunctionalTesterActions">
+    <method name="getScenario" start="13" end="13" abstract="true" final="false" static="false" visibility="protected">
+      <docblock>
+        <description/>
+        <return type="object">
+          <type full="\Codeception\Scenario" namespace="\Codeception" name="Scenario"/>
+        </return>
+      </docblock>
+    </method>
+  </trait>
+</class>

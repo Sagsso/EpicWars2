@@ -24,6 +24,9 @@
         <li>
           <a href="../classes.xhtml">Classes</a>
         </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
         <li class="separator">
           <a href="../source/index.xhtml">Source</a>
         </li>
@@ -56,22 +59,21 @@
             <a href="#methods">Methods</a>
           </li>
           <li>
-            <a href="../source/interfaces/ICharacterFactory.php.xhtml#line13">Source</a>
+            <a href="../source/interfaces/ICharacterFactory.php.xhtml#line7">Source</a>
           </li>
         </ul>
       </nav>
       <section>
         <h1 id="introduction"><small>\</small>ICharacterFactory</h1>
-        <h4/>
+        <h4>This interface is in charge of naming the functions that are specific to the character factory object.</h4>
         <p/>
-        <ul>
-          <li>Author: pabhoz</li>
-        </ul>
+        <ul/>
         <h2 id="synopsis">Synopsis</h2>
         <div class="synopsis">interface ICharacterFactory
-            {<br/><ul class="none"><li>// methods</li><li>public static <span title="Mage">Mage</span> <a title="ICharacterFactory" href="../interfaces/ICharacterFactory/createMage.xhtml">createMage</a>()
-                    </li><li>public static <span title="Rogue">Rogue</span> <a title="ICharacterFactory" href="../interfaces/ICharacterFactory/createRogue.xhtml">createRogue</a>()
-                    </li><li>public static <span title="Warrior">Warrior</span> <a title="ICharacterFactory" href="../interfaces/ICharacterFactory/createWarrior.xhtml">createWarrior</a>()
+            {<br/><ul class="none"><li>// methods</li><li>public <span title="Mage">Mage</span> <a title="ICharacterFactory" href="../interfaces/ICharacterFactory/createMage.xhtml">createMage</a>()
+                    </li><li>public <span title="Rogue">Rogue</span> <a title="ICharacterFactory" href="../interfaces/ICharacterFactory/createRogue.xhtml">createRogue</a>()
+                    </li><li>public <span title="Warrior">Warrior</span> <a title="ICharacterFactory" href="../interfaces/ICharacterFactory/createWarrior.xhtml">createWarrior</a>()
+                    </li><li>public <span title="ICharacter">ICharacter</span> <a title="ICharacterFactory" href="../interfaces/ICharacterFactory/getCharacter.xhtml">getCharacter</a>()
                     </li></ul>
 
             }<br/></div>
@@ -79,15 +81,14 @@
         <div class="styled">
           <h4>public</h4>
           <ul>
-            <li id="createMage">
-              <a title="ICharacterFactory" href="../interfaces/ICharacterFactory/createMage.xhtml">createMage()</a>
-            </li>
-            <li id="createRogue">
-              <a title="ICharacterFactory" href="../interfaces/ICharacterFactory/createRogue.xhtml">createRogue()</a>
-            </li>
-            <li id="createWarrior">
-              <a title="ICharacterFactory" href="../interfaces/ICharacterFactory/createWarrior.xhtml">createWarrior()</a>
-            </li>
+            <li id="createMage"><a title="ICharacterFactory" href="../interfaces/ICharacterFactory/createMage.xhtml">createMage()</a>
+                — Create a mage type character.</li>
+            <li id="createRogue"><a title="ICharacterFactory" href="../interfaces/ICharacterFactory/createRogue.xhtml">createRogue()</a>
+                — Create a rogue type character.</li>
+            <li id="createWarrior"><a title="ICharacterFactory" href="../interfaces/ICharacterFactory/createWarrior.xhtml">createWarrior()</a>
+                — Create a warrior type character.</li>
+            <li id="getCharacter"><a title="ICharacterFactory" href="../interfaces/ICharacterFactory/getCharacter.xhtml">getCharacter()</a>
+                — Create an existing character.</li>
           </ul>
         </div>
       </section>

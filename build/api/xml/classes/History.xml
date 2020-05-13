@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="History" namespace="" name="History" abstract="false" final="false" start="10" end="142">
-  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/models" file="History.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/models/History.php" size="4016" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="5b97b565a9bf02a532834fde97be5e29d897675c" relative="models/History.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="History" namespace="" name="History" abstract="false" final="false" start="8" end="140">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/models" file="History.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/models/History.php" size="3987" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="7f6ccf6b73cd3078484fa14fe43ca93090c21be3" relative="models/History.php"/>
   <docblock>
-    <description compact="Description of History">The history class is in charge of creating an object of the history
-entity with all its respective attributes, and its main objective
-is to keep the history of the fights between characters.</description>
+    <description compact="The history class is in charge of creating an object of the history entity with all its respective attributes, and its main objective is to keep the history of the fights between characters."/>
   </docblock>
   <implements full="IHistory" namespace="" name="IHistory"/>
-  <member name="detail" visibility="private" static="false" line="18">
+  <member name="detail" visibility="private" static="false" line="16">
     <docblock>
       <description/>
       <var description="$detail All the events that occurred in the fight." type="string"/>
@@ -16,13 +14,13 @@ is to keep the history of the fights between characters.</description>
       <var description="$result The result of the fight." type="int"/>
     </docblock>
   </member>
-  <member name="challengerId" visibility="private" static="false" line="19"/>
-  <member name="duelo" visibility="private" static="false" line="20"/>
-  <member name="result" visibility="private" static="false" line="21"/>
-  <constructor name="__construct" start="23" end="25" abstract="false" final="false" static="false" visibility="public"/>
-  <method name="locutor" start="40" end="59" abstract="false" final="false" static="false" visibility="public">
+  <member name="challengerId" visibility="private" static="false" line="17"/>
+  <member name="duelo" visibility="private" static="false" line="18"/>
+  <member name="result" visibility="private" static="false" line="19"/>
+  <constructor name="__construct" start="21" end="23" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="locutor" start="38" end="57" abstract="false" final="false" static="false" visibility="public">
     <docblock>
-      <description compact="He's in charge of reporting all the events that happen in the fight.">It generates chains of strings with information about the fight and
+      <description compact="It's in charge of reporting all the events that happen in the fight.">It generates chains of strings with information about the fight and
 accumulates them in an array to generate a final message. It is also
 in charge of saving all the messages in the fight history details
 variable.</description>
@@ -44,7 +42,7 @@ variable.</description>
     </parameter>
     <parameter name="details" byreference="false" type="array"/>
   </method>
-  <method name="death" start="68" end="72" abstract="false" final="false" static="false" visibility="public">
+  <method name="death" start="66" end="70" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="The function that announces the death of a player.">It also saves the message within the history details.</description>
       <param description="The character who died." type="object" variable="$character">
@@ -57,13 +55,13 @@ variable.</description>
       <type full="ICharacter" namespace="" name="ICharacter"/>
     </parameter>
   </method>
-  <method name="getChallengerId" start="78" end="80" abstract="false" final="false" static="false" visibility="public">
+  <method name="getChallengerId" start="76" end="78" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Gets the challenger's ID."/>
       <return type="int"/>
     </docblock>
   </method>
-  <method name="setChallengerId" start="87" end="89" abstract="false" final="false" static="false" visibility="public">
+  <method name="setChallengerId" start="85" end="87" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Sets the challenger's ID."/>
       <param type="int" variable="$id"/>
@@ -74,13 +72,13 @@ variable.</description>
     <return type="void" nullable="false"/>
     <parameter name="id" byreference="false" type="int"/>
   </method>
-  <method name="getDuelo" start="95" end="97" abstract="false" final="false" static="false" visibility="public">
+  <method name="getDuelo" start="93" end="95" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Gets the Duelo."/>
       <return type="string"/>
     </docblock>
   </method>
-  <method name="setDuelo" start="104" end="106" abstract="false" final="false" static="false" visibility="public">
+  <method name="setDuelo" start="102" end="104" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Sets the Duelo."/>
       <param type="string" variable="$duelo"/>
@@ -91,13 +89,13 @@ variable.</description>
     <return type="void" nullable="false"/>
     <parameter name="duelo" byreference="false" type="string"/>
   </method>
-  <method name="getDetail" start="112" end="114" abstract="false" final="false" static="false" visibility="public">
+  <method name="getDetail" start="110" end="112" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Gets the details (final message)."/>
       <return type="string"/>
     </docblock>
   </method>
-  <method name="setDetail" start="121" end="123" abstract="false" final="false" static="false" visibility="public">
+  <method name="setDetail" start="119" end="121" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Concatenate a new message to the final history details."/>
       <param type="string" variable="$newMsn"/>
@@ -108,13 +106,13 @@ variable.</description>
     <return type="void" nullable="false"/>
     <parameter name="newMsn" byreference="false" type="string"/>
   </method>
-  <method name="getResult" start="129" end="131" abstract="false" final="false" static="false" visibility="public">
+  <method name="getResult" start="127" end="129" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Gets the result."/>
       <return type="int"/>
     </docblock>
   </method>
-  <method name="setResult" start="138" end="140" abstract="false" final="false" static="false" visibility="public">
+  <method name="setResult" start="136" end="138" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Sets the result."/>
       <param type="string" variable="$result"/>
@@ -126,7 +124,21 @@ variable.</description>
     <parameter name="result" byreference="false" type="{unknown}"/>
   </method>
   <interface full="IHistory" namespace="" name="IHistory">
-    <method name="locutor" start="15" end="15" abstract="false" final="false" static="false" visibility="public">
+    <method name="locutor" start="22" end="22" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="It's in charge of reporting all the events that happen in the fight.">It generates chains of strings with information about the fight and
+accumulates them in an array to generate a final message. It is also
+in charge of saving all the messages in the fight history details
+variable.</description>
+        <param description="The character he's going to attack." type="object" variable="$character1">
+          <type full="ICharacter" namespace="" name="ICharacter"/>
+        </param>
+        <param description="The character who gets attacked." type="object" variable="$character2">
+          <type full="ICharacter" namespace="" name="ICharacter"/>
+        </param>
+        <param description="Array with the attack and defense calculations." type="array" variable="$details"/>
+        <return description="Final message." type="string"/>
+      </docblock>
       <return type="string" nullable="false"/>
       <parameter name="character1" byreference="false" type="object">
         <type full="ICharacter" namespace="" name="ICharacter"/>
@@ -136,7 +148,14 @@ variable.</description>
       </parameter>
       <parameter name="details" byreference="false" type="array"/>
     </method>
-    <method name="death" start="17" end="17" abstract="false" final="false" static="false" visibility="public">
+    <method name="death" start="31" end="31" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="The function that announces the death of a player.">It also saves the message within the history details.</description>
+        <param description="The character who died." type="object" variable="$character">
+          <type full="ICharacter" namespace="" name="ICharacter"/>
+        </param>
+        <return description="Final message." type="string"/>
+      </docblock>
       <return type="string" nullable="false"/>
       <parameter name="stats" byreference="false" type="object">
         <type full="ICharacter" namespace="" name="ICharacter"/>

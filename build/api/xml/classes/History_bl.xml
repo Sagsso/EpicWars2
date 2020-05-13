@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="History_bl" namespace="" name="History_bl" abstract="false" final="false" start="12" end="39">
-  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/businessLogic" file="history_bl.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/businessLogic/history_bl.php" size="1156" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="a52267bbc14d53e5aefd0b24ec9ed7c8d4958547" relative="businessLogic/history_bl.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="History_bl" namespace="" name="History_bl" abstract="false" final="false" start="12" end="44">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/businessLogic" file="History_bl.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/businessLogic/History_bl.php" size="1198" time="2020-05-12T09:10:52+02:00" unixtime="1589267452" sha1="09d48305bfb86f4b5b018f91fb9d08d537b40fb6" relative="businessLogic/History_bl.php"/>
   <docblock>
     <description compact="Description of History_bl.">It is in charge of creating, bringing, updating, or deleting
 specific data, according to the function,
 from the table history in the database.</description>
   </docblock>
-  <method name="show" start="22" end="25" abstract="false" final="false" static="true" visibility="public">
+  <constructor name="__construct" start="15" end="18" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="show" start="27" end="30" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="show method.">This function is in charge of searching all the histories
 related to the current user.</description>
       <return description="Of histories." type="array"/>
     </docblock>
   </method>
-  <method name="create" start="36" end="38" abstract="false" final="false" static="true" visibility="public">
+  <method name="create" start="41" end="43" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="create method.">This function is responsible for creating a history in the
 database related to the current user.</description>

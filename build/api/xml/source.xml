@@ -1,62 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <source xmlns="http://xml.phpdox.net/src">
   <dir name="/opt/lampp/htdocs/backendProjects/Parcial2">
-    <file name="loader.php" size="748" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="7c1a49acf732476a0d12d1dda27dd0020fa23d82" xml="tokens/loader.php.xml"/>
+    <file name="loader.php" size="751" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="061d96431dd6ed4c9016e2dd16cf7f53e65faf5f" xml="tokens/loader.php.xml"/>
     <dir name="interfaces">
-      <file name="ICharacter.php" size="635" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="3fa17b8047b124ef6982b9b52afeb1cb2ca1cf96" xml="tokens/interfaces/ICharacter.php.xml"/>
-      <file name="IView.php" size="301" time="2020-04-17T07:23:19+02:00" unixtime="1587100999" sha1="7682a330cec0bf4dc4540c666de1c7d418384d83" xml="tokens/interfaces/IView.php.xml"/>
-      <file name="IController.php" size="276" time="2020-04-17T07:23:19+02:00" unixtime="1587100999" sha1="660c45bc19896a2a93e238a6a3ed2fdd6be03ca1" xml="tokens/interfaces/IController.php.xml"/>
-      <file name="IHistory.php" size="395" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="04b4075ccf1efbb398b539d3bd6740b639a4d106" xml="tokens/interfaces/IHistory.php.xml"/>
-      <file name="IDBAdapter.php" size="497" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="eb1086c6cf421fbcff0ae1566a3b7b883f8c1861" xml="tokens/interfaces/IDBAdapter.php.xml"/>
-      <file name="IGame.php" size="321" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="e78d96a28574ad20464a951498d41e7b90af34c2" xml="tokens/interfaces/IGame.php.xml"/>
-      <file name="ICharacterFactory.php" size="418" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="ed73ac5f09fa0e9a580bffef2c8ea6009fe41afa" xml="tokens/interfaces/ICharacterFactory.php.xml"/>
+      <file name="ICharacter.php" size="1498" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="b144067bc1e71b0209001a273fc1aee7a2fc2d2a" xml="tokens/interfaces/ICharacter.php.xml"/>
+      <file name="IView.php" size="501" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="1ce40194768750f95435f208a5dbd97b1f9ac0d1" xml="tokens/interfaces/IView.php.xml"/>
+      <file name="IController.php" size="300" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="11680d2342598ded40023672b3d5bc6b4ff6f98f" xml="tokens/interfaces/IController.php.xml"/>
+      <file name="IHistory.php" size="1137" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="9de5581a342c6b40d181a49130b07618826b3553" xml="tokens/interfaces/IHistory.php.xml"/>
+      <file name="IDBAdapter.php" size="2475" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="0144f101f89754f21f11c4f1cf2795be2b691358" xml="tokens/interfaces/IDBAdapter.php.xml"/>
+      <file name="IGame.php" size="565" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="d33d11fba03a08d1556851b48593b0eda91868fb" xml="tokens/interfaces/IGame.php.xml"/>
+      <file name="ICharacterFactory.php" size="1384" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="b00a850f4919cf206ed117df61b915ce3edc75ec" xml="tokens/interfaces/ICharacterFactory.php.xml"/>
     </dir>
     <dir name="database">
-      <file name="connection.php" size="775" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="a6d595426e2496e76e0f5cbdbbd376ac4247f835" xml="tokens/database/connection.php.xml"/>
-      <file name="MySQLiMAdapter.php" size="1445" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="363f3e4130f222dd3746f0f89ecf573ef56b3c5c" xml="tokens/database/MySQLiMAdapter.php.xml"/>
+      <file name="connection.php" size="775" time="2020-05-12T08:10:45+02:00" unixtime="1589263845" sha1="a6d595426e2496e76e0f5cbdbbd376ac4247f835" xml="tokens/database/connection.php.xml"/>
+      <file name="MySQLiMAdapter.php" size="1409" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="058db939b105ab04f1380695367a443c5741ade7" xml="tokens/database/MySQLiMAdapter.php.xml"/>
       <file name="MySQLiManager.php" size="5359" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="ad21c41ef497a47e356648147c42ebd35d918b06" xml="tokens/database/MySQLiManager.php.xml"/>
     </dir>
-    <file name="config.php" size="1190" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="555456c78e8c6adec87edf80fb546307f483f19f" xml="tokens/config.php.xml"/>
+    <file name="config.php" size="1190" time="2020-05-12T08:10:45+02:00" unixtime="1589263845" sha1="555456c78e8c6adec87edf80fb546307f483f19f" xml="tokens/config.php.xml"/>
     <dir name="factories">
-      <file name="CharacterFactory.php" size="1851" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="a4ba10718835f74ef88b14ff627f7c5e53698f99" xml="tokens/factories/CharacterFactory.php.xml"/>
+      <file name="CharacterFactory.php" size="1880" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="a5fd24dc5101b001345212c157d5f103f8101579" xml="tokens/factories/CharacterFactory.php.xml"/>
     </dir>
     <dir name="views">
       <dir name="_fragments">
         <file name="head.php" size="241" time="2020-04-17T07:23:19+02:00" unixtime="1587100999" sha1="355410a6827752c464e64d37af707f374bb19484" xml="tokens/views/_fragments/head.php.xml"/>
         <file name="imports.php" size="720" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="99c24c8db7670f6a3cd6846c8e4fa655e19c5d91" xml="tokens/views/_fragments/imports.php.xml"/>
-        <file name="header.php" size="1374" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="9c33c03a7c9b935b03ee0a2bb01353e7d13467ed" xml="tokens/views/_fragments/header.php.xml"/>
+        <file name="header.php" size="1443" time="2020-05-12T09:10:52+02:00" unixtime="1589267452" sha1="ad43338ce000d500afe5454ea8a5fc1af0f877e0" xml="tokens/views/_fragments/header.php.xml"/>
       </dir>
       <dir name="Index">
-        <file name="create.php" size="1401" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="db91890cc2e45e294d07149ffc2755f72ba2c13a" xml="tokens/views/Index/create.php.xml"/>
-        <file name="challenge.php" size="982" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="79299099adfe5f326fde598ec0bde08131f0ced5" xml="tokens/views/Index/challenge.php.xml"/>
+        <file name="create.php" size="1470" time="2020-05-12T09:10:52+02:00" unixtime="1589267452" sha1="8760fb7f78816c7ed1b1d9f419aebb59f0777cd5" xml="tokens/views/Index/create.php.xml"/>
+        <file name="challenge.php" size="1198" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="e1dfa9f07a3205c68cefbf0f95251b4410a78400" xml="tokens/views/Index/challenge.php.xml"/>
         <file name="characters.php" size="3096" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="f9315178d9ba84d7d8cca1afd832219f7edacb8c" xml="tokens/views/Index/characters.php.xml"/>
         <file name="challengeH.php" size="599" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="6e3300f51156d1f5218fc034e03bc1b4375a6f3a" xml="tokens/views/Index/challengeH.php.xml"/>
-        <file name="index.php" size="1400" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="65ed9509f502b26afc555d93206c4c3518e06cef" xml="tokens/views/Index/index.php.xml"/>
+        <file name="index.php" size="1441" time="2020-05-12T09:10:52+02:00" unixtime="1589267452" sha1="d8a4331c0d11024fb5bff30388e367dbf5939697" xml="tokens/views/Index/index.php.xml"/>
         <file name="history.php" size="4139" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="8cb4790b06f63328ff2502ed7daffe8778438005" xml="tokens/views/Index/history.php.xml"/>
-        <file name="signup.php" size="859" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="76b4b83534f624a86acaea23102820783efb5955" xml="tokens/views/Index/signup.php.xml"/>
-        <file name="home.php" size="515" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="655881be0f6828b3ae3114fcf72414b7bc51639d" xml="tokens/views/Index/home.php.xml"/>
-        <file name="arena.php" size="5148" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="f25487b489d90c8f0295c12dd86330902a703899" xml="tokens/views/Index/arena.php.xml"/>
+        <file name="signup.php" size="894" time="2020-05-12T09:10:52+02:00" unixtime="1589267452" sha1="2579acb8ea1e640373c3368b47c07e8946f61311" xml="tokens/views/Index/signup.php.xml"/>
+        <file name="home.php" size="516" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="f457616f1c5a4ec13f308e5232957907afeb59df" xml="tokens/views/Index/home.php.xml"/>
+        <file name="arena.php" size="5212" time="2020-05-12T09:10:52+02:00" unixtime="1589267452" sha1="fe9032ead8e0891b27fa40791727e6fdb2e9db7a" xml="tokens/views/Index/arena.php.xml"/>
       </dir>
     </dir>
-    <file name="index.php" size="216" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="8c9745e37c4f4b39548858155d90df5568344772" xml="tokens/index.php.xml"/>
+    <file name="index.php" size="216" time="2020-05-12T08:10:45+02:00" unixtime="1589263845" sha1="8c9745e37c4f4b39548858155d90df5568344772" xml="tokens/index.php.xml"/>
     <dir name="models">
-      <file name="Rogue.php" size="3922" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="81d64830c40182dcd7db8e8179bb0e88f54c7fed" xml="tokens/models/Rogue.php.xml"/>
-      <file name="Character.php" size="5325" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="44ef8a71c3ee535b4445ead263ebc84e81f6c976" xml="tokens/models/Character.php.xml"/>
-      <file name="View.php" size="1666" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="dc7e138541f5a5cf49bd28ffd708938b9c142d70" xml="tokens/models/View.php.xml"/>
-      <file name="History.php" size="4016" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="5b97b565a9bf02a532834fde97be5e29d897675c" xml="tokens/models/History.php.xml"/>
-      <file name="Mage.php" size="3922" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="240ecf025b02e80f39f08c6edb9d190a75e9d1e0" xml="tokens/models/Mage.php.xml"/>
-      <file name="Game.php" size="4780" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="2ae373c665837f64b232d5f57db32bdc58ce4d0e" xml="tokens/models/Game.php.xml"/>
-      <file name="Controller.php" size="463" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="4583fd83a9c1762a777500fc71168f8a34a27dba" xml="tokens/models/Controller.php.xml"/>
-      <file name="Warrior.php" size="3952" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="fcc51bf90cc60dd6dfaba882d132cf99e1998dfe" xml="tokens/models/Warrior.php.xml"/>
+      <file name="Rogue.php" size="3703" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="f2c4b31015e6d2ceb2227a960928b3a1fbb1d0a3" xml="tokens/models/Rogue.php.xml"/>
+      <file name="Character.php" size="5049" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="3fd9a944080c9f6545e374120c4fce97a9d962c6" xml="tokens/models/Character.php.xml"/>
+      <file name="View.php" size="1640" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="f298bc5f749b4e521ed50f8f7754ac919826c30e" xml="tokens/models/View.php.xml"/>
+      <file name="History.php" size="3987" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="7f6ccf6b73cd3078484fa14fe43ca93090c21be3" xml="tokens/models/History.php.xml"/>
+      <file name="Mage.php" size="3690" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="4fb47cfdd3e2f08dded8b0468f699ffba7e12a9d" xml="tokens/models/Mage.php.xml"/>
+      <file name="Game.php" size="4815" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="81de876f6ab890988a621bd4f5c217d355ceabcd" xml="tokens/models/Game.php.xml"/>
+      <file name="Controller.php" size="431" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="58c0e93c995f3a73378d4b269020b21b1651f56c" xml="tokens/models/Controller.php.xml"/>
+      <file name="Warrior.php" size="3717" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="a29d6acecc088b7de5666bf5c9906bc40f1fa803" xml="tokens/models/Warrior.php.xml"/>
     </dir>
     <dir name="controllers">
-      <file name="Index_controller.php" size="3644" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="477e661faaab9eb854e4481737ad1c57f1b0d944" xml="tokens/controllers/Index_controller.php.xml"/>
+      <file name="Index_controller.php" size="3729" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="1d5c5102750ce113457f0b8d5a9c3da874e560c1" xml="tokens/controllers/Index_controller.php.xml"/>
     </dir>
-    <file name="mvcBootstrap.php" size="840" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="60655f15d1e3477a861ca7633cdae3d40cf70c6e" xml="tokens/mvcBootstrap.php.xml"/>
+    <file name="mvcBootstrap.php" size="840" time="2020-05-12T08:10:45+02:00" unixtime="1589263845" sha1="60655f15d1e3477a861ca7633cdae3d40cf70c6e" xml="tokens/mvcBootstrap.php.xml"/>
+    <dir name="tests">
+      <dir name="_support">
+        <file name="AcceptanceTester.php" size="561" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="620261ce25ede01cb985dd1636bdc81256fad402" xml="tokens/tests/_support/AcceptanceTester.php.xml"/>
+        <dir name="Helper">
+          <file name="Functional.php" size="185" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="bce318edffec26bb62e28e010c7663f840a8aad4" xml="tokens/tests/_support/Helper/Functional.php.xml"/>
+          <file name="Unit.php" size="179" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="8185d8b04ac375caa76449990beb6dcf65e9abd5" xml="tokens/tests/_support/Helper/Unit.php.xml"/>
+          <file name="Acceptance.php" size="185" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="199b1f8728281b8910205fd1d04678f0d38c5281" xml="tokens/tests/_support/Helper/Acceptance.php.xml"/>
+        </dir>
+        <file name="UnitTester.php" size="549" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="eab8df2247cf5ace7ac16dc42622175161d0784a" xml="tokens/tests/_support/UnitTester.php.xml"/>
+        <file name="FunctionalTester.php" size="561" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="82504ed90bc6f75377bcefa567e5d96c06280d19" xml="tokens/tests/_support/FunctionalTester.php.xml"/>
+        <dir name="_generated">
+          <file name="UnitTesterActions.php" size="32440" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="e12d1b9709691bfe537d99b0d34fb3ab18bb1833" xml="tokens/tests/_support/_generated/UnitTesterActions.php.xml"/>
+          <file name="FunctionalTesterActions.php" size="377" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="430876c34c4edf1d7ce36dd99e8174a567ec70fa" xml="tokens/tests/_support/_generated/FunctionalTesterActions.php.xml"/>
+          <file name="AcceptanceTesterActions.php" size="82065" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="47358efb3ba71c5f2fb9588cbfc5c315dd8be8e3" xml="tokens/tests/_support/_generated/AcceptanceTesterActions.php.xml"/>
+        </dir>
+      </dir>
+      <dir name="unit">
+        <file name="WarriorTest.php" size="1358" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="e65624ab636917e0532117993568a300b13abecf" xml="tokens/tests/unit/WarriorTest.php.xml"/>
+        <file name="UsersBlTest.php" size="1115" time="2020-05-12T09:10:52+02:00" unixtime="1589267452" sha1="3795feb64c14c204fac38a87abdae6ba9e8f8bc6" xml="tokens/tests/unit/UsersBlTest.php.xml"/>
+        <file name="GameTest.php" size="674" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="4f110982e6a9c2edb3633402b41550c53dac534b" xml="tokens/tests/unit/GameTest.php.xml"/>
+        <file name="CharacterFactoryTest.php" size="1968" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="ca7b739fd11b5b37dc4cadb69130ed9b5d6782b2" xml="tokens/tests/unit/CharacterFactoryTest.php.xml"/>
+        <file name="HistoryBlTest.php" size="1851" time="2020-05-12T09:10:52+02:00" unixtime="1589267452" sha1="ef03ade8896024b0b393e4b7540b471bd5940946" xml="tokens/tests/unit/HistoryBlTest.php.xml"/>
+        <file name="MageTest.php" size="1255" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="349bdaddc68c424b919c6e128d3ce865fc963a6a" xml="tokens/tests/unit/MageTest.php.xml"/>
+        <file name="HistoryTest.php" size="1517" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="0ddb74ce53f3b8c641cca67db5f23a4b0a9c4f07" xml="tokens/tests/unit/HistoryTest.php.xml"/>
+        <file name="CharacterBlTest.php" size="967" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="60d39316bf30f9ac11138ee1c99ea8ab54959cce" xml="tokens/tests/unit/CharacterBlTest.php.xml"/>
+        <file name="RogueTest.php" size="1326" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="a9225925a6fa82453978a90ee1a9f7671f1253c4" xml="tokens/tests/unit/RogueTest.php.xml"/>
+      </dir>
+    </dir>
     <dir name="businessLogic">
-      <file name="characters_bl.php" size="8193" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="1f4c0fff8fab8c594a8c1e24dd6816ced144f6a2" xml="tokens/businessLogic/characters_bl.php.xml"/>
-      <file name="history_bl.php" size="1156" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="a52267bbc14d53e5aefd0b24ec9ed7c8d4958547" xml="tokens/businessLogic/history_bl.php.xml"/>
-      <file name="users_bl.php" size="1924" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="f6a8a4962df78afcfba0fa130ff7623637afe14a" xml="tokens/businessLogic/users_bl.php.xml"/>
+      <file name="Users_bl.php" size="2302" time="2020-05-12T09:10:52+02:00" unixtime="1589267452" sha1="10435105a9fa0adbdcd27504c41b1328600f234f" xml="tokens/businessLogic/Users_bl.php.xml"/>
+      <file name="Characters_bl.php" size="7879" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="81a6e127160b4213e6e3cd9156c459fd73b9af5e" xml="tokens/businessLogic/Characters_bl.php.xml"/>
+      <file name="History_bl.php" size="1198" time="2020-05-12T09:10:52+02:00" unixtime="1589267452" sha1="09d48305bfb86f4b5b018f91fb9d08d537b40fb6" xml="tokens/businessLogic/History_bl.php.xml"/>
     </dir>
   </dir>
 </source>

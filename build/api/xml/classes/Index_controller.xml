@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Index_controller" namespace="" name="Index_controller" abstract="false" final="false" start="15" end="133">
-  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/controllers" file="Index_controller.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/controllers/Index_controller.php" size="3644" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="477e661faaab9eb854e4481737ad1c57f1b0d944" relative="controllers/Index_controller.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Index_controller" namespace="" name="Index_controller" abstract="false" final="false" start="12" end="132">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/controllers" file="Index_controller.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/controllers/Index_controller.php" size="3729" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="1d5c5102750ce113457f0b8d5a9c3da874e560c1" relative="controllers/Index_controller.php"/>
   <docblock>
-    <description compact="Description of Index_controller.">The index_controller is in charge of handling views in the interface by using
-the rendering of the View class. It is also in charge of creating the
-variables to display the necessary information within the views, usually using
-business logic to do so.</description>
+    <description compact="The index_controller is in charge of handling views in the interface by using the rendering of the View class. It is also in charge of creating the variables to display the necessary information within the views, usually using business logic to do so."/>
   </docblock>
   <extends full="Controller" namespace="" name="Controller"/>
-  <constructor name="__construct" start="17" end="19" abstract="false" final="false" static="false" visibility="public"/>
-  <method name="index" start="28" end="30" abstract="false" final="false" static="false" visibility="public">
+  <constructor name="__construct" start="14" end="18" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="index" start="27" end="29" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Default function.">It is in charge of rendering the login view.</description>
       <return type="object">
@@ -18,7 +15,7 @@ business logic to do so.</description>
     </docblock>
     <return type="void" nullable="false"/>
   </method>
-  <method name="create" start="37" end="39" abstract="false" final="false" static="false" visibility="public">
+  <method name="create" start="36" end="38" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="This function is responsible for rendering the character creation view."/>
       <return type="object">
@@ -27,7 +24,7 @@ business logic to do so.</description>
     </docblock>
     <return type="void" nullable="false"/>
   </method>
-  <method name="signup" start="46" end="48" abstract="false" final="false" static="false" visibility="public">
+  <method name="signup" start="45" end="47" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="This function is responsible for rendering the sign up view."/>
       <return type="object">
@@ -36,7 +33,7 @@ business logic to do so.</description>
     </docblock>
     <return type="void" nullable="false"/>
   </method>
-  <method name="home" start="58" end="60" abstract="false" final="false" static="false" visibility="public">
+  <method name="home" start="57" end="59" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="This function is responsible for rendering the home view.">It also creates the variable characters that are in charge
 of saving the user's characters.</description>
@@ -46,7 +43,7 @@ of saving the user's characters.</description>
     </docblock>
     <return type="void" nullable="false"/>
   </method>
-  <method name="characters" start="70" end="73" abstract="false" final="false" static="false" visibility="public">
+  <method name="characters" start="69" end="72" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="This function is responsible for rendering the characters view.">It also creates the variable characters that are in charge
 of saving the user's characters.</description>
@@ -56,7 +53,7 @@ of saving the user's characters.</description>
     </docblock>
     <return type="void" nullable="false"/>
   </method>
-  <method name="history" start="83" end="86" abstract="false" final="false" static="false" visibility="public">
+  <method name="history" start="82" end="85" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="This function is responsible for rendering the history view.">It also creates the variable history that are in charge
 of saving the user's histories.</description>
@@ -66,7 +63,7 @@ of saving the user's histories.</description>
     </docblock>
     <return type="void" nullable="false"/>
   </method>
-  <method name="challenge" start="96" end="99" abstract="false" final="false" static="false" visibility="public">
+  <method name="challenge" start="95" end="98" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="This function is responsible for rendering the challenge view.">Where the whole process of the combat between 2
 characters is shown.</description>
@@ -76,7 +73,7 @@ characters is shown.</description>
     </docblock>
     <return type="void" nullable="false"/>
   </method>
-  <method name="challengeH" start="110" end="112" abstract="false" final="false" static="false" visibility="public">
+  <method name="challengeH" start="109" end="111" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="This function is responsible for rendering challenge saved in the history.">Where the whole process of the combat between 2
 characters is shown.</description>
@@ -86,7 +83,7 @@ characters is shown.</description>
     </docblock>
     <return type="void" nullable="false"/>
   </method>
-  <method name="arena" start="123" end="131" abstract="false" final="false" static="false" visibility="public">
+  <method name="arena" start="122" end="130" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="This function is responsible for rendering the arena view.">Where the rival characters that can be challenged are shown
 depending on the character of the current user that has
@@ -99,7 +96,7 @@ been chosen.</description>
   </method>
   <parent full="Controller" namespace="" name="Controller">
     <implements full="IController" namespace="" name="IController"/>
-    <member name="view" visibility="protected" static="false" line="14">
+    <member name="view" visibility="protected" static="false" line="12">
       <docblock>
         <description/>
         <var description="$view The view to render the controller." type="object">
@@ -107,13 +104,19 @@ been chosen.</description>
         </var>
       </docblock>
     </member>
-    <constructor name="__construct" start="16" end="19" abstract="false" final="false" static="false" visibility="public"/>
-    <method name="index" start="21" end="21" abstract="true" final="false" static="false" visibility="public">
+    <constructor name="__construct" start="14" end="17" abstract="false" final="false" static="false" visibility="public"/>
+    <method name="index" start="19" end="19" abstract="true" final="false" static="false" visibility="public">
       <return type="void" nullable="false"/>
     </method>
   </parent>
   <interface full="IController" namespace="" name="IController">
-    <method name="index" start="14" end="14" abstract="false" final="false" static="false" visibility="public">
+    <method name="index" start="16" end="16" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Default function.">It is in charge of rendering the principal view.</description>
+        <return type="object">
+          <type full="void" namespace="" name="void"/>
+        </return>
+      </docblock>
       <return type="void" nullable="false"/>
     </method>
   </interface>

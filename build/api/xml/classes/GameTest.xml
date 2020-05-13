@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="GameTest" namespace="" name="GameTest" abstract="false" final="false" start="7" end="36">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/tests/unit" file="GameTest.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/tests/unit/GameTest.php" size="674" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="4f110982e6a9c2edb3633402b41550c53dac534b" relative="tests/unit/GameTest.php"/>
+  <extends full="Codeception\Test\Unit" namespace="Codeception\Test" name="Unit" unresolved="true"/>
+  <member name="tester" visibility="protected" static="false" line="12">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="\UnitTester" namespace="" name="UnitTester"/>
+      </var>
+    </docblock>
+  </member>
+  <method name="_before" start="14" end="20" abstract="false" final="false" static="false" visibility="protected"/>
+  <method name="_after" start="22" end="24" abstract="false" final="false" static="false" visibility="protected"/>
+  <method name="testFight" start="27" end="30" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="testWon" start="32" end="35" abstract="false" final="false" static="false" visibility="public"/>
+</class>

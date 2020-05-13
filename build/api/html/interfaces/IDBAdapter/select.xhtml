@@ -24,6 +24,9 @@
         <li>
           <a href="../../classes.xhtml">Classes</a>
         </li>
+        <li>
+          <a href="../../traits.xhtml">Traits</a>
+        </li>
         <li class="separator">
           <a href="../../source/index.xhtml">Source</a>
         </li>
@@ -59,21 +62,25 @@
             <a href="#parameter">Parameter</a>
           </li>
           <li>
-            <a href="../../source/interfaces/IDBAdapter.php.xhtml#line15">Source</a>
+            <a href="#return">Return</a>
+          </li>
+          <li>
+            <a href="../../source/interfaces/IDBAdapter.php.xhtml#line29">Source</a>
           </li>
         </ul>
       </nav>
       <section>
         <h1><small>IDBAdapter::</small>select</h1>
-        <h4/>
+        <h4>It is in charge of selecting the information from the database.</h4>
         <p/>
+        <ul/>
         <h2 id="signature">Signature</h2>
         <div class="styled synopsis">
-          <code>public function select(
+          <code>public function select(string
         $attr,
-            
+            array
         $values,
-            
+            string
         $where )
             </code>
         </div>
@@ -81,16 +88,21 @@
         <dl class="styled">
           <dt><code>$attr</code>
                 —
-                </dt>
-          <dd/>
+                string</dt>
+          <dd>The name of the existing table's columns in the database.</dd>
           <dt><code>$values</code>
                 —
-                </dt>
-          <dd/>
+                array</dt>
+          <dd>It must contain the name of the table<br/>columns with the values to be inserted. In an array of objects.</dd>
           <dt><code>$where</code>
                 —
-                </dt>
-          <dd/>
+                string</dt>
+          <dd>(optional) Condition.</dd>
+        </dl>
+        <h2 id="return">Returns</h2>
+        <dl class="styled">
+          <dt>array</dt>
+          <dd>An array with all the rows and columns selected.</dd>
         </dl>
       </section>
     </div>

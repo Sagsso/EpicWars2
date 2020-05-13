@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Game" namespace="" name="Game" abstract="false" final="false" start="10" end="154">
-  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/models" file="Game.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/models/Game.php" size="4780" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="2ae373c665837f64b232d5f57db32bdc58ce4d0e" relative="models/Game.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Game" namespace="" name="Game" abstract="false" final="false" start="8" end="153">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/models" file="Game.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/models/Game.php" size="4815" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="81de876f6ab890988a621bd4f5c217d355ceabcd" relative="models/Game.php"/>
   <docblock>
-    <description compact="Description of Game.">It's the class in charge of managing the logic of the game.</description>
+    <description compact="It's the class in charge of managing the logic of the game."/>
   </docblock>
   <implements full="IGame" namespace="" name="IGame"/>
-  <member name="character1" visibility="private" static="false" line="15">
+  <member name="character1" visibility="private" static="false" line="13">
     <docblock>
       <description/>
       <var description="$character1 The first character, who challenges." type="object">
@@ -13,7 +13,7 @@
       </var>
     </docblock>
   </member>
-  <member name="character2" visibility="private" static="false" line="20">
+  <member name="character2" visibility="private" static="false" line="18">
     <docblock>
       <description/>
       <var description="$character2 The second character, who is challenged." type="object">
@@ -21,7 +21,7 @@
       </var>
     </docblock>
   </member>
-  <member name="history" visibility="private" static="false" line="25">
+  <member name="history" visibility="private" static="false" line="23">
     <docblock>
       <description/>
       <var description="$history The history of the challenge." type="object">
@@ -29,7 +29,7 @@
       </var>
     </docblock>
   </member>
-  <constructor name="__construct" start="27" end="33" abstract="false" final="false" static="false" visibility="public">
+  <constructor name="__construct" start="25" end="32" abstract="false" final="false" static="false" visibility="public">
     <parameter name="character1" byreference="false" type="object">
       <type full="ICharacter" namespace="" name="ICharacter"/>
     </parameter>
@@ -37,7 +37,7 @@
       <type full="ICharacter" namespace="" name="ICharacter"/>
     </parameter>
   </constructor>
-  <method name="fight" start="47" end="87" abstract="false" final="false" static="false" visibility="public">
+  <method name="fight" start="46" end="86" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Manages the fights between characters.">Artificial intelligence that manages the turns of the characters as well
 as the attacks and defenses. It uses character specific functions for damage
@@ -61,7 +61,7 @@ It is a recursive function.</description>
       <type full="ICharacter" namespace="" name="ICharacter"/>
     </parameter>
   </method>
-  <method name="won" start="99" end="101" abstract="false" final="false" static="false" visibility="public">
+  <method name="won" start="98" end="100" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Determines the character that won.">This function determines if the player who challenges is
 the one who wins the fight. From there you can determine
@@ -75,7 +75,7 @@ the status (Victory or Defeat).</description>
       <type full="ICharacter" namespace="" name="ICharacter"/>
     </parameter>
   </method>
-  <method name="getCharacter1" start="107" end="109" abstract="false" final="false" static="false" visibility="public">
+  <method name="getCharacter1" start="106" end="108" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Gets the character1."/>
       <return type="object">
@@ -83,7 +83,7 @@ the status (Victory or Defeat).</description>
       </return>
     </docblock>
   </method>
-  <method name="setCharacter1" start="116" end="118" abstract="false" final="false" static="false" visibility="public">
+  <method name="setCharacter1" start="115" end="117" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Sets the character1."/>
       <param type="object" variable="$character">
@@ -98,7 +98,7 @@ the status (Victory or Defeat).</description>
       <type full="ICharacter" namespace="" name="ICharacter"/>
     </parameter>
   </method>
-  <method name="getCharacter2" start="124" end="126" abstract="false" final="false" static="false" visibility="public">
+  <method name="getCharacter2" start="123" end="125" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Gets the character2."/>
       <return type="object">
@@ -106,7 +106,7 @@ the status (Victory or Defeat).</description>
       </return>
     </docblock>
   </method>
-  <method name="setCharacter2" start="133" end="135" abstract="false" final="false" static="false" visibility="public">
+  <method name="setCharacter2" start="132" end="134" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Sets the character2."/>
       <param type="object" variable="$character">
@@ -121,7 +121,7 @@ the status (Victory or Defeat).</description>
       <type full="ICharacter" namespace="" name="ICharacter"/>
     </parameter>
   </method>
-  <method name="getHistory" start="141" end="143" abstract="false" final="false" static="false" visibility="public">
+  <method name="getHistory" start="140" end="142" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Gets the history."/>
       <return type="object">
@@ -129,7 +129,7 @@ the status (Victory or Defeat).</description>
       </return>
     </docblock>
   </method>
-  <method name="setHistory" start="150" end="152" abstract="false" final="false" static="false" visibility="public">
+  <method name="setHistory" start="149" end="151" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Sets the history."/>
       <param type="object" variable="$history">
@@ -145,7 +145,19 @@ the status (Victory or Defeat).</description>
     </parameter>
   </method>
   <interface full="IGame" namespace="" name="IGame">
-    <method name="fight" start="15" end="15" abstract="false" final="false" static="false" visibility="public">
+    <method name="fight" start="17" end="17" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="It is the basis of the game, which consists of recreating the battle of 2 characters using the attack and defense of each player according to the turns."/>
+        <param description="The character he's going to attack." type="object" variable="$character1">
+          <type full="ICharacter" namespace="" name="ICharacter"/>
+        </param>
+        <param description="The character who gets attacked." type="object" variable="$character2">
+          <type full="ICharacter" namespace="" name="ICharacter"/>
+        </param>
+        <return type="object">
+          <type full="void" namespace="" name="void"/>
+        </return>
+      </docblock>
       <return type="void" nullable="false"/>
       <parameter name="character1" byreference="false" type="object">
         <type full="ICharacter" namespace="" name="ICharacter"/>

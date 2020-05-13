@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trait xmlns="http://xml.phpdox.net/src" full="_generated\FunctionalTesterActions" namespace="_generated" name="FunctionalTesterActions" abstract="false" final="false" start="8" end="16">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/tests/_support/_generated" file="FunctionalTesterActions.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/tests/_support/_generated/FunctionalTesterActions.php" size="377" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="430876c34c4edf1d7ce36dd99e8174a567ec70fa" relative="tests/_support/_generated/FunctionalTesterActions.php"/>
+  <method name="getScenario" start="13" end="13" abstract="true" final="false" static="false" visibility="protected">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="\Codeception\Scenario" namespace="\Codeception" name="Scenario"/>
+      </return>
+    </docblock>
+  </method>
+  <users>
+    <class full="FunctionalTester" namespace="" name="FunctionalTester"/>
+  </users>
+</trait>

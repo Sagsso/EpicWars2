@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="View" namespace="" name="View" abstract="false" final="false" start="10" end="60">
-  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/models" file="View.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/models/View.php" size="1666" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="dc7e138541f5a5cf49bd28ffd708938b9c142d70" relative="models/View.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="View" namespace="" name="View" abstract="false" final="false" start="8" end="58">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/models" file="View.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/models/View.php" size="1640" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="f298bc5f749b4e521ed50f8f7754ac919826c30e" relative="models/View.php"/>
   <docblock>
-    <description compact="Description of View">The view class is in charge of defining the minimum methods
-that every view must have in order to be shown properly in
-the interface.</description>
+    <description compact="The view class is in charge of defining the minimum methods that every view must have in order to be shown properly in the interface."/>
   </docblock>
   <implements full="IView" namespace="" name="IView"/>
-  <member name="title" visibility="private" static="false" line="15">
+  <member name="title" visibility="private" static="false" line="13">
     <docblock>
       <description/>
       <var description="$title View's title." type="string"/>
     </docblock>
   </member>
-  <method name="render" start="26" end="43" abstract="false" final="false" static="false" visibility="public">
+  <method name="render" start="24" end="41" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="It is in charge of rendering the view, which allows it to be displayed in the interface each time it is called."/>
       <param description="The controller's name." type="string" variable="$controller"/>
@@ -28,7 +26,7 @@ the interface.</description>
     <parameter name="view" byreference="false" type="{unknown}"/>
     <parameter name="title" byreference="false" type="string" default="''"/>
   </method>
-  <method name="loadFragment" start="51" end="58" abstract="false" final="false" static="false" visibility="public">
+  <method name="loadFragment" start="49" end="56" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="He's the one who loads a piece of information into a view."/>
       <param description="The fragment's name." type="string" variable="$fragmentName"/>
@@ -40,7 +38,16 @@ the interface.</description>
     <parameter name="fragmentName" byreference="false" type="{unknown}"/>
   </method>
   <interface full="IView" namespace="" name="IView">
-    <method name="render" start="14" end="14" abstract="false" final="false" static="false" visibility="public">
+    <method name="render" start="18" end="18" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="It is in charge of rendering the view, which allows it to be displayed in the interface each time it is called."/>
+        <param description="The controller's name." type="string" variable="$controller"/>
+        <param description="The view's name." type="string" variable="$view"/>
+        <param description="The page title." type="string" variable="$title"/>
+        <return type="object">
+          <type full="void" namespace="" name="void"/>
+        </return>
+      </docblock>
       <return type="void" nullable="false"/>
       <parameter name="controller" byreference="false" type="object">
         <type full="IController" namespace="" name="IController"/>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="CharacterFactoryTest" namespace="" name="CharacterFactoryTest" abstract="false" final="false" start="17" end="63">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/tests/unit" file="CharacterFactoryTest.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/tests/unit/CharacterFactoryTest.php" size="1968" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="ca7b739fd11b5b37dc4cadb69130ed9b5d6782b2" relative="tests/unit/CharacterFactoryTest.php"/>
+  <extends full="Codeception\Test\Unit" namespace="Codeception\Test" name="Unit" unresolved="true"/>
+  <member name="tester" visibility="protected" static="false" line="22">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="\UnitTester" namespace="" name="UnitTester"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="characterFactory" visibility="protected" static="false" line="23"/>
+  <method name="_before" start="25" end="28" abstract="false" final="false" static="false" visibility="protected"/>
+  <method name="_after" start="30" end="32" abstract="false" final="false" static="false" visibility="protected"/>
+  <method name="testCreateMage" start="35" end="39" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="testCreateRogue" start="40" end="44" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="testCreateWarrior" start="45" end="49" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="testGetCharacter" start="51" end="61" abstract="false" final="false" static="false" visibility="public"/>
+</class>

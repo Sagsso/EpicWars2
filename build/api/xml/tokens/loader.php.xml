@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2" file="loader.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/loader.php" size="748" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="7c1a49acf732476a0d12d1dda27dd0020fa23d82" relative="loader.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2" file="loader.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/loader.php" size="751" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="061d96431dd6ed4c9016e2dd16cf7f53e65faf5f" relative="loader.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -198,14 +198,7 @@
   </line>
   <line no="32">
     <token name="T_WHITESPACE">    </token>
-    <token name="T_REQUIRE">require</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">DATABASE</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_PHPDOX_DOT">.</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_CONSTANT_ENCAPSED_STRING">"connection.php"</token>
-    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_COMMENT">// require DATABASE . "connection.php";</token>
   </line>
   <line no="33">
     <token name="T_WHITESPACE">    </token>

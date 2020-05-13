@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="UsersBlTest" namespace="" name="UsersBlTest" abstract="false" final="false" start="8" end="44">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/tests/unit" file="UsersBlTest.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/tests/unit/UsersBlTest.php" size="1115" time="2020-05-12T09:10:52+02:00" unixtime="1589267452" sha1="3795feb64c14c204fac38a87abdae6ba9e8f8bc6" relative="tests/unit/UsersBlTest.php"/>
+  <extends full="Codeception\Test\Unit" namespace="Codeception\Test" name="Unit" unresolved="true"/>
+  <member name="tester" visibility="protected" static="false" line="13">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="\UnitTester" namespace="" name="UnitTester"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="username" visibility="private" static="false" line="14"/>
+  <member name="users_bl" visibility="private" static="false" line="15"/>
+  <method name="_before" start="17" end="24" abstract="false" final="false" static="false" visibility="protected"/>
+  <method name="_after" start="26" end="29" abstract="false" final="false" static="false" visibility="protected"/>
+  <method name="testUserCreation" start="32" end="36" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="testUserAuthentication" start="37" end="43" abstract="false" final="false" static="false" visibility="public"/>
+</class>

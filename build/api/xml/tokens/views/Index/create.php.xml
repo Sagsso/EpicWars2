@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/views/Index" file="create.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/views/Index/create.php" size="1401" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="db91890cc2e45e294d07149ffc2755f72ba2c13a" relative="views/Index/create.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/views/Index" file="create.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/views/Index/create.php" size="1470" time="2020-05-12T09:10:52+02:00" unixtime="1589267452" sha1="8760fb7f78816c7ed1b1d9f419aebb59f0777cd5" relative="views/Index/create.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -58,51 +58,64 @@
   <line no="14">
     <token name="T_INLINE_HTML">                &lt;form action="</token>
     <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_VARIABLE">$charactersbl</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">Characters_bl</token>
-    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="15">
+    <token name="T_WHITESPACE">                                </token>
+    <token name="T_VARIABLE">$charactersbl</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">create</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_CLOSE_TAG">?&gt;</token>
     <token name="T_INLINE_HTML">" class="form-signin" method="POST"&gt;</token>
   </line>
-  <line no="15">
+  <line no="16">
     <token name="T_INLINE_HTML">                    &lt;h1 class="h3 mb-3 font-weight-normal"&gt;Creating a new character&lt;/h1&gt;</token>
   </line>
-  <line no="16">
+  <line no="17">
     <token name="T_INLINE_HTML">                    &lt;label class="sr-only"&gt;Name&lt;/label&gt;</token>
   </line>
-  <line no="17">
+  <line no="18">
     <token name="T_INLINE_HTML">                    &lt;input class="form-control" placeholder="Character's name" name="name" required autofocus&gt;</token>
   </line>
-  <line no="18">
+  <line no="19">
     <token name="T_INLINE_HTML">                    &lt;label class="sr-only"&gt;Class&lt;/label&gt;</token>
   </line>
-  <line no="19">
+  <line no="20">
     <token name="T_INLINE_HTML">                    &lt;div class="dropdown"&gt;</token>
   </line>
-  <line no="20">
+  <line no="21">
     <token name="T_INLINE_HTML">                        &lt;select name="class" id="" class="form-control"&gt;</token>
   </line>
-  <line no="21">
+  <line no="22">
     <token name="T_INLINE_HTML">                            &lt;option value="Mage"&gt;Mage&lt;/option&gt;</token>
   </line>
-  <line no="22">
+  <line no="23">
     <token name="T_INLINE_HTML">                            &lt;option value="Rogue"&gt;Rogue&lt;/option&gt;</token>
   </line>
-  <line no="23">
+  <line no="24">
     <token name="T_INLINE_HTML">                            &lt;option value="Warrior"&gt;Warrior&lt;/option&gt;</token>
   </line>
-  <line no="24">
+  <line no="25">
     <token name="T_INLINE_HTML">                        &lt;/select&gt;</token>
   </line>
-  <line no="25">
+  <line no="26">
     <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
   </line>
-  <line no="26">
+  <line no="27">
     <token name="T_INLINE_HTML">                    &lt;button class="btn btn-lg btn-primary btn-block mt-3" type="submit"&gt;Create&lt;/button&gt;</token>
   </line>
-  <line no="27">
+  <line no="28">
     <token name="T_INLINE_HTML">                    &lt;a href="</token>
     <token name="T_OPEN_TAG">&lt;?php </token>
     <token name="T_ECHO">echo</token>
@@ -112,24 +125,24 @@
     <token name="T_CLOSE_TAG">?&gt;</token>
     <token name="T_INLINE_HTML">characters" class="mt-3"&gt;Cancel&lt;/a&gt;</token>
   </line>
-  <line no="28">
+  <line no="29">
     <token name="T_INLINE_HTML">                &lt;/form&gt;</token>
   </line>
-  <line no="29">
+  <line no="30">
     <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
   </line>
-  <line no="30">
+  <line no="31">
     <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
   </line>
-  <line no="31">
+  <line no="32">
     <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
   </line>
-  <line no="32"/>
-  <line no="33">
+  <line no="33"/>
+  <line no="34">
     <token name="T_INLINE_HTML">&lt;/body&gt;</token>
   </line>
-  <line no="34">
+  <line no="35">
     <token name="T_INLINE_HTML">&lt;/html&gt;</token>
   </line>
-  <line no="35"/>
+  <line no="36"/>
 </source>

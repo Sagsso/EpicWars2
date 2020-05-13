@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="HistoryBlTest" namespace="" name="HistoryBlTest" abstract="false" final="false" start="10" end="65">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/tests/unit" file="HistoryBlTest.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/tests/unit/HistoryBlTest.php" size="1851" time="2020-05-12T09:10:52+02:00" unixtime="1589267452" sha1="ef03ade8896024b0b393e4b7540b471bd5940946" relative="tests/unit/HistoryBlTest.php"/>
+  <extends full="Codeception\Test\Unit" namespace="Codeception\Test" name="Unit" unresolved="true"/>
+  <member name="tester" visibility="protected" static="false" line="15">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="\UnitTester" namespace="" name="UnitTester"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="userId" visibility="private" static="false" line="16"/>
+  <member name="users_bl" visibility="private" static="false" line="17"/>
+  <member name="history_bl" visibility="private" static="false" line="18"/>
+  <method name="_before" start="20" end="27" abstract="false" final="false" static="false" visibility="protected"/>
+  <method name="_after" start="29" end="31" abstract="false" final="false" static="false" visibility="protected"/>
+  <method name="testCreateHistoryInDB" start="34" end="51" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="Stub for History class" line="40"/>
+      <comment value="MySQLiManager returns false if insert query is OK." line="47"/>
+    </inline>
+  </method>
+  <method name="testShow" start="53" end="63" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="$this-&gt;history_bl-&gt;show() retorna arreglo si el usuario tiene historiales de combate." line="57"/>
+    </inline>
+  </method>
+</class>

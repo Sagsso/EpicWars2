@@ -1,49 +1,57 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces" file="ICharacterFactory.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces/ICharacterFactory.php" size="418" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="ed73ac5f09fa0e9a580bffef2c8ea6009fe41afa" relative="interfaces/ICharacterFactory.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces" file="ICharacterFactory.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces/ICharacterFactory.php" size="1384" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="b00a850f4919cf206ed117df61b915ce3edc75ec" relative="interfaces/ICharacterFactory.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
   <line no="2"/>
   <line no="3">
-    <token name="T_COMMENT">/*</token>
-  </line>
-  <line no="4">
-    <token name="T_COMMENT"> * To change this license header, choose License Headers in Project Properties.</token>
-  </line>
-  <line no="5">
-    <token name="T_COMMENT"> * To change this template file, choose Tools | Templates</token>
-  </line>
-  <line no="6">
-    <token name="T_COMMENT"> * and open the template in the editor.</token>
-  </line>
-  <line no="7">
-    <token name="T_COMMENT"> */</token>
-  </line>
-  <line no="8"/>
-  <line no="9">
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="10">
-    <token name="T_DOC_COMMENT"> *</token>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> * This interface is in charge of naming the </token>
   </line>
-  <line no="11">
-    <token name="T_DOC_COMMENT"> * @author pabhoz</token>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * functions that are specific to the character factory object.</token>
   </line>
-  <line no="12">
+  <line no="6">
     <token name="T_DOC_COMMENT"> */</token>
   </line>
-  <line no="13">
+  <line no="7">
     <token name="T_INTERFACE">interface</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">ICharacterFactory</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="14">
+  <line no="8"/>
+  <line no="9">
     <token name="T_WHITESPACE">    </token>
-    <token name="T_STATIC">static</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT">     * Create a mage type character.</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT">     * Creates the instance of a new mage, with a predefined level of 1.</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT">     * @param string $name Name of the character.</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT">     * @return Mage An instance.</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="17">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">createMage</token>
@@ -57,10 +65,34 @@
     <token name="T_STRING">Mage</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="15">
+  <line no="18"/>
+  <line no="19">
     <token name="T_WHITESPACE">    </token>
-    <token name="T_STATIC">static</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT">     * Create a rogue type character.</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT">     * Creates the instance of a new rogue, with a predefined level of 1.</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT">     * @param string $name Name of the character.</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT">     * @return Rogue An instance.</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="27">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">createRogue</token>
@@ -74,10 +106,34 @@
     <token name="T_STRING">Rogue</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="16">
+  <line no="28"/>
+  <line no="29">
     <token name="T_WHITESPACE">    </token>
-    <token name="T_STATIC">static</token>
-    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT">     * Create a warrior type character.</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT">     * Creates the instance of a new warrior, with a predefined level of 1.</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT">     * @param string $name Name of the character.</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT">     * @return Warrior An instance.</token>
+  </line>
+  <line no="36">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="37">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">createWarrior</token>
@@ -91,8 +147,57 @@
     <token name="T_STRING">Warrior</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="17">
+  <line no="38"/>
+  <line no="39">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT">     * Create an existing character.</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="42">
+    <token name="T_DOC_COMMENT">     * Creates an instance for a character that is brought from the database.</token>
+  </line>
+  <line no="43">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="44">
+    <token name="T_DOC_COMMENT">     * @param int $id It receives a number that represents a specific character </token>
+  </line>
+  <line no="45">
+    <token name="T_DOC_COMMENT">     * on the character table.</token>
+  </line>
+  <line no="46">
+    <token name="T_DOC_COMMENT">     * @return ICharacter An instance of character-type.</token>
+  </line>
+  <line no="47">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="48">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">getCharacter</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">int</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$id</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Characters_bl</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$charactersbl</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">ICharacter</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="49">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="18"/>
+  <line no="50"/>
 </source>

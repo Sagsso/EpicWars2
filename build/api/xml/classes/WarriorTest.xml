@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="WarriorTest" namespace="" name="WarriorTest" abstract="false" final="false" start="6" end="51">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/tests/unit" file="WarriorTest.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/tests/unit/WarriorTest.php" size="1358" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="e65624ab636917e0532117993568a300b13abecf" relative="tests/unit/WarriorTest.php"/>
+  <extends full="Codeception\Test\Unit" namespace="Codeception\Test" name="Unit" unresolved="true"/>
+  <member name="tester" visibility="protected" static="false" line="11">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="\UnitTester" namespace="" name="UnitTester"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="warrior" visibility="private" static="false" line="12"/>
+  <method name="_before" start="14" end="17" abstract="false" final="false" static="false" visibility="protected"/>
+  <method name="_after" start="19" end="21" abstract="false" final="false" static="false" visibility="protected"/>
+  <method name="testCreation" start="24" end="28" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="testLevelUp" start="30" end="50" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="Set new level to warrior" line="41"/>
+    </inline>
+  </method>
+</class>

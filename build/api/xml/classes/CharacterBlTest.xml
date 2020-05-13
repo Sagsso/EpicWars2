@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="CharacterBlTest" namespace="" name="CharacterBlTest" abstract="false" final="false" start="8" end="38">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/tests/unit" file="CharacterBlTest.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/tests/unit/CharacterBlTest.php" size="967" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="60d39316bf30f9ac11138ee1c99ea8ab54959cce" relative="tests/unit/CharacterBlTest.php"/>
+  <extends full="Codeception\Test\Unit" namespace="Codeception\Test" name="Unit" unresolved="true"/>
+  <member name="tester" visibility="protected" static="false" line="13">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="\UnitTester" namespace="" name="UnitTester"/>
+      </var>
+    </docblock>
+  </member>
+  <method name="_before" start="15" end="19" abstract="false" final="false" static="false" visibility="protected">
+    <inline>
+      <comment value="$this-&gt;characters_bl = new Characters_bl();" line="17"/>
+      <comment value="Connection::getInstance()-&gt;insert('`Character`', [&quot;name&quot; =&gt; &quot;Test&quot;, &quot;level&quot; =&gt; 4, &quot;characterClassId&quot; =&gt; 2]);" line="18"/>
+    </inline>
+  </method>
+  <method name="_after" start="21" end="24" abstract="false" final="false" static="false" visibility="protected">
+    <inline>
+      <comment value="Connection::getInstance()-&gt;delete('`Character`', array(&quot;id&quot; =&gt;  200));" line="23"/>
+    </inline>
+  </method>
+  <method name="testCreate" start="27" end="31" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="$class = $this-&gt;characters_bl-&gt;getClass($this-&gt;id);" line="29"/>
+      <comment value="$this-&gt;tester-&gt;assertEquals($class,'Mage');" line="30"/>
+    </inline>
+  </method>
+  <method name="testGetClass" start="33" end="37" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="$class = $this-&gt;characters_bl-&gt;getClass($this-&gt;id);" line="35"/>
+      <comment value="$this-&gt;tester-&gt;assertEquals($class,'Mage');" line="36"/>
+    </inline>
+  </method>
+</class>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Connection" namespace="" name="Connection" abstract="false" final="false" start="10" end="38">
-  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/database" file="connection.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/database/connection.php" size="775" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="a6d595426e2496e76e0f5cbdbbd376ac4247f835" relative="database/connection.php"/>
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/database" file="connection.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/database/connection.php" size="775" time="2020-05-12T08:10:45+02:00" unixtime="1589263845" sha1="a6d595426e2496e76e0f5cbdbbd376ac4247f835" relative="database/connection.php"/>
   <docblock>
     <description compact="Description of Connection.">This is the class that manages the connection to the database.</description>
   </docblock>

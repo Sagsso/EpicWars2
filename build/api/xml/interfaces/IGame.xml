@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns="http://xml.phpdox.net/src" full="IGame" namespace="" name="IGame" abstract="false" final="false" start="13" end="17">
-  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces" file="IGame.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces/IGame.php" size="321" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="e78d96a28574ad20464a951498d41e7b90af34c2" relative="interfaces/IGame.php"/>
+<interface xmlns="http://xml.phpdox.net/src" full="IGame" namespace="" name="IGame" abstract="false" final="false" start="7" end="19">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces" file="IGame.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces/IGame.php" size="565" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="d33d11fba03a08d1556851b48593b0eda91868fb" relative="interfaces/IGame.php"/>
   <docblock>
-    <description/>
-    <author value="pabhoz"/>
+    <description compact="This interface is in charge of naming the functions that are specific to the game logic."/>
   </docblock>
-  <method name="fight" start="15" end="15" abstract="false" final="false" static="false" visibility="public">
+  <method name="fight" start="17" end="17" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="It is the basis of the game, which consists of recreating the battle of 2 characters using the attack and defense of each player according to the turns."/>
+      <param description="The character he's going to attack." type="object" variable="$character1">
+        <type full="ICharacter" namespace="" name="ICharacter"/>
+      </param>
+      <param description="The character who gets attacked." type="object" variable="$character2">
+        <type full="ICharacter" namespace="" name="ICharacter"/>
+      </param>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
     <return type="void" nullable="false"/>
     <parameter name="character1" byreference="false" type="object">
       <type full="ICharacter" namespace="" name="ICharacter"/>

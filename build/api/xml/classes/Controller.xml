@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Controller" namespace="" name="Controller" abstract="true" final="false" start="9" end="23">
-  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/models" file="Controller.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/models/Controller.php" size="463" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="4583fd83a9c1762a777500fc71168f8a34a27dba" relative="models/Controller.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Controller" namespace="" name="Controller" abstract="true" final="false" start="7" end="21">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/models" file="Controller.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/models/Controller.php" size="431" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="58c0e93c995f3a73378d4b269020b21b1651f56c" relative="models/Controller.php"/>
   <docblock>
-    <description compact="Description of Controller">The controller class defines the constructor and the
-general minimum methods that every controller should have.</description>
+    <description compact="The controller class defines the constructor and the general minimum methods that every controller should have."/>
   </docblock>
   <implements full="IController" namespace="" name="IController"/>
-  <member name="view" visibility="protected" static="false" line="14">
+  <member name="view" visibility="protected" static="false" line="12">
     <docblock>
       <description/>
       <var description="$view The view to render the controller." type="object">
@@ -14,12 +13,18 @@ general minimum methods that every controller should have.</description>
       </var>
     </docblock>
   </member>
-  <constructor name="__construct" start="16" end="19" abstract="false" final="false" static="false" visibility="public"/>
-  <method name="index" start="21" end="21" abstract="true" final="false" static="false" visibility="public">
+  <constructor name="__construct" start="14" end="17" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="index" start="19" end="19" abstract="true" final="false" static="false" visibility="public">
     <return type="void" nullable="false"/>
   </method>
   <interface full="IController" namespace="" name="IController">
-    <method name="index" start="14" end="14" abstract="false" final="false" static="false" visibility="public">
+    <method name="index" start="16" end="16" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Default function.">It is in charge of rendering the principal view.</description>
+        <return type="object">
+          <type full="void" namespace="" name="void"/>
+        </return>
+      </docblock>
       <return type="void" nullable="false"/>
     </method>
   </interface>

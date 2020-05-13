@@ -1,46 +1,59 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces" file="IDBAdapter.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces/IDBAdapter.php" size="497" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="eb1086c6cf421fbcff0ae1566a3b7b883f8c1861" relative="interfaces/IDBAdapter.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces" file="IDBAdapter.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces/IDBAdapter.php" size="2475" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="0144f101f89754f21f11c4f1cf2795be2b691358" relative="interfaces/IDBAdapter.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
   <line no="2"/>
   <line no="3">
-    <token name="T_COMMENT">/*</token>
-  </line>
-  <line no="4">
-    <token name="T_COMMENT"> * To change this license header, choose License Headers in Project Properties.</token>
-  </line>
-  <line no="5">
-    <token name="T_COMMENT"> * To change this template file, choose Tools | Templates</token>
-  </line>
-  <line no="6">
-    <token name="T_COMMENT"> * and open the template in the editor.</token>
-  </line>
-  <line no="7">
-    <token name="T_COMMENT"> */</token>
-  </line>
-  <line no="8"/>
-  <line no="9">
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="10">
-    <token name="T_DOC_COMMENT"> *</token>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> * This interface is in charge of naming the </token>
   </line>
-  <line no="11">
-    <token name="T_DOC_COMMENT"> * @author sagsso</token>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * functions that are specific to the adapters.</token>
   </line>
-  <line no="12">
+  <line no="6">
     <token name="T_DOC_COMMENT"> */</token>
   </line>
-  <line no="13">
+  <line no="7">
     <token name="T_INTERFACE">interface</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">IDBAdapter</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
+  <line no="8"/>
+  <line no="9">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT">     * It is the one in charge of inserting data in the database table.</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT">     * @param string $table The name of the existing table's columns in the database.</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT">     * @param array $values It must contain the name of the table </token>
+  </line>
   <line no="14">
+    <token name="T_DOC_COMMENT">     * columns with the values to be inserted. In an array of objects.</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT">     * @param string $where (optional) Condition.</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT">     * @return bool</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="18">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -56,7 +69,36 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="15">
+  <line no="19"/>
+  <line no="20">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT">     * It is in charge of selecting the information from the database.</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT">     * @param string $attr The name of the existing table's columns in the database.</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT">     * @param array $values It must contain the name of the table </token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT">     * columns with the values to be inserted. In an array of objects.</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT">     * @param string $where (optional) Condition.</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT">     * @return array An array with all the rows and columns selected.</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="29">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -72,7 +114,36 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="16">
+  <line no="30"/>
+  <line no="31">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT">     * It is the one in charge of updating data in the database table.</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT">     * @param string $table The name of the existing table in the database.</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT">     * @param array $values It must contain the name of the table </token>
+  </line>
+  <line no="36">
+    <token name="T_DOC_COMMENT">     * columns with the values to be inserted. In an array of objects.</token>
+  </line>
+  <line no="37">
+    <token name="T_DOC_COMMENT">     * @param string $where (optional) Condition.</token>
+  </line>
+  <line no="38">
+    <token name="T_DOC_COMMENT">     * @return bool</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="40">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -88,7 +159,33 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="17">
+  <line no="41"/>
+  <line no="42">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="43">
+    <token name="T_DOC_COMMENT">     * It is the one in charge of deleting data in the database table.</token>
+  </line>
+  <line no="44">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="45">
+    <token name="T_DOC_COMMENT">     * @param string $table The name of the existing table in the database.</token>
+  </line>
+  <line no="46">
+    <token name="T_DOC_COMMENT">     * @param array $pk </token>
+  </line>
+  <line no="47">
+    <token name="T_DOC_COMMENT">     * @param string $where (optional) Condition.</token>
+  </line>
+  <line no="48">
+    <token name="T_DOC_COMMENT">     * @return bool</token>
+  </line>
+  <line no="49">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="50">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -104,7 +201,36 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="18">
+  <line no="51"/>
+  <line no="52">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="53">
+    <token name="T_DOC_COMMENT">     * It is in charge of verifying the existence of a record in the database.</token>
+  </line>
+  <line no="54">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="55">
+    <token name="T_DOC_COMMENT">     * @param string $attr The name of the existing table in the database.</token>
+  </line>
+  <line no="56">
+    <token name="T_DOC_COMMENT">     * @param array $table Database's table.</token>
+  </line>
+  <line no="57">
+    <token name="T_DOC_COMMENT">     * @param array $values It must contain the name of the table </token>
+  </line>
+  <line no="58">
+    <token name="T_DOC_COMMENT">     * columns with the values to be inserted. In an array of objects.</token>
+  </line>
+  <line no="59">
+    <token name="T_DOC_COMMENT">     * @return bool</token>
+  </line>
+  <line no="60">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="61">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -118,7 +244,27 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="19">
+  <line no="62"/>
+  <line no="63">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="64">
+    <token name="T_DOC_COMMENT">     * It is in charge of obtaining all the data of a specific table.</token>
+  </line>
+  <line no="65">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="66">
+    <token name="T_DOC_COMMENT">     * @param string $table The name of the existing table in the database.</token>
+  </line>
+  <line no="67">
+    <token name="T_DOC_COMMENT">     * @return array An array with all the rows and columns.</token>
+  </line>
+  <line no="68">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="69">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -128,8 +274,8 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="20">
+  <line no="70">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="21"/>
+  <line no="71"/>
 </source>

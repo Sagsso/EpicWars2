@@ -1,78 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="MySQLiMAdapter" namespace="" name="MySQLiMAdapter" abstract="false" final="false" start="12" end="45">
-  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/database" file="MySQLiMAdapter.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/database/MySQLiMAdapter.php" size="1445" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="363f3e4130f222dd3746f0f89ecf573ef56b3c5c" relative="database/MySQLiMAdapter.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="MySQLiMAdapter" namespace="" name="MySQLiMAdapter" abstract="false" final="false" start="10" end="43">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/database" file="MySQLiMAdapter.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/database/MySQLiMAdapter.php" size="1409" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="058db939b105ab04f1380695367a443c5741ade7" relative="database/MySQLiMAdapter.php"/>
   <docblock>
-    <description compact="Description of MySQLiMAdapter">The MySQLiMAdapter class is based on the design pattern
-called adapter. Which consists in generating an intermediary
-that facilitates the processes with the current application
-with respect to another imported file.</description>
+    <description compact="The MySQLiMAdapter class is based on the design pattern called adapter. Which consists in generating an intermediary that facilitates the processes with the current application with respect to another imported file."/>
   </docblock>
   <implements full="IDBAdapter" namespace="" name="IDBAdapter"/>
-  <member name="source" visibility="private" static="false" line="14"/>
-  <constructor name="__construct" start="15" end="17" abstract="false" final="false" static="false" visibility="public">
+  <member name="source" visibility="private" static="false" line="12"/>
+  <constructor name="__construct" start="13" end="15" abstract="false" final="false" static="false" visibility="public">
     <parameter name="DB_HOST" byreference="false" type="{unknown}"/>
     <parameter name="DB_USER" byreference="false" type="{unknown}"/>
     <parameter name="DB_PASS" byreference="false" type="{unknown}"/>
     <parameter name="DB_NAME" byreference="false" type="{unknown}"/>
   </constructor>
-  <method name="insert" start="19" end="21" abstract="false" final="false" static="false" visibility="public">
+  <method name="insert" start="17" end="19" abstract="false" final="false" static="false" visibility="public">
     <parameter name="table" byreference="false" type="{unknown}"/>
     <parameter name="values" byreference="false" type="{unknown}"/>
     <parameter name="where" byreference="false" type="string" default="''"/>
   </method>
-  <method name="select" start="22" end="24" abstract="false" final="false" static="false" visibility="public">
+  <method name="select" start="20" end="22" abstract="false" final="false" static="false" visibility="public">
     <parameter name="attr" byreference="false" type="{unknown}"/>
     <parameter name="table" byreference="false" type="{unknown}"/>
     <parameter name="where" byreference="false" type="string" default="''"/>
   </method>
-  <method name="update" start="25" end="27" abstract="false" final="false" static="false" visibility="public">
+  <method name="update" start="23" end="25" abstract="false" final="false" static="false" visibility="public">
     <parameter name="table" byreference="false" type="{unknown}"/>
     <parameter name="values" byreference="false" type="{unknown}"/>
     <parameter name="where" byreference="false" type="string" default="''"/>
   </method>
-  <method name="delete" start="28" end="30" abstract="false" final="false" static="false" visibility="public">
+  <method name="delete" start="26" end="28" abstract="false" final="false" static="false" visibility="public">
     <parameter name="table" byreference="false" type="{unknown}"/>
     <parameter name="pk" byreference="false" type="{unknown}"/>
     <parameter name="where" byreference="false" type="string" default="''"/>
   </method>
-  <method name="check" start="31" end="33" abstract="false" final="false" static="false" visibility="public">
+  <method name="check" start="29" end="31" abstract="false" final="false" static="false" visibility="public">
     <parameter name="attr" byreference="false" type="{unknown}"/>
     <parameter name="table" byreference="false" type="{unknown}"/>
     <parameter name="values" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getAll" start="34" end="36" abstract="false" final="false" static="false" visibility="public">
+  <method name="getAll" start="32" end="34" abstract="false" final="false" static="false" visibility="public">
     <parameter name="table" byreference="false" type="{unknown}"/>
   </method>
-  <method name="query" start="37" end="44" abstract="false" final="false" static="false" visibility="public">
+  <method name="query" start="35" end="42" abstract="false" final="false" static="false" visibility="public">
     <parameter name="query" byreference="false" type="{unknown}"/>
   </method>
   <interface full="IDBAdapter" namespace="" name="IDBAdapter">
-    <method name="insert" start="14" end="14" abstract="false" final="false" static="false" visibility="public">
+    <method name="insert" start="18" end="18" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="It is the one in charge of inserting data in the database table."/>
+        <param description="The name of the existing table's columns in the database." type="string" variable="$table"/>
+        <param description="It must contain the name of the table" type="array" variable="$values">columns with the values to be inserted. In an array of objects.</param>
+        <param description="(optional) Condition." type="string" variable="$where"/>
+        <return type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
       <parameter name="table" byreference="false" type="{unknown}"/>
       <parameter name="values" byreference="false" type="{unknown}"/>
       <parameter name="where" byreference="false" type="{unknown}"/>
     </method>
-    <method name="select" start="15" end="15" abstract="false" final="false" static="false" visibility="public">
+    <method name="select" start="29" end="29" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="It is in charge of selecting the information from the database."/>
+        <param description="The name of the existing table's columns in the database." type="string" variable="$attr"/>
+        <param description="It must contain the name of the table" type="array" variable="$values">columns with the values to be inserted. In an array of objects.</param>
+        <param description="(optional) Condition." type="string" variable="$where"/>
+        <return description="An array with all the rows and columns selected." type="array"/>
+      </docblock>
       <parameter name="attr" byreference="false" type="{unknown}"/>
       <parameter name="values" byreference="false" type="{unknown}"/>
       <parameter name="where" byreference="false" type="{unknown}"/>
     </method>
-    <method name="update" start="16" end="16" abstract="false" final="false" static="false" visibility="public">
+    <method name="update" start="40" end="40" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="It is the one in charge of updating data in the database table."/>
+        <param description="The name of the existing table in the database." type="string" variable="$table"/>
+        <param description="It must contain the name of the table" type="array" variable="$values">columns with the values to be inserted. In an array of objects.</param>
+        <param description="(optional) Condition." type="string" variable="$where"/>
+        <return type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
       <parameter name="table" byreference="false" type="{unknown}"/>
       <parameter name="values" byreference="false" type="{unknown}"/>
       <parameter name="where" byreference="false" type="{unknown}"/>
     </method>
-    <method name="delete" start="17" end="17" abstract="false" final="false" static="false" visibility="public">
+    <method name="delete" start="50" end="50" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="It is the one in charge of deleting data in the database table."/>
+        <param description="The name of the existing table in the database." type="string" variable="$table"/>
+        <param type="array" variable="$pk"/>
+        <param description="(optional) Condition." type="string" variable="$where"/>
+        <return type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
       <parameter name="table" byreference="false" type="{unknown}"/>
       <parameter name="pk" byreference="false" type="{unknown}"/>
       <parameter name="where" byreference="false" type="{unknown}"/>
     </method>
-    <method name="check" start="18" end="18" abstract="false" final="false" static="false" visibility="public">
+    <method name="check" start="61" end="61" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="It is in charge of verifying the existence of a record in the database."/>
+        <param description="The name of the existing table in the database." type="string" variable="$attr"/>
+        <param description="Database's table." type="array" variable="$table"/>
+        <param description="It must contain the name of the table" type="array" variable="$values">columns with the values to be inserted. In an array of objects.</param>
+        <return type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
       <parameter name="attr" byreference="false" type="{unknown}"/>
       <parameter name="table" byreference="false" type="{unknown}"/>
       <parameter name="values" byreference="false" type="{unknown}"/>
     </method>
-    <method name="getAll" start="19" end="19" abstract="false" final="false" static="false" visibility="public">
+    <method name="getAll" start="69" end="69" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="It is in charge of obtaining all the data of a specific table."/>
+        <param description="The name of the existing table in the database." type="string" variable="$table"/>
+        <return description="An array with all the rows and columns." type="array"/>
+      </docblock>
       <parameter name="table" byreference="false" type="{unknown}"/>
     </method>
   </interface>

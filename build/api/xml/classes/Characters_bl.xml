@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Characters_bl" namespace="" name="Characters_bl" abstract="false" final="false" start="12" end="209">
-  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/businessLogic" file="characters_bl.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/businessLogic/characters_bl.php" size="8193" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="1f4c0fff8fab8c594a8c1e24dd6816ced144f6a2" relative="businessLogic/characters_bl.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Characters_bl" namespace="" name="Characters_bl" abstract="false" final="false" start="12" end="213">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/businessLogic" file="Characters_bl.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/businessLogic/Characters_bl.php" size="7879" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="81a6e127160b4213e6e3cd9156c459fd73b9af5e" relative="businessLogic/Characters_bl.php"/>
   <docblock>
     <description compact="Description of Characters_bl.">It is in charge of creating, bringing, updating, or deleting
 specific data, according to the function,
 from the table character in the database.</description>
   </docblock>
-  <method name="getClass" start="24" end="29" abstract="false" final="false" static="true" visibility="public">
+  <constructor name="__construct" start="15" end="16" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getClass" start="28" end="33" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Get the class of a character.">Its function is to search the database for the class that corresponds
 to the character with a specific ID.</description>
@@ -15,7 +16,7 @@ to the character with a specific ID.</description>
     </docblock>
     <parameter name="id" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getIdCharacter" start="40" end="44" abstract="false" final="false" static="true" visibility="public">
+  <method name="getIdCharacter" start="44" end="48" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Get the ID of a character.">Its function is to search the database for the ID number that corresponds
 to the name of the character.</description>
@@ -24,7 +25,7 @@ to the name of the character.</description>
     </docblock>
     <parameter name="name" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getLevel" start="56" end="59" abstract="false" final="false" static="true" visibility="public">
+  <method name="getLevel" start="60" end="63" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Get the level of a character.">Its function is to search the database for the level that corresponds
 to the character with a specific ID.</description>
@@ -33,7 +34,7 @@ to the character with a specific ID.</description>
     </docblock>
     <parameter name="id" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getCharacterName" start="71" end="78" abstract="false" final="false" static="true" visibility="public">
+  <method name="getCharacterName" start="75" end="82" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Get the name of a character.">Its function is to search the database for the name that corresponds
 to the character with a specific ID.</description>
@@ -42,7 +43,7 @@ to the character with a specific ID.</description>
     </docblock>
     <parameter name="id" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getAll" start="90" end="106" abstract="false" final="false" static="true" visibility="public">
+  <method name="getAll" start="96" end="112" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Get all the characters of a user.">Its function is to search for all the information corresponding to the
 current user's characters. It also determines the *character_selected
@@ -51,7 +52,7 @@ user has registered in the character table.</description>
       <return description="Of characters." type="array"/>
     </docblock>
   </method>
-  <method name="getRivals" start="119" end="134" abstract="false" final="false" static="true" visibility="public">
+  <method name="getRivals" start="125" end="140" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Get the rivals depending the character selected.">Depending on the *id_character_selected* in the current user session, the
 function will be searched for the characters of other players with the same
@@ -61,7 +62,7 @@ level or within a range of 2 levels higher and lower.</description>
     </docblock>
     <parameter name="idCharacter" byreference="false" type="{unknown}"/>
   </method>
-  <method name="delete" start="146" end="151" abstract="false" final="false" static="true" visibility="public">
+  <method name="delete" start="152" end="157" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Delete a character.">This function takes care of removing a row from the character table,
 depending on the specific character ID delivered.</description>
@@ -72,7 +73,7 @@ depending on the specific character ID delivered.</description>
     </docblock>
     <parameter name="id" byreference="false" type="{unknown}"/>
   </method>
-  <method name="update" start="162" end="165" abstract="false" final="false" static="true" visibility="public">
+  <method name="update" start="168" end="171" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Update the level of a character.">This function updates the level in the database depending on the
 specific character ID.</description>
@@ -85,7 +86,7 @@ specific character ID.</description>
     </docblock>
     <parameter name="character" byreference="false" type="{unknown}"/>
   </method>
-  <method name="create" start="177" end="207" abstract="false" final="false" static="true" visibility="public">
+  <method name="create" start="183" end="210" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Create a character.">This function is in charge of creating the character depending on
 the data obtained by POST method. It calls the character factory to

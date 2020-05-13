@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/models" file="Character.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/models/Character.php" size="5325" time="2020-05-06T20:54:24+02:00" unixtime="1588791264" sha1="44ef8a71c3ee535b4445ead263ebc84e81f6c976" relative="models/Character.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/models" file="Character.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/models/Character.php" size="5049" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="3fd9a944080c9f6545e374120c4fce97a9d962c6" relative="models/Character.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -9,21 +9,15 @@
     <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="4">
-    <token name="T_DOC_COMMENT"> * Description of Character</token>
-  </line>
-  <line no="5">
-    <token name="T_DOC_COMMENT"> *</token>
-  </line>
-  <line no="6">
     <token name="T_DOC_COMMENT"> * The character class is in charge of defining all </token>
   </line>
-  <line no="7">
+  <line no="5">
     <token name="T_DOC_COMMENT"> * the attributes that belong to all the characters in general.</token>
   </line>
-  <line no="8">
+  <line no="6">
     <token name="T_DOC_COMMENT"> */</token>
   </line>
-  <line no="9">
+  <line no="7">
     <token name="T_ABSTRACT">abstract</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_CLASS">class</token>
@@ -35,105 +29,105 @@
     <token name="T_STRING">ICharacter</token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="10">
+  <line no="8">
     <token name="T_WHITESPACE">    </token>
   </line>
-  <line no="11">
+  <line no="9">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="12">
+  <line no="10">
     <token name="T_DOC_COMMENT">     * @var string $name Character's name.</token>
   </line>
-  <line no="13">
+  <line no="11">
     <token name="T_DOC_COMMENT">     * @var int $level Character's level.</token>
   </line>
-  <line no="14">
+  <line no="12">
     <token name="T_DOC_COMMENT">     * @var int $str Character's strenght.</token>
   </line>
-  <line no="15">
+  <line no="13">
     <token name="T_DOC_COMMENT">     * @var int $intl Character's intellect.</token>
   </line>
-  <line no="16">
+  <line no="14">
     <token name="T_DOC_COMMENT">     * @var int $agi Character's agility.</token>
   </line>
-  <line no="17">
+  <line no="15">
     <token name="T_DOC_COMMENT">     * @var int $mDef Character's magic defense.</token>
   </line>
-  <line no="18">
+  <line no="16">
     <token name="T_DOC_COMMENT">     * @var int $fDef Character's physical defense.</token>
   </line>
-  <line no="19">
+  <line no="17">
     <token name="T_DOC_COMMENT">     * @var int $id Character's ID.</token>
   </line>
-  <line no="20">
+  <line no="18">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="21">
+  <line no="19">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PROTECTED">protected</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$name</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="22">
+  <line no="20">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PROTECTED">protected</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$level</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="23">
+  <line no="21">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PROTECTED">protected</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$str</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="24">
+  <line no="22">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PROTECTED">protected</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$intl</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="25">
+  <line no="23">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PROTECTED">protected</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$agi</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="26">
+  <line no="24">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PROTECTED">protected</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$mDef</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="27">
+  <line no="25">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PROTECTED">protected</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$fDef</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="28">
+  <line no="26">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PROTECTED">protected</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$hp</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="29">
+  <line no="27">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PROTECTED">protected</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_VARIABLE">$id</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="30"/>
-  <line no="31">
+  <line no="28"/>
+  <line no="29">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -165,7 +159,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="32">
+  <line no="30">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -176,7 +170,7 @@
     <token name="T_VARIABLE">$name</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="33">
+  <line no="31">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -187,7 +181,7 @@
     <token name="T_VARIABLE">$level</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="34">
+  <line no="32">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -198,7 +192,7 @@
     <token name="T_VARIABLE">$str</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="35">
+  <line no="33">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -209,7 +203,7 @@
     <token name="T_VARIABLE">$intl</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="36">
+  <line no="34">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -220,7 +214,7 @@
     <token name="T_VARIABLE">$agi</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="37">
+  <line no="35">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -231,7 +225,7 @@
     <token name="T_VARIABLE">$mDef</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="38">
+  <line no="36">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -242,7 +236,7 @@
     <token name="T_VARIABLE">$fDef</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="39">
+  <line no="37">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -253,15 +247,15 @@
     <token name="T_VARIABLE">$hp</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="40">
+  <line no="38">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="41"/>
-  <line no="42">
+  <line no="39"/>
+  <line no="40">
     <token name="T_WHITESPACE">    </token>
   </line>
-  <line no="43">
+  <line no="41">
     <token name="T_WHITESPACE">    </token>
     <token name="T_ABSTRACT">abstract</token>
     <token name="T_WHITESPACE"> </token>
@@ -281,8 +275,8 @@
     <token name="T_ARRAY">array</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="44"/>
-  <line no="45">
+  <line no="42"/>
+  <line no="43">
     <token name="T_WHITESPACE">    </token>
     <token name="T_ABSTRACT">abstract</token>
     <token name="T_WHITESPACE"> </token>
@@ -306,50 +300,30 @@
     <token name="T_ARRAY">array</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="46"/>
-  <line no="47">
-    <token name="T_WHITESPACE">    </token>
-    <token name="T_ABSTRACT">abstract</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_PUBLIC">public</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_FUNCTION">function</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">getStat</token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_STRING">string</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_VARIABLE">$statName</token>
-    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-    <token name="T_PHPDOX_COLON">:</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">float</token>
-    <token name="T_PHPDOX_SEMICOLON">;</token>
-  </line>
-  <line no="48"/>
-  <line no="49">
+  <line no="44"/>
+  <line no="45">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="50">
+  <line no="46">
     <token name="T_DOC_COMMENT">     * Manages the character's stats.</token>
   </line>
-  <line no="51">
+  <line no="47">
     <token name="T_DOC_COMMENT">     * </token>
   </line>
-  <line no="52">
+  <line no="48">
     <token name="T_DOC_COMMENT">     * Returns all stats of the character's instance.</token>
   </line>
-  <line no="53">
+  <line no="49">
     <token name="T_DOC_COMMENT">     * </token>
   </line>
-  <line no="54">
+  <line no="50">
     <token name="T_DOC_COMMENT">     * @return array</token>
   </line>
-  <line no="55">
+  <line no="51">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="56">
+  <line no="52">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -364,7 +338,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="57">
+  <line no="53">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -409,10 +383,10 @@
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="58">
+  <line no="54">
     <token name="T_WHITESPACE">                </token>
     <token name="T_PHPDOX_COMMA">,</token>
-    <token name="T_CONSTANT_ENCAPSED_STRING">"mDef"</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"mdef"</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_DOUBLE_ARROW">=&gt;</token>
     <token name="T_WHITESPACE"> </token>
@@ -422,7 +396,7 @@
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_COMMA">,</token>
-    <token name="T_CONSTANT_ENCAPSED_STRING">"fDef"</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"fdef"</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_DOUBLE_ARROW">=&gt;</token>
     <token name="T_WHITESPACE"> </token>
@@ -444,74 +418,12 @@
     <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="59">
+  <line no="55">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="60"/>
-  <line no="61">
-    <token name="T_WHITESPACE">    </token>
-    <token name="T_ABSTRACT">abstract</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_PUBLIC">public</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_FUNCTION">function</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">iDie</token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-    <token name="T_PHPDOX_COLON">:</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">void</token>
-    <token name="T_PHPDOX_SEMICOLON">;</token>
-  </line>
-  <line no="62"/>
-  <line no="63">
-    <token name="T_WHITESPACE">    </token>
-    <token name="T_ABSTRACT">abstract</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_PUBLIC">public</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_FUNCTION">function</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">setStat</token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_STRING">string</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_VARIABLE">$statName</token>
-    <token name="T_PHPDOX_COMMA">,</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">float</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_VARIABLE">$value</token>
-    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-    <token name="T_PHPDOX_COLON">:</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">void</token>
-    <token name="T_PHPDOX_SEMICOLON">;</token>
-  </line>
-  <line no="64"/>
-  <line no="65">
-    <token name="T_WHITESPACE">    </token>
-    <token name="T_ABSTRACT">abstract</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_PUBLIC">public</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_FUNCTION">function</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">setStats</token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_ARRAY">array</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_VARIABLE">$stats</token>
-    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-    <token name="T_PHPDOX_COLON">:</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">void</token>
-    <token name="T_PHPDOX_SEMICOLON">;</token>
-  </line>
-  <line no="66"/>
-  <line no="67">
+  <line no="56"/>
+  <line no="57">
     <token name="T_WHITESPACE">    </token>
     <token name="T_ABSTRACT">abstract</token>
     <token name="T_WHITESPACE"> </token>
@@ -527,41 +439,41 @@
     <token name="T_STRING">void</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="68">
+  <line no="58">
     <token name="T_WHITESPACE">    </token>
   </line>
-  <line no="69">
+  <line no="59">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="70">
+  <line no="60">
     <token name="T_DOC_COMMENT">     * Determines a critical hit</token>
   </line>
-  <line no="71">
+  <line no="61">
     <token name="T_DOC_COMMENT">     * </token>
   </line>
-  <line no="72">
+  <line no="62">
     <token name="T_DOC_COMMENT">     * It generates a logic, where a random number is obtained </token>
   </line>
-  <line no="73">
+  <line no="63">
     <token name="T_DOC_COMMENT">     * to determine the probability of taking a critical hit </token>
   </line>
-  <line no="74">
+  <line no="64">
     <token name="T_DOC_COMMENT">     * within the given range.</token>
   </line>
-  <line no="75">
+  <line no="65">
     <token name="T_DOC_COMMENT">     * </token>
   </line>
-  <line no="76">
+  <line no="66">
     <token name="T_DOC_COMMENT">     * @param float $rate </token>
   </line>
-  <line no="77">
+  <line no="67">
     <token name="T_DOC_COMMENT">     * @return bool</token>
   </line>
-  <line no="78">
+  <line no="68">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="79">
+  <line no="69">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PROTECTED">protected</token>
     <token name="T_WHITESPACE"> </token>
@@ -579,7 +491,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="80">
+  <line no="70">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$roll</token>
     <token name="T_WHITESPACE"> </token>
@@ -593,7 +505,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="81">
+  <line no="71">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -617,37 +529,37 @@
     <token name="T_STRING">false</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="82">
+  <line no="72">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="83"/>
-  <line no="84">
+  <line no="73"/>
+  <line no="74">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="85">
+  <line no="75">
     <token name="T_DOC_COMMENT">     * Determines a magical hit</token>
   </line>
-  <line no="86">
+  <line no="76">
     <token name="T_DOC_COMMENT">     * </token>
   </line>
-  <line no="87">
+  <line no="77">
     <token name="T_DOC_COMMENT">     * It generates a logic, where a random number is obtained </token>
   </line>
-  <line no="88">
+  <line no="78">
     <token name="T_DOC_COMMENT">     * to determine the probability of taking a magical hit.</token>
   </line>
-  <line no="89">
+  <line no="79">
     <token name="T_DOC_COMMENT">     * </token>
   </line>
-  <line no="90">
+  <line no="80">
     <token name="T_DOC_COMMENT">     * @return bool</token>
   </line>
-  <line no="91">
+  <line no="81">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="92">
+  <line no="82">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PROTECTED">protected</token>
     <token name="T_WHITESPACE"> </token>
@@ -662,7 +574,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="93">
+  <line no="83">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$roll</token>
     <token name="T_WHITESPACE"> </token>
@@ -676,7 +588,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="94">
+  <line no="84">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -696,27 +608,27 @@
     <token name="T_STRING">true</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="95">
+  <line no="85">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="96">
+  <line no="86">
     <token name="T_WHITESPACE">    </token>
   </line>
-  <line no="97">
+  <line no="87">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="98">
+  <line no="88">
     <token name="T_DOC_COMMENT">     * Gets the character's name.</token>
   </line>
-  <line no="99">
+  <line no="89">
     <token name="T_DOC_COMMENT">     * @return string</token>
   </line>
-  <line no="100">
+  <line no="90">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="101">
+  <line no="91">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -726,7 +638,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="102">
+  <line no="92">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -735,25 +647,25 @@
     <token name="T_STRING">name</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="103">
+  <line no="93">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="104"/>
-  <line no="105">
+  <line no="94"/>
+  <line no="95">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="106">
+  <line no="96">
     <token name="T_DOC_COMMENT">     * Gets the character's level.</token>
   </line>
-  <line no="107">
+  <line no="97">
     <token name="T_DOC_COMMENT">     * @return int</token>
   </line>
-  <line no="108">
+  <line no="98">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="109">
+  <line no="99">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -763,7 +675,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="110">
+  <line no="100">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -772,25 +684,25 @@
     <token name="T_STRING">level</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="111">
+  <line no="101">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="112"/>
-  <line no="113">
+  <line no="102"/>
+  <line no="103">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="114">
+  <line no="104">
     <token name="T_DOC_COMMENT">     * Gets the character's str.</token>
   </line>
-  <line no="115">
+  <line no="105">
     <token name="T_DOC_COMMENT">     * @return int</token>
   </line>
-  <line no="116">
+  <line no="106">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="117">
+  <line no="107">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -800,7 +712,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="118">
+  <line no="108">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -809,25 +721,25 @@
     <token name="T_STRING">str</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="119">
+  <line no="109">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="120"/>
-  <line no="121">
+  <line no="110"/>
+  <line no="111">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="122">
+  <line no="112">
     <token name="T_DOC_COMMENT">     * Gets the character's intl.</token>
   </line>
-  <line no="123">
+  <line no="113">
     <token name="T_DOC_COMMENT">     * @return int</token>
   </line>
-  <line no="124">
+  <line no="114">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="125">
+  <line no="115">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -837,7 +749,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="126">
+  <line no="116">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -846,25 +758,25 @@
     <token name="T_STRING">intl</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="127">
+  <line no="117">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="128"/>
-  <line no="129">
+  <line no="118"/>
+  <line no="119">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="130">
+  <line no="120">
     <token name="T_DOC_COMMENT">     * Gets the character's agi.</token>
   </line>
-  <line no="131">
+  <line no="121">
     <token name="T_DOC_COMMENT">     * @return int</token>
   </line>
-  <line no="132">
+  <line no="122">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="133">
+  <line no="123">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -874,7 +786,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="134">
+  <line no="124">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -883,25 +795,25 @@
     <token name="T_STRING">agi</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="135">
+  <line no="125">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="136"/>
-  <line no="137">
+  <line no="126"/>
+  <line no="127">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="138">
+  <line no="128">
     <token name="T_DOC_COMMENT">     * Gets the character's mDef.</token>
   </line>
-  <line no="139">
+  <line no="129">
     <token name="T_DOC_COMMENT">     * @return int</token>
   </line>
-  <line no="140">
+  <line no="130">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="141">
+  <line no="131">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -911,7 +823,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="142">
+  <line no="132">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -920,25 +832,25 @@
     <token name="T_STRING">mDef</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="143">
+  <line no="133">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="144"/>
-  <line no="145">
+  <line no="134"/>
+  <line no="135">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="146">
+  <line no="136">
     <token name="T_DOC_COMMENT">     * Gets the character's fDef.</token>
   </line>
-  <line no="147">
+  <line no="137">
     <token name="T_DOC_COMMENT">     * @return int</token>
   </line>
-  <line no="148">
+  <line no="138">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="149">
+  <line no="139">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -948,7 +860,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="150">
+  <line no="140">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -957,25 +869,25 @@
     <token name="T_STRING">fDef</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="151">
+  <line no="141">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="152"/>
-  <line no="153">
+  <line no="142"/>
+  <line no="143">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="154">
+  <line no="144">
     <token name="T_DOC_COMMENT">     * Gets the character's hp.</token>
   </line>
-  <line no="155">
+  <line no="145">
     <token name="T_DOC_COMMENT">     * @return int</token>
   </line>
-  <line no="156">
+  <line no="146">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="157">
+  <line no="147">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -985,7 +897,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="158">
+  <line no="148">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -994,28 +906,28 @@
     <token name="T_STRING">hp</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="159">
+  <line no="149">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="160"/>
-  <line no="161">
+  <line no="150"/>
+  <line no="151">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="162">
+  <line no="152">
     <token name="T_DOC_COMMENT">     * Sets the character's name.</token>
   </line>
-  <line no="163">
+  <line no="153">
     <token name="T_DOC_COMMENT">     * @param string $name</token>
   </line>
-  <line no="164">
+  <line no="154">
     <token name="T_DOC_COMMENT">     * @return void</token>
   </line>
-  <line no="165">
+  <line no="155">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="166">
+  <line no="156">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -1029,7 +941,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="167">
+  <line no="157">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -1040,28 +952,28 @@
     <token name="T_VARIABLE">$name</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="168">
+  <line no="158">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="169"/>
-  <line no="170">
+  <line no="159"/>
+  <line no="160">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="171">
+  <line no="161">
     <token name="T_DOC_COMMENT">     * Sets the character's level.</token>
   </line>
-  <line no="172">
+  <line no="162">
     <token name="T_DOC_COMMENT">     * @param int $level</token>
   </line>
-  <line no="173">
+  <line no="163">
     <token name="T_DOC_COMMENT">     * @return void</token>
   </line>
-  <line no="174">
+  <line no="164">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="175">
+  <line no="165">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -1075,7 +987,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="176">
+  <line no="166">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -1086,28 +998,28 @@
     <token name="T_VARIABLE">$level</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="177">
+  <line no="167">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="178"/>
-  <line no="179">
+  <line no="168"/>
+  <line no="169">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="180">
+  <line no="170">
     <token name="T_DOC_COMMENT">     * Sets the character's str.</token>
   </line>
-  <line no="181">
+  <line no="171">
     <token name="T_DOC_COMMENT">     * @param int $str</token>
   </line>
-  <line no="182">
+  <line no="172">
     <token name="T_DOC_COMMENT">     * @return void</token>
   </line>
-  <line no="183">
+  <line no="173">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="184">
+  <line no="174">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -1121,7 +1033,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="185">
+  <line no="175">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -1132,28 +1044,28 @@
     <token name="T_VARIABLE">$str</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="186">
+  <line no="176">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="187"/>
-  <line no="188">
+  <line no="177"/>
+  <line no="178">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="189">
+  <line no="179">
     <token name="T_DOC_COMMENT">     * Sets the character's intl.</token>
   </line>
-  <line no="190">
+  <line no="180">
     <token name="T_DOC_COMMENT">     * @param int $intl</token>
   </line>
-  <line no="191">
+  <line no="181">
     <token name="T_DOC_COMMENT">     * @return void</token>
   </line>
-  <line no="192">
+  <line no="182">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="193">
+  <line no="183">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -1167,7 +1079,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="194">
+  <line no="184">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -1178,28 +1090,28 @@
     <token name="T_VARIABLE">$intl</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="195">
+  <line no="185">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="196"/>
-  <line no="197">
+  <line no="186"/>
+  <line no="187">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="198">
+  <line no="188">
     <token name="T_DOC_COMMENT">     * Sets the character's agi.</token>
   </line>
-  <line no="199">
+  <line no="189">
     <token name="T_DOC_COMMENT">     * @param int $agi</token>
   </line>
-  <line no="200">
+  <line no="190">
     <token name="T_DOC_COMMENT">     * @return void</token>
   </line>
-  <line no="201">
+  <line no="191">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="202">
+  <line no="192">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -1213,7 +1125,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="203">
+  <line no="193">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -1224,28 +1136,28 @@
     <token name="T_VARIABLE">$agi</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="204">
+  <line no="194">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="205"/>
-  <line no="206">
+  <line no="195"/>
+  <line no="196">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="207">
+  <line no="197">
     <token name="T_DOC_COMMENT">     * Sets the character's mDef.</token>
   </line>
-  <line no="208">
+  <line no="198">
     <token name="T_DOC_COMMENT">     * @param int $mDef</token>
   </line>
-  <line no="209">
+  <line no="199">
     <token name="T_DOC_COMMENT">     * @return void</token>
   </line>
-  <line no="210">
+  <line no="200">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="211">
+  <line no="201">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -1259,7 +1171,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="212">
+  <line no="202">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -1270,28 +1182,28 @@
     <token name="T_VARIABLE">$mDef</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="213">
+  <line no="203">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="214"/>
-  <line no="215">
+  <line no="204"/>
+  <line no="205">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="216">
+  <line no="206">
     <token name="T_DOC_COMMENT">     * Sets the character's fDef.</token>
   </line>
-  <line no="217">
+  <line no="207">
     <token name="T_DOC_COMMENT">     * @param int $fDef</token>
   </line>
-  <line no="218">
+  <line no="208">
     <token name="T_DOC_COMMENT">     * @return void</token>
   </line>
-  <line no="219">
+  <line no="209">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="220">
+  <line no="210">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -1305,7 +1217,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="221">
+  <line no="211">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -1316,28 +1228,28 @@
     <token name="T_VARIABLE">$fDef</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="222">
+  <line no="212">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="223"/>
-  <line no="224">
+  <line no="213"/>
+  <line no="214">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="225">
+  <line no="215">
     <token name="T_DOC_COMMENT">     * Sets the character's hp.</token>
   </line>
-  <line no="226">
+  <line no="216">
     <token name="T_DOC_COMMENT">     * @param int $hp</token>
   </line>
-  <line no="227">
+  <line no="217">
     <token name="T_DOC_COMMENT">     * @return void</token>
   </line>
-  <line no="228">
+  <line no="218">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="229">
+  <line no="219">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -1351,7 +1263,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="230">
+  <line no="220">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -1362,25 +1274,25 @@
     <token name="T_VARIABLE">$hp</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="231">
+  <line no="221">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="232"/>
-  <line no="233">
+  <line no="222"/>
+  <line no="223">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="234">
+  <line no="224">
     <token name="T_DOC_COMMENT">     * Gets the character's id.</token>
   </line>
-  <line no="235">
+  <line no="225">
     <token name="T_DOC_COMMENT">     * @return int</token>
   </line>
-  <line no="236">
+  <line no="226">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="237">
+  <line no="227">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -1391,11 +1303,11 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">int</token>
   </line>
-  <line no="238">
+  <line no="228">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="239">
+  <line no="229">
     <token name="T_WHITESPACE">        </token>
     <token name="T_RETURN">return</token>
     <token name="T_WHITESPACE"> </token>
@@ -1404,28 +1316,28 @@
     <token name="T_STRING">id</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="240">
+  <line no="230">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="241"/>
-  <line no="242">
+  <line no="231"/>
+  <line no="232">
     <token name="T_WHITESPACE">    </token>
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="243">
+  <line no="233">
     <token name="T_DOC_COMMENT">     * Sets the character's id.</token>
   </line>
-  <line no="244">
+  <line no="234">
     <token name="T_DOC_COMMENT">     * @param int $id</token>
   </line>
-  <line no="245">
+  <line no="235">
     <token name="T_DOC_COMMENT">     * @return void</token>
   </line>
-  <line no="246">
+  <line no="236">
     <token name="T_DOC_COMMENT">     */</token>
   </line>
-  <line no="247">
+  <line no="237">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -1437,11 +1349,11 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">void</token>
   </line>
-  <line no="248">
+  <line no="238">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="249">
+  <line no="239">
     <token name="T_WHITESPACE">        </token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -1452,14 +1364,14 @@
     <token name="T_VARIABLE">$id</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="250">
+  <line no="240">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="251"/>
-  <line no="252"/>
-  <line no="253">
+  <line no="241"/>
+  <line no="242"/>
+  <line no="243">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="254"/>
+  <line no="244"/>
 </source>

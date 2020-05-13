@@ -1,27 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns="http://xml.phpdox.net/src" full="ICharacterFactory" namespace="" name="ICharacterFactory" abstract="false" final="false" start="13" end="17">
-  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces" file="ICharacterFactory.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces/ICharacterFactory.php" size="418" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="ed73ac5f09fa0e9a580bffef2c8ea6009fe41afa" relative="interfaces/ICharacterFactory.php"/>
+<interface xmlns="http://xml.phpdox.net/src" full="ICharacterFactory" namespace="" name="ICharacterFactory" abstract="false" final="false" start="7" end="49">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces" file="ICharacterFactory.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces/ICharacterFactory.php" size="1384" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="b00a850f4919cf206ed117df61b915ce3edc75ec" relative="interfaces/ICharacterFactory.php"/>
   <docblock>
-    <description/>
-    <author value="pabhoz"/>
+    <description compact="This interface is in charge of naming the functions that are specific to the character factory object."/>
   </docblock>
-  <method name="createMage" start="14" end="14" abstract="false" final="false" static="true" visibility="public">
+  <method name="createMage" start="17" end="17" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a mage type character.">Creates the instance of a new mage, with a predefined level of 1.</description>
+      <param description="Name of the character." type="string" variable="$name"/>
+      <return description="An instance." type="object">
+        <type full="Mage" namespace="" name="Mage"/>
+      </return>
+    </docblock>
     <return type="object" nullable="false">
       <type full="Mage" namespace="" name="Mage"/>
     </return>
     <parameter name="name" byreference="false" type="string"/>
   </method>
-  <method name="createRogue" start="15" end="15" abstract="false" final="false" static="true" visibility="public">
+  <method name="createRogue" start="27" end="27" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a rogue type character.">Creates the instance of a new rogue, with a predefined level of 1.</description>
+      <param description="Name of the character." type="string" variable="$name"/>
+      <return description="An instance." type="object">
+        <type full="Rogue" namespace="" name="Rogue"/>
+      </return>
+    </docblock>
     <return type="object" nullable="false">
       <type full="Rogue" namespace="" name="Rogue"/>
     </return>
     <parameter name="name" byreference="false" type="string"/>
   </method>
-  <method name="createWarrior" start="16" end="16" abstract="false" final="false" static="true" visibility="public">
+  <method name="createWarrior" start="37" end="37" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a warrior type character.">Creates the instance of a new warrior, with a predefined level of 1.</description>
+      <param description="Name of the character." type="string" variable="$name"/>
+      <return description="An instance." type="object">
+        <type full="Warrior" namespace="" name="Warrior"/>
+      </return>
+    </docblock>
     <return type="object" nullable="false">
       <type full="Warrior" namespace="" name="Warrior"/>
     </return>
     <parameter name="name" byreference="false" type="string"/>
+  </method>
+  <method name="getCharacter" start="48" end="48" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create an existing character.">Creates an instance for a character that is brought from the database.</description>
+      <param description="It receives a number that represents a specific character" type="int" variable="$id">on the character table.</param>
+      <return description="An instance of character-type." type="object">
+        <type full="ICharacter" namespace="" name="ICharacter"/>
+      </return>
+    </docblock>
+    <return type="object" nullable="false">
+      <type full="ICharacter" namespace="" name="ICharacter"/>
+    </return>
+    <parameter name="id" byreference="false" type="int"/>
+    <parameter name="charactersbl" byreference="false" type="object">
+      <type full="Characters_bl" namespace="" name="Characters_bl"/>
+    </parameter>
   </method>
   <implementors>
     <class full="CharacterFactory" namespace="" name="CharacterFactory"/>

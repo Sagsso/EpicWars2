@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns="http://xml.phpdox.net/src" full="IController" namespace="" name="IController" abstract="false" final="false" start="13" end="15">
-  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces" file="IController.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces/IController.php" size="276" time="2020-04-17T07:23:19+02:00" unixtime="1587100999" sha1="660c45bc19896a2a93e238a6a3ed2fdd6be03ca1" relative="interfaces/IController.php"/>
+<interface xmlns="http://xml.phpdox.net/src" full="IController" namespace="" name="IController" abstract="false" final="false" start="7" end="17">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces" file="IController.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces/IController.php" size="300" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="11680d2342598ded40023672b3d5bc6b4ff6f98f" relative="interfaces/IController.php"/>
   <docblock>
-    <description/>
-    <author value="pabhoz"/>
+    <description compact="This interface is in charge of naming the functions that are specific to the controllers."/>
   </docblock>
-  <method name="index" start="14" end="14" abstract="false" final="false" static="false" visibility="public">
+  <method name="index" start="16" end="16" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Default function.">It is in charge of rendering the principal view.</description>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
     <return type="void" nullable="false"/>
   </method>
   <implementors>

@@ -1,49 +1,73 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces" file="IHistory.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces/IHistory.php" size="395" time="2020-05-06T20:53:53+02:00" unixtime="1588791233" sha1="04b4075ccf1efbb398b539d3bd6740b639a4d106" relative="interfaces/IHistory.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces" file="IHistory.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces/IHistory.php" size="1137" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="9de5581a342c6b40d181a49130b07618826b3553" relative="interfaces/IHistory.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
   <line no="2"/>
   <line no="3">
-    <token name="T_COMMENT">/*</token>
-  </line>
-  <line no="4">
-    <token name="T_COMMENT"> * To change this license header, choose License Headers in Project Properties.</token>
-  </line>
-  <line no="5">
-    <token name="T_COMMENT"> * To change this template file, choose Tools | Templates</token>
-  </line>
-  <line no="6">
-    <token name="T_COMMENT"> * and open the template in the editor.</token>
-  </line>
-  <line no="7">
-    <token name="T_COMMENT"> */</token>
-  </line>
-  <line no="8"/>
-  <line no="9">
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="10">
-    <token name="T_DOC_COMMENT"> *</token>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> * This interface is in charge of naming the </token>
   </line>
-  <line no="11">
-    <token name="T_DOC_COMMENT"> * @author pabhoz</token>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * functions that are specific to the history logic.</token>
   </line>
-  <line no="12">
+  <line no="6">
     <token name="T_DOC_COMMENT"> */</token>
   </line>
-  <line no="13">
+  <line no="7">
     <token name="T_INTERFACE">interface</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">IHistory</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="14">
+  <line no="8">
     <token name="T_WHITESPACE">    </token>
   </line>
+  <line no="9">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT">     * It's in charge of reporting all the events that happen in the fight.</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT">     * It generates chains of strings with information about the fight and </token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT">     * accumulates them in an array to generate a final message. It is also </token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT">     * in charge of saving all the messages in the fight history details </token>
+  </line>
   <line no="15">
+    <token name="T_DOC_COMMENT">     * variable.</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT">     * @param ICharacter $character1 The character he's going to attack.</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT">     * @param ICharacter $character2 The character who gets attacked.</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT">     * @param array $details Array with the attack and defense calculations.</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT">     * @return string Final message.</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="22">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -68,10 +92,32 @@
     <token name="T_STRING">string</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="16">
+  <line no="23">
     <token name="T_WHITESPACE">    </token>
   </line>
-  <line no="17">
+  <line no="24">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT">     * The function that announces the death of a player. </token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT">     * It also saves the message within the history details.</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT">     * </token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT">     * @param ICharacter $character The character who died.</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT">     * @return string Final message.</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="31">
     <token name="T_WHITESPACE">    </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
@@ -86,7 +132,7 @@
     <token name="T_STRING">string</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="18">
+  <line no="32">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
 </source>

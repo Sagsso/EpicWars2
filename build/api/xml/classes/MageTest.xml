@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="MageTest" namespace="" name="MageTest" abstract="false" final="false" start="6" end="52">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/tests/unit" file="MageTest.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/tests/unit/MageTest.php" size="1255" time="2020-05-12T08:19:09+02:00" unixtime="1589264349" sha1="349bdaddc68c424b919c6e128d3ce865fc963a6a" relative="tests/unit/MageTest.php"/>
+  <extends full="Codeception\Test\Unit" namespace="Codeception\Test" name="Unit" unresolved="true"/>
+  <member name="tester" visibility="protected" static="false" line="11">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="\UnitTester" namespace="" name="UnitTester"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="mage" visibility="private" static="false" line="12"/>
+  <method name="_before" start="14" end="17" abstract="false" final="false" static="false" visibility="protected"/>
+  <method name="_after" start="19" end="22" abstract="false" final="false" static="false" visibility="protected"/>
+  <method name="testCreation" start="25" end="28" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="testLevelUp" start="30" end="51" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="Set new level to mage" line="41"/>
+    </inline>
+  </method>
+</class>

@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns="http://xml.phpdox.net/src" full="IView" namespace="" name="IView" abstract="false" final="false" start="13" end="15">
-  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces" file="IView.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces/IView.php" size="301" time="2020-04-17T07:23:19+02:00" unixtime="1587100999" sha1="7682a330cec0bf4dc4540c666de1c7d418384d83" relative="interfaces/IView.php"/>
+<interface xmlns="http://xml.phpdox.net/src" full="IView" namespace="" name="IView" abstract="false" final="false" start="7" end="19">
+  <file path="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces" file="IView.php" realpath="/opt/lampp/htdocs/backendProjects/Parcial2/interfaces/IView.php" size="501" time="2020-05-14T00:29:16+02:00" unixtime="1589408956" sha1="1ce40194768750f95435f208a5dbd97b1f9ac0d1" relative="interfaces/IView.php"/>
   <docblock>
-    <description/>
-    <author value="pabhoz"/>
+    <description compact="This interface is in charge of naming the functions that are specific to the views."/>
   </docblock>
-  <method name="render" start="14" end="14" abstract="false" final="false" static="false" visibility="public">
+  <method name="render" start="18" end="18" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="It is in charge of rendering the view, which allows it to be displayed in the interface each time it is called."/>
+      <param description="The controller's name." type="string" variable="$controller"/>
+      <param description="The view's name." type="string" variable="$view"/>
+      <param description="The page title." type="string" variable="$title"/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
     <return type="void" nullable="false"/>
     <parameter name="controller" byreference="false" type="object">
       <type full="IController" namespace="" name="IController"/>
